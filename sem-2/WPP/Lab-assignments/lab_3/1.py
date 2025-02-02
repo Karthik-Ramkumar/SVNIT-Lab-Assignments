@@ -1,29 +1,29 @@
-def root(len, n):
-    digital_root = n  # Initialize digital_root
+def root(num_len, num):
+    digital_root = num  
 
-    while digital_root >= 10:  # Keep reducing until a single digit
+    while digital_root >= 10:  
         number_split = []
-        temp = digital_root  # Use a temp variable to avoid modifying `n`
+        temp = digital_root 
         digital_root = 0
 
-        for _ in range(len):
+        for _ in range(num_len):
             store = temp % 10
             number_split.append(store)
             temp //= 10
 
         for num in number_split:
-            digital_root += num  # Sum all digits
+            digital_root += num  
 
-        len = len(str(digital_root))  # Update length for new number
+        num_len = len(str(digital_root))  
 
     return digital_root
 
 
 def main():
-    n = input("Enter number: ")
-    length = len(n)
-    n = int(n)
-    root_n = root(length, n)
+    num = input("Enter number: ")
+    num_len = len(num)  
+    num = int(num)
+    root_n = root(num_len, num)
     print("Digital Root:", root_n)
 
 
