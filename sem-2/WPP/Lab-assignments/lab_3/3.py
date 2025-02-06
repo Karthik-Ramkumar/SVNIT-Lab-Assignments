@@ -1,7 +1,7 @@
 t = int(input())
 
 for _ in range(t):
-    n = int(input())
+    n = int(input("Enter height"))
     height = 1
 
     for cycle in range(n):

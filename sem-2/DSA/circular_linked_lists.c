@@ -6,7 +6,7 @@ struct node {
     struct node *link;
 };
 
-// Prototypes
+// Function Prototypes
 void createList(struct node **last);
 void insertNode(struct node **last, int data, int position);
 void deleteNode(struct node **last);
@@ -85,6 +85,7 @@ void insertNode(struct node **last, int data, int position)
     struct node *insertAtBeginning(struct node **last, int data);
     struct node *insertAfterNode(struct node *temp, int data);
     struct node *insertAtEnd(struct node **last, int data);
+    
 
     if (*last == NULL) {
         insertIntoEmptyList(last, data);
