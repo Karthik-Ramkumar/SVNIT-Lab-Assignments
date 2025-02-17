@@ -61,13 +61,42 @@ int main()
     struct Stack s;
     create(&s);
     
-    push(&s, 10);
-    push(&s, 20);
-    push(&s, 30);
+    int choice, value;
     
-    printf("Top element: %d\n", peek(&s));
-    printf("Popped: %d\n", pop(&s));
-    printf("Stack empty: %s\n", isEmpty(&s) ? "Yes" : "No");
+    while (1) 
+    {
+        printf("\nStack Operations:\n");
+        printf("1. Push\n");
+        printf("2. Pop\n");
+        printf("3. Peek\n");
+        printf("4. Check if Empty\n");
+        printf("5. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        
+        switch (choice) 
+        {
+            case 1:
+                printf("Enter value to push: ");
+                scanf("%d", &value);
+                push(&s, value);
+                break;
+            case 2:
+                printf("Popped: %d\n", pop(&s));
+                break;
+            case 3:
+                printf("Top element: %d\n", peek(&s));
+                break;
+            case 4:
+                printf("Stack empty: %s\n", isEmpty(&s) ? "Yes" : "No");
+                break;
+            case 5:
+                printf("Exiting program...\n");
+                return 0;
+            default:
+                printf("Invalid choice. Try again.\n");
+        }
+    }
     
     return 0;
 }

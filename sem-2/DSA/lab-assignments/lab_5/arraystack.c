@@ -1,69 +1,75 @@
-#include <iostream>
-#define MAXSIZE 100
+#include <stdio.h>
+#define MAX 100
 
-struct Stack 
-{
-    int stArr[MAXSIZE];
-    int top;
-};
+int stack[MAX];
+int top = -1;
 
-void create(Stack &s) 
-{
-    s.top = -1;
+void create() {
+    top = -1;
 }
 
-bool isFull(Stack &s) 
-{
-    return s.top == MAXSIZE - 1;
-}
-
-bool isEmpty(Stack &s) 
-{
-    return s.top == -1;
-}
-
-void push(Stack &s, int value)
- {
-    if (isFull(s)) 
-    {
-        std::cout << "Stack is full!\n";
+void push(int value) {
+    if (top == MAX - 1) {
+        printf("Stack overflow\n");
         return;
     }
-    s.stArr[++s.top] = value;
+    stack[++top] = value;
 }
 
-int pop(Stack &s) 
-{
-    if (isEmpty(s)) 
-    {
-        std::cout << "Stack is empty!\n";
+int pop() {
+    if (top == -1) {
+        printf("Stack underflow\n");
         return -1;
     }
-    return s.stArr[s.top--];
+    return stack[top--];
 }
 
-int peek(Stack &s) 
-{
-    if (isEmpty(s)) 
-    {
-        std::cout << "Stack is empty!\n";
+int peek() {
+    if (top == -1) {
+        printf("Stack empty\n");
         return -1;
     }
-    return s.stArr[s.top];
+    return stack[top];
 }
 
-int main() 
-{
-    Stack s;
-    create(s);
-    
-    push(s, 10);
-    push(s, 20);
-    push(s, 30);
-    
-    std::cout << "Top element: " << peek(s) << "\n";
-    std::cout << "Popped: " << pop(s) << "\n";
-    std::cout << "Stack empty: " << (isEmpty(s) ? "Yes" : "No") << "\n";
-    
-    return 0;
+int isFull() {
+    return top == MAX - 1;
+}
+
+int isEmpty() {
+    return top == -1;
+}
+
+int main() {
+    int choice, value;
+    create();
+
+    while (1) {
+        printf("\n1. Push\n2. Pop\n3. Peek\n4. Check if Full\n5. Check if Empty\n6. Exit\nEnter choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Enter value to push: ");
+                scanf("%d", &value);
+                push(value);
+                break;
+            case 2:
+                printf("Popped element: %d\n", pop());
+                break;
+            case 3:
+                printf("Top element: %d\n", peek());
+                break;
+            case 4:
+                printf("Stack full: %s\n", isFull() ? "Yes" : "No");
+                break;
+            case 5:
+                printf("Stack empty: %s\n", isEmpty() ? "Yes" : "No");
+                break;
+            case 6:
+                return 0;
+            default:
+                printf("Invalid choice\n");
+        }
+    }
 }
