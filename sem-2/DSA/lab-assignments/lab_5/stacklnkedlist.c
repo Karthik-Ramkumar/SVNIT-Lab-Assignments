@@ -12,20 +12,21 @@ struct Stack
     struct Node* top;
 };
 
-void create(struct Stack* s) 
+void create(struct Stack *s) 
 {
     s->top = NULL;
 }
 
-int isEmpty(struct Stack* s) 
+int isEmpty(struct Stack *s) 
 {
     return s->top == NULL;
 }
 
-void push(struct Stack* s, int value) 
+void push(struct Stack *s, int value) 
 {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
-    if (!newNode) {
+    if (!newNode) 
+    {
         printf("Heap overflow!\n");
         return;
     }
@@ -36,7 +37,8 @@ void push(struct Stack* s, int value)
 
 int pop(struct Stack* s) 
 {
-    if (isEmpty(s)) {
+    if (isEmpty(s)) 
+    {
         printf("Stack is empty!\n");
         return -1;
     }
@@ -49,7 +51,8 @@ int pop(struct Stack* s)
 
 int peek(struct Stack* s) 
 {
-    if (isEmpty(s)) {
+    if (isEmpty(s)) 
+    {
         printf("Stack is empty!\n");
         return -1;
     }

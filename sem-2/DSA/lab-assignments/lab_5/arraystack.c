@@ -4,12 +4,15 @@
 int stack[MAX];
 int top = -1;
 
-void create() {
+void create() 
+{
     top = -1;
 }
 
-void push(int value) {
-    if (top == MAX - 1) {
+void push(int value) 
+{
+    if (top == MAX - 1) 
+    {
         printf("Stack overflow\n");
         return;
     }
@@ -17,7 +20,8 @@ void push(int value) {
 }
 
 int pop() {
-    if (top == -1) {
+    if (top == -1) 
+    {
         printf("Stack underflow\n");
         return -1;
     }
@@ -25,26 +29,31 @@ int pop() {
 }
 
 int peek() {
-    if (top == -1) {
+    if (top == -1) 
+    {
         printf("Stack empty\n");
         return -1;
     }
     return stack[top];
 }
 
-int isFull() {
+int isFull() 
+{
     return top == MAX - 1;
 }
 
-int isEmpty() {
+int isEmpty() 
+{
     return top == -1;
 }
 
-int main() {
+int main() 
+{
     int choice, value;
     create();
 
-    while (1) {
+    while (1) 
+    {
         printf("\n1. Push\n2. Pop\n3. Peek\n4. Check if Full\n5. Check if Empty\n6. Exit\nEnter choice: ");
         scanf("%d", &choice);
 
