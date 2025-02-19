@@ -89,9 +89,11 @@ void insertNode(struct node **last, int data, int position)
 
     if (*last == NULL) {
         insertIntoEmptyList(last, data);
-    } else if (position == 1) {
+    } 
+    else if (position == 1) {
         insertAtBeginning(last, data);
-    } else {
+    } 
+    else {
         struct node *temp = (*last)->link;
         int count = 1;
 
@@ -120,9 +122,11 @@ void deleteNode(struct node **last)
 
     if (*last == NULL) {
         printf("List is empty. Nothing to delete.\n");
-    } else if (position == 1) {
+    } 
+    else if (position == 1) {
         deleteBeginning(last);
-    } else {
+    } 
+    else {
         struct node *temp = (*last)->link;
         int count = 1;
 
@@ -133,9 +137,11 @@ void deleteNode(struct node **last)
 
         if (temp == *last || temp->link == *last) {
             deleteEnd(last);
-        } else if (count == position - 1) {
+        } 
+        else if (count == position - 1) {
             deleteAtPosition(last, position);
-        } else {
+        } 
+        else {
             printf("Invalid position.\n");
         }
     }
