@@ -1,30 +1,31 @@
-class Password_Manager:
+class PasswordManager:
     def __init__(self):
-        self.old_passwords = []
+        self.password_history = []
 
     def get_password(self):
-        return self.old_passwords[-1] if self.old_passwords else None
+        if self.password_history:
+            return self.password_history[-1]
+        return None
 
     def set_password(self, new_password):
-        if new_password not in self.old_passwords:
-            self.old_passwords.append(new_password)
-            return True
-        return False
+        if new_password in self.password_history:
+            return False
+        self.password_history.append(new_password)
+        return True
 
     def is_correct(self, password):
         return password == self.get_password()
 
+pm = PasswordManager()
 
-pm = Password_Manager()
+# Adding passwords
+print(pm.set_password("pass123"))  # True (New password added)
+print(pm.set_password("secure456"))  # True (New password added)
+print(pm.set_password("pass123"))  # False (Already used)
 
-# Setting password
-print(pm.set_password("abc123"))  # True (New password set)
-print(pm.set_password("xyz7fwfw89"))  # True (New password set)
-print(pm.set_password("abc123"))  # False (Already used)
+# Checking current password
+print("Current password:", pm.get_password())  # secure456
 
-# Getting current password
-print("Current password:", pm.get_password())  # xyz789
-
-# Checking password if correct or not
-print(pm.is_correct("xyz789"))  # True
-print(pm.is_correct("abc123"))  # False
+# Verifying password
+print(pm.is_correct("secure456"))  # True
+print(pm.is_correct("pass123"))  # False

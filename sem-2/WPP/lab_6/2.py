@@ -1,77 +1,55 @@
 import random
 
-class Rock_paper_scissors:
-    def __init__(self, num_rounds):
-        self.num_rounds = num_rounds
+class RockPaperScissors:
+    def __init__(self, rounds):
+        self.rounds = rounds
         self.current_round = 0
-        self.user_wins = 0
-        self.computer_wins = 0
+        self.user_score = 0
+        self.computer_score = 0
 
-    def get_computer_choice(self):
-        choices = ["rock", "paper", "scissors"]
-        return random.choice(choices)
+    def computer_choice(self):
+        return random.choice(["rock", "paper", "scissors"])
 
     def play_round(self, user_choice):
         self.current_round += 1
-        computer_choice = self.get_computer_choice()
+        computer_choice = self.computer_choice()
 
-        winner = self.determine_winner(user_choice, computer_choice)
-
-        if winner == "user":
-            self.user_wins += 1
-        elif winner == "computer":
-            self.computer_wins += 1
-
-        return user_choice, computer_choice, winner  # Return choices and winner for display
-
-    def determine_winner(self, user_choice, computer_choice):
         if user_choice == computer_choice:
-            return "tie"
+            result = "tie"
         elif (user_choice == "rock" and computer_choice == "scissors") or \
              (user_choice == "paper" and computer_choice == "rock") or \
              (user_choice == "scissors" and computer_choice == "paper"):
-            return "user"
+            result = "user"
+            self.user_score += 1
         else:
-            return "computer"
+            result = "computer"
+            self.computer_score += 1
 
-    def game_over(self):
-        return self.current_round >= self.num_rounds or self.user_wins > self.num_rounds // 2 or self.computer_wins > self.num_rounds // 2 #check if someone won the majority
+        print(f"You chose: {user_choice}, Computer chose: {computer_choice}")
+        print(f"Winner: {result}\n")
 
-    def get_final_winner(self):
-      if self.user_wins > self.computer_wins:
-        return "user"
-      elif self.computer_wins > self.user_wins:
-        return "computer"
-      else:
-        return "tie"
+    def is_game_over(self):
+        return self.current_round >= self.rounds
 
-    def display_results(self):
-        print(f"\n--- Game Results ---")
-        print(f"Rounds played: {self.current_round}")
-        print(f"User wins: {self.user_wins}")
-        print(f"Computer wins: {self.computer_wins}")
-
-        final_winner = self.get_final_winner()
-        if final_winner != "tie":
-            print(f"The final winner is: {final_winner}!")
+    def final_winner(self):
+        if self.user_score > self.computer_score:
+            return "You win"
+        elif self.computer_score > self.user_score:
+            return "Computer wins"
         else:
-            print("The game ended in a tie!")
-#------------------------------
-num_rounds = 5  
-game = Rock_paper_scissors(num_rounds)
+            return "It's a tie"
+#no of games
+game = RockPaperScissors(3)
 
-while not game.game_over():
+while not game.is_game_over():
     while True:
-      user_choice = input(f"Round {game.current_round + 1}: Enter your choice (rock, paper, scissors): ").lower()
-      if user_choice in ["rock", "paper", "scissors"]:
-        break
-      else:
-        print("Invalid choice. Please enter rock, paper, or scissors.")
+        user_move = input("Enter rock, paper, or scissors: ").lower()
+        if user_move in ["rock", "paper", "scissors"]:
+            break
+        print("Invalid choice, try again.")
 
-    user_choice, computer_choice, winner = game.play_round(user_choice)
-    print(f"You chose: {user_choice}")
-    print(f"Computer chose: {computer_choice}")
-    print(f"Round winner: {winner}")
+    game.play_round(user_move)
 
-
-game.display_results()
+print("\n--- Final Results ---")
+print(f"User: {game.user_score}, Computer: {game.computer_score}")
+print(game.final_winner())
