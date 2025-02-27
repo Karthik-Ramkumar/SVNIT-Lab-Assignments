@@ -1,72 +1,68 @@
-import math
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
 
-class Vector2D:
-    class Vector2D:
-        def __init__(self, x, y):
-            self.x = x
-            self.y = y
+class Queue:
+    def __init__(self):
+        self.front = None
+        self.rear = None
 
-        def magnitude(self):
-            return math.sqrt(self.x**2 + self.y**2)
+    def is_empty(self):
+        return self.front is None
 
-        def rotation(self):  # Angle with respect to x-axis
-            return math.atan2(self.y, self.x)
+    def enqueue(self, data):
+        new_node = Node(data)
+        if self.is_empty():
+            self.front = new_node
+            self.rear = new_node
+        else:
+            self.rear.next = new_node
+            self.rear = new_node
+        print(f"{data} enqueued to queue")
 
-        @staticmethod
-        def distance(v1, v2):
-            return math.sqrt((v2.x - v1.x)**2 + (v2.y - v1.y)**2)
+    def dequeue(self):
+        if self.is_empty():
+            print("Queue is empty")
+            return None
+        data = self.front.data
+        temp = self.front
+        self.front = self.front.next
+        if self.front is None:
+            self.rear = None 
+        del temp  
+        print(f"{data} dequeued from queue")
+        return data
 
-        @staticmethod
-        def dot_product(v1, v2):
-            return v1.x * v2.x + v1.y * v2.y
+    def peek(self):
+        if self.is_empty():
+            print("Queue is empty")
+            return None
+        return self.front.data
 
-        @staticmethod
-        def cross_product(v1, v2):
-            return v1.x * v2.y - v1.y * v2.x  # Returns a scalar in 2D
+    def is_full(self):
+        
+        return False
 
-class Vector3D(Vector2D):  # Inherits from Vector2D
-    def __init__(self, x, y, z):
-        super().__init__(x, y)  # Call the 2D constructor
-        self.z = z
+    def free_queue(self): 
+        while not self.is_empty():
+            self.dequeue()
 
-    def magnitude(self):
-        return math.sqrt(self.x**2 + self.y**2 + self.z**2)
+# Example usage
+queue = Queue()
 
-    @staticmethod
-    def distance(v1, v2):
-        return math.sqrt((v2.x - v1.x)**2 + (v2.y - v1.y)**2 + (v2.z - v1.z)**2)
+queue.enqueue(10)
+queue.enqueue(20)
+queue.enqueue(30)
 
-    @staticmethod
-    def dot_product(v1, v2):
-        return v1.x * v2.x + v1.y * v2.y + v1.z * v2.z
+print("Peek:", queue.peek())
 
-    @staticmethod
-    def cross_product(v1, v2):
-        return Vector3D(v1.y * v2.z - v1.z * v2.y,
-                        v1.z * v2.x - v1.x * v2.z,
-                        v1.x * v2.y - v1.y * v2.x)
+queue.dequeue()
+queue.dequeue()
 
-    def __str__(self): #for printing the vector nicely
-      return f"({self.x}, {self.y}, {self.z})"
+print("Peek:", queue.peek())
 
+queue.dequeue()
+queue.dequeue() # Try to dequeue from empty queue
 
-
-# Example usage:
-v2d1 = Vector2D(3, 4)
-v2d2 = Vector2D(1, 2)
-
-print(f"2D Magnitude: {v2d1.magnitude()}")
-print(f"2D Distance: {Vector2D.distance(v2d1, v2d2)}")
-print(f"2D Dot Product: {Vector2D.dot_product(v2d1, v2d2)}")
-print(f"2D Cross Product: {Vector2D.cross_product(v2d1, v2d2)}")
-
-
-v3d1 = Vector3D(1, 2, 3)
-v3d2 = Vector3D(4, 5, 6)
-
-print(f"3D Magnitude: {v3d1.magnitude()}")
-print(f"3D Distance: {Vector3D.distance(v3d1, v3d2)}")
-print(f"3D Dot Product: {Vector3D.dot_product(v3d1, v3d2)}")
-print(f"3D Cross Product: {Vector3D.cross_product(v3d1, v3d2)}")
-
-print(v3d1) #output: (1, 2, 3)
+queue.free_queue() #Free all nodes.

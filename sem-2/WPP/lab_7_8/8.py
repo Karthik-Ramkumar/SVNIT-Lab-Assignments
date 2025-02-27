@@ -24,16 +24,15 @@ def decode_message(encoded_message):
 
 encoded_message = "11106"
 decoded_messages = decode_message(encoded_message)
-print(decoded_messages)  # Output: ['AAJF', 'KJF']
+print(decoded_messages)  
 
 encoded_message = "226"
 decoded_messages = decode_message(encoded_message)
-print(decoded_messages) # Output: ['BBF', 'VF', 'BZ']
+print(decoded_messages) 
 
-encoded_message = "06" #handle leading 0s
+encoded_message = "06" 
 decoded_messages = decode_message(encoded_message)
-print(decoded_messages) # Output: []
-
-encoded_message = "10" #handle leading 0s
+print(decoded_messages)
+encoded_message = "10" 
 decoded_messages = decode_message(encoded_message)
-print(decoded_messages) # Output: ['J']
+print(decoded_messages) 
