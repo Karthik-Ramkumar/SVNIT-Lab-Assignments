@@ -1,105 +1,91 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node 
-{
+struct Node {
     int data;
     struct Node* next;
 };
 
-struct Stack 
-{
-    struct Node* top;
-};
+void push(struct Node** top, int data);
+void pop(struct Node** top);
+void peek(struct Node* top);
+int size(struct Node* top);
+void isEmpty(struct Node* top);
 
-void create(struct Stack *s) 
-{
-    s->top = NULL;
-}
-
-int isEmpty(struct Stack *s) 
-{
-    return s->top == NULL;
-}
-
-void push(struct Stack *s, int value) 
-{
+void push(struct Node** top, int data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
-    if (!newNode) 
-    {
-        printf("Heap overflow!\n");
+    newNode->data = data;
+    newNode->next = *top;
+    *top = newNode;
+}
+
+void pop(struct Node** top) {
+    if (*top == NULL) {
+        printf("Stack is empty\n");
         return;
     }
-    newNode->data = value;
-    newNode->next = s->top;
-    s->top = newNode;
-}
-
-int pop(struct Stack* s) 
-{
-    if (isEmpty(s)) 
-    {
-        printf("Stack is empty!\n");
-        return -1;
-    }
-    struct Node* temp = s->top;
-    int popped = temp->data;
-    s->top = s->top->next;
+    struct Node* temp = *top;
+    printf("Popped element: %d\n", temp->data);
+    *top = (*top)->next;
     free(temp);
-    return popped;
 }
 
-int peek(struct Stack* s) 
-{
-    if (isEmpty(s)) 
-    {
-        printf("Stack is empty!\n");
-        return -1;
+void peek(struct Node* top) {
+    if (top == NULL) {
+        printf("Stack is empty\n");
+    } else {
+        printf("Top element: %d\n", top->data);
     }
-    return s->top->data;
 }
 
-int main() 
-{
-    struct Stack s;
-    create(&s);
-    
+int size(struct Node* top) {
+    int count = 0;
+    while (top != NULL) {
+        count++;
+        top = top->next;
+    }
+    return count;
+}
+
+void isEmpty(struct Node* top) {
+    if (top == NULL) {
+        printf("Stack is empty\n");
+    } else {
+        printf("Stack is not empty\n");
+    }
+}
+
+int main() {
+    struct Node* top = NULL;
     int choice, value;
-    
-    while (1) 
-    {
-        printf("\nStack Operations:\n");
-        printf("1. Push\n");
-        printf("2. Pop\n");
-        printf("3. Peek\n");
-        printf("4. Check if Empty\n");
-        printf("5. Exit\n");
+
+    while (1) {
+        printf("\n1. Push\n2. Pop\n3. Peek\n4. Size\n5. Is Empty\n6. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-        
-        switch (choice) 
-        {
+
+        switch (choice) {
             case 1:
-                printf("Enter value to push: ");
+                printf("Enter element to push: ");
                 scanf("%d", &value);
-                push(&s, value);
+                push(&top, value);
                 break;
             case 2:
-                printf("Popped: %d\n", pop(&s));
+                pop(&top);
                 break;
             case 3:
-                printf("Top element: %d\n", peek(&s));
+                peek(top);
                 break;
             case 4:
-                printf("Stack empty: %s\n", isEmpty(&s) ? "Yes" : "No");
+                printf("Stack size: %d\n", size(top));
                 break;
             case 5:
-                printf("Exiting program...\n");
+                isEmpty(top);
+                break;
+            case 6:
                 return 0;
             default:
-                printf("Invalid choice. Try again.\n");
+                printf("Invalid choice\n");
         }
     }
-    
-    return 0;
 }
