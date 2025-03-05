@@ -43,11 +43,15 @@ void insert(struct node **head) {
     temp->data = data;
     temp->next = NULL;
     
-    if (*head == NULL) {
+    if (*head == NULL) 
+    {
         *head = temp;
-    } else {
+    } 
+    else 
+    {
         struct node *ptr = *head;
-        while (ptr->next != NULL) {
+        while (ptr->next != NULL) 
+        {
             ptr = ptr->next;
         }
         ptr->next = temp;
@@ -55,8 +59,10 @@ void insert(struct node **head) {
     display(*head);
 }
 
-void del(struct node **head) {
-    if (*head == NULL) {
+void del(struct node **head) 
+{
+    if (*head == NULL) 
+    {
         printf("List is empty!\n");
         return;
     }
@@ -66,16 +72,20 @@ void del(struct node **head) {
     scanf("%d", &position);
     
     struct node *ptr = *head, *prev = NULL;
-    if (position == 0) {
+    if (position == 0) 
+    {
         *head = ptr->next;
         free(ptr);
-    } else {
+    } 
+    else 
+    {
         while (position > 0 && ptr != NULL) {
             prev = ptr;
             ptr = ptr->next;
             position--;
         }
-        if (ptr == NULL) {
+        if (ptr == NULL) 
+        {
             printf("Invalid position!\n");
             return;
         }
