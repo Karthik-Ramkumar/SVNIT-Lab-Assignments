@@ -1,84 +1,101 @@
 #include <stdio.h>
-#define MAX 100
+#define MAX 50
 
-int stack[MAX];
-int top = -1;
+void push(int arr[], int *top);
+void pop(int arr[], int *top);
+void peek(int arr[], int *top);
+int size(int *top);
+void isfull(int *top);
+void isempty(int *top);
 
-void create() 
+int main()
 {
-    top = -1;
-}
+    int arr[MAX];
+    int top = -1;
+    int choice;
 
-void push(int value) 
-{
-    if (top == MAX - 1) 
+    while (1)
     {
-        printf("Stack overflow\n");
-        return;
-    }
-    stack[++top] = value;
-}
-
-int pop() {
-    if (top == -1) 
-    {
-        printf("Stack underflow\n");
-        return -1;
-    }
-    return stack[top--];
-}
-
-int peek() {
-    if (top == -1) 
-    {
-        printf("Stack empty\n");
-        return -1;
-    }
-    return stack[top];
-}
-
-int isFull() 
-{
-    return top == MAX - 1;
-}
-
-int isEmpty() 
-{
-    return top == -1;
-}
-
-int main() 
-{
-    int choice, value;
-    create();
-
-    while (1) 
-    {
-        printf("\n1. Push\n2. Pop\n3. Peek\n4. Check if Full\n5. Check if Empty\n6. Exit\nEnter choice: ");
+        printf("\n1. Push\n2. Pop\n3. Peek\n4. Size\n5. Is Full\n6. Is Empty\n7. Exit\n");
+        printf("Enter your choice: ");
         scanf("%d", &choice);
 
-        switch (choice) {
-            case 1:
-                printf("Enter value to push: ");
-                scanf("%d", &value);
-                push(value);
-                break;
-            case 2:
-                printf("Popped element: %d\n", pop());
-                break;
-            case 3:
-                printf("Top element: %d\n", peek());
-                break;
-            case 4:
-                printf("Stack full: %s\n", isFull() ? "Yes" : "No");
-                break;
-            case 5:
-                printf("Stack empty: %s\n", isEmpty() ? "Yes" : "No");
-                break;
-            case 6:
-                return 0;
-            default:
-                printf("Invalid choice\n");
+        switch (choice)
+        {
+            case 1: push(arr, &top); break;
+            case 2: pop(arr, &top); break;
+            case 3: peek(arr, &top); break;
+            case 4: printf("Stack size: %d\n", size(&top)); break;
+            case 5: isfull(&top); break;
+            case 6: isempty(&top); break;
+            case 7: return 0;
+            default: printf("Invalid choice\n");
         }
+    }
+}
+
+void push(int arr[], int *top)
+{
+    if (*top == MAX - 1)
+    {
+        printf("Stack is full\n");
+        return;
+    }
+    printf("Enter element to push: ");
+    (*top)++;
+    scanf("%d", &arr[*top]);
+}
+
+void pop(int arr[], int *top)
+{
+    if (*top == -1)
+    {
+        printf("Stack is empty\n");
+    }
+    else
+    {
+        printf("Popped element: %d\n", arr[*top]);
+        (*top)--;
+    }
+}
+
+void peek(int arr[], int *top)
+{
+    if (*top == -1)
+    {
+        printf("Stack is empty\n");
+    }
+    else
+    {
+        printf("Top element: %d\n", arr[*top]);
+    }
+}
+
+int size(int *top)
+{
+    return (*top) + 1;
+}
+
+void isfull(int *top)
+{
+    if (*top == MAX - 1)
+    {
+        printf("Stack is full\n");
+    }
+    else
+    {
+        printf("Not full\n");
+    }
+}
+
+void isempty(int *top)
+{
+    if (*top == -1)
+    {
+        printf("Stack is empty\n");
+    }
+    else
+    {
+        printf("Not empty\n");
     }
 }
