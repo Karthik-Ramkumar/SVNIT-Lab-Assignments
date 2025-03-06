@@ -41,10 +41,3 @@ void isfull(int *arr,int *top)
         printf("Not full");
     }
 }
-void peek(int *arr, int *top)
-{
-    if (top == -1)
-    {
-        printf("stack empty");
-    }
-}
