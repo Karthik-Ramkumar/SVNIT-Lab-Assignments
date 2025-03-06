@@ -31,7 +31,8 @@ void infixToPostfix(char *infix) {
         else if (*p == ')') {
             while ((ch = pop()) != '(')
                 printf("%c", ch);
-        } else {  // Operator found
+        } 
+        else {  // Operator found
             while (top != -1 && precedence(stack[top]) >= precedence(*p))
                 printf("%c", pop());
             push(*p);

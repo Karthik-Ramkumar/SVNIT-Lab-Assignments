@@ -19,13 +19,13 @@ void push(struct Node** top, int data) {
     *top = newNode;
 }
 
-void pop(struct Node** top) {
-    if (*top == NULL) {
+void pop(struct Node** top) 
+{
+    if (*top == NULL) 
+    {
         printf("Stack is empty\n");
         return;
     }
-    struct Node* temp = *top;
-    printf("Popped element: %d\n", temp->data);
     *top = (*top)->next;
     free(temp);
 }
@@ -33,24 +33,30 @@ void pop(struct Node** top) {
 void peek(struct Node* top) {
     if (top == NULL) {
         printf("Stack is empty\n");
-    } else {
+    } 
+    else 
+    {
         printf("Top element: %d\n", top->data);
     }
 }
 
-int size(struct Node* top) {
+int size(struct Node* top) 
+{
     int count = 0;
-    while (top != NULL) {
+    while (top != NULL) 
+    {
         count++;
         top = top->next;
     }
     return count;
 }
 
-void isEmpty(struct Node* top) {
+void isEmpty(struct Node* top) 
+{
     if (top == NULL) {
         printf("Stack is empty\n");
-    } else {
+    } 
+    else {
         printf("Stack is not empty\n");
     }
 }

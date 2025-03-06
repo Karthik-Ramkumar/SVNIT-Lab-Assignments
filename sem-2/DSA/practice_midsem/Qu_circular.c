@@ -14,14 +14,15 @@ void enqueue(int data)
     newNode->data = data;
 
     if (rear == NULL) {  // First node
-        newNode->next = newNode;  // Points to itself
+        newNode->next = newNode;
+        rear = newNode;  // Points to itself
     } 
     else
     {
         newNode->next = rear->next;
         rear->next = newNode;
+        rear = newNode;
     }
-    rear = newNode;  // Update rear
 }
 
 void dequeue() 
