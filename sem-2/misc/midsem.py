@@ -15,9 +15,9 @@ for key, value in d.items():
 
 # variables stored inside a class is called attributes
 class Student:
-    college_name = "SVNIT" # class attribute
+    college_name = "SVNIT"                                          # class attribute
     def __init__(self,name,rollno):                                 # obj atrr > class atrr
-        self.name = name # object attribute
+        self.name = name                                            # object attribute
         self.rollno = rollno
         print(name)     # prints automatically cause self is called on creation of object
         print(rollno)
