@@ -17,9 +17,12 @@ void enqueue(int data, int priority) {
     if (front == NULL || priority < front->priority) {
         newNode->next = front;
         front = newNode;
-    } else {
+    } 
+    else 
+    {
         struct Node* temp = front;
-        while (temp->next != NULL && temp->next->priority <= priority) {
+        while (temp->next != NULL && temp->next->priority <= priority) 
+        {
             temp = temp->next;
         }
         newNode->next = temp->next;
@@ -33,7 +36,6 @@ void dequeue() {
         return;
     }
     struct Node* temp = front;
-    printf("Deleted: %d (Priority: %d)\n", temp->data, temp->priority);
     front = front->next;
     free(temp);
 }
