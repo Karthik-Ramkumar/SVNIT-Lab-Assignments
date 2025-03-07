@@ -65,8 +65,8 @@ class car:
         car.name = 'honda'
     
     @classmethod
-    def changeName(cls, Name):          # cls is class
-        cls.name = Name  
+    def changeName(car, Name):          # cls is class
+        car.name = Name  
 
 
 class Car:
