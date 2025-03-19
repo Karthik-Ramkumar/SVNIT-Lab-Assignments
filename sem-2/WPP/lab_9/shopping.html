@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f2f2f2;
+        }
+        .navbar {
+            background-color: #232f3e;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .categories {
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .categories a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .main-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .box {
+            background: white;
+            padding: 15px;
+            width: 30%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div>amazon</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="nav-links">
+            <a href="#">Account & Lists</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart</a>
+        </div>
+    </header>
+    <nav class="categories">
+        <a href="#">Best Sellers</a>
+        <a href="#">Amazon Basics</a>
+        <a href="#">New Releases</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Books</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Toys & Games</a>
+        <a href="#">Fashion</a>
+    </nav>
+    <section class="main-section">
+        <div class="box">Cozy winter style for her</div>
+        <div class="box">Bring in the fresh energy</div>
+        <div class="box">Must-see fashion deals</div>
+    </section>
+</body>
+</html>
