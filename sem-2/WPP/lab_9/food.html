@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background: url('food3.jpg') no-repeat center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            position: relative;
+        }
+        .hero h1 {  
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .search-bar {
+            margin-top: 20px;
+        }
+        .search-bar input {
+            width: 400px;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .category {
+            width: 200px;
+            text-align: center;
+        }
+        .category img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .category p {
+            font-size: 1.1rem;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>ORDER NOW!</h1>
+        <p>Discover the best food & drinks in your city nearby you</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for restaurants, dishes...">
+        </div>
+    </div>
+
+    <div class="categories">
+        <div class="category">
+            <img src="food4.jpg" alt="Order Food">
+            <p>Order Food Online</p>
+        </div>
+        <div class="category">
+            <img src="food2.jpg" alt="Dine Out">
+            <p>Go out for a meal</p>
+        </div>
+        <div class="category">
+            <img src="food1.jpg" alt="Nightlife">
+            <p>Night Life & Clubs</p>
+        </div>
+        <div class="category">
+            <img src="food5.jpg" alt="Zomato Pro">
+            <p>Exclusive Offers</p>
+        </div>
+    </div>
+
+</body>
+</html>
