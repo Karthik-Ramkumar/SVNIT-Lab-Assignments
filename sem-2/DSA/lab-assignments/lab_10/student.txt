@@ -1,0 +1,9 @@
+Alice, 101, ComputerScience  
+Bob, 102, Mechanical  
+Charlie, 103, Electrical  
+Alice, 104, Mathematics  
+David, 105, Civil  
+Bob, 106, ComputerScience  
+Eve, 107, Electronics  
+Charlie, 108, Mechanical  
+Alice, 109, Physics  
