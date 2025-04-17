@@ -26,7 +26,6 @@ def solve_n_queens(board, row, n):
             board[row] = col
             solve_n_queens(board, row + 1, n)
             board[row] = -1  # Backtrack
-
 def print_solution(board, n):
     for i in range(n):
         row = ['.'] * n
