@@ -30,7 +30,7 @@ graph = [
 [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,107,  0,  0]  # por
 ]
 
-# ---------------- HEURISTIC (to Boston) ----------------
+#  heuristic(to Chicago) 
 h = {
 "Chicago":0,"Detroit":283,"Cleveland":345,"Indianapolis":182,"Columbus":320,"Pittsburgh":460,
 "Buffalo":540,"Syracuse":690,"NewYork":790,"Philadelphia":760,"Baltimore":700,"Boston":980,"Providence":1030,
