@@ -1,6 +1,7 @@
-# BEST FIRST SEARCH USING MATRIX (CITY GRAPH)
 
-# ---------------- CITIES ----------------
+
+# BEST FIRST SEARCH (f(n) = g(n) + h(n)) USING MATRIX
+
 cities = [
     "Chicago","Detroit","Cleveland","Indianapolis","Columbus",
     "Pittsburgh","Buffalo","Syracuse","NewYork","Philadelphia",
@@ -10,8 +11,6 @@ cities = [
 n = len(cities)
 INF = 9999999
 
-# ---------------- ADJACENCY MATRIX ----------------
-# 0 means no direct road
 graph = [
 # Chi Det Cle Ind Col Pit Buf Syr NY  Phi Bal Bos Pro Por
 [  0,283,345,182,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0], # chi
@@ -30,19 +29,20 @@ graph = [
 [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,107,  0,  0]  # por
 ]
 
-#  heuristic(to Chicago) 
+# heuristic to Chicago
 h = {
 "Chicago":0,"Detroit":283,"Cleveland":345,"Indianapolis":182,"Columbus":320,"Pittsburgh":460,
-"Buffalo":540,"Syracuse":690,"NewYork":790,"Philadelphia":760,"Baltimore":700,"Boston":980,"Providence":1030,
-"Portland":1090
+"Buffalo":540,"Syracuse":690,"NewYork":790,"Philadelphia":760,"Baltimore":700,"Boston":980,
+"Providence":1030,"Portland":1090
 }
+
 class Node:
     def __init__(self,state,parent=None,cost=0):
         self.state = state
         self.parent = parent
         self.cost = cost
 
-def expand(node): #generates all children (successor nodes) of current city
+def expand(node):
     children=[]
     i=cities.index(node.state)
     for j in range(n):
@@ -68,8 +68,9 @@ def BEST_FIRST_SEARCH(start,goal):
 
     nodes_explored=0
 
-    while frontier: # frontier keeps all the cities that are generated but not yet explored
-        frontier.sort(key=lambda x:h[x.state]) # for each node in x sort with heuristic value of that node's city
+    while frontier:
+        # f(n) = g(n) + h(n)
+        frontier.sort(key=lambda x: x.cost + h[x.state])
         node=frontier.pop(0)
         nodes_explored+=1
 
@@ -84,8 +85,9 @@ def BEST_FIRST_SEARCH(start,goal):
 
     return None,nodes_explored
 
-# ---------------- RUN ----------------
-path,explored=BEST_FIRST_SEARCH("Boston","Chicago")
+# RUN
+path,explored=BEST_FIRST_SEARCH("Syracuse","Chicago")
 
 print("Path:",path)
 print("Nodes explored:",explored)
+
