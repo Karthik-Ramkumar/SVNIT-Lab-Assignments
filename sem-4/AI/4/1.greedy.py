@@ -1,6 +1,4 @@
 # BEST FIRST SEARCH USING MATRIX (CITY GRAPH)
-
-# ---------------- CITIES ----------------
 cities = [
     "Chicago","Detroit","Cleveland","Indianapolis","Columbus",
     "Pittsburgh","Buffalo","Syracuse","NewYork","Philadelphia",
@@ -10,7 +8,6 @@ cities = [
 n = len(cities)
 INF = 9999999
 
-# ---------------- ADJACENCY MATRIX ----------------
 # 0 means no direct road
 graph = [
 # Chi Det Cle Ind Col Pit Buf Syr NY  Phi Bal Bos Pro Por
@@ -30,7 +27,6 @@ graph = [
 [  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,107,  0,  0]
 ]
 
-# ---------------- HEURISTIC (to Boston) ----------------
 h = {
 "Chicago":0,"Detroit":283,"Cleveland":345,"Indianapolis":182,"Columbus":320,"Pittsburgh":460,
 "Buffalo":540,"Syracuse":690,"NewYork":790,"Philadelphia":760,"Baltimore":700,"Boston":980,"Providence":1030,
@@ -59,7 +55,6 @@ def solution(node):
         node=node.parent
     return path[::-1]
 
-#  BEST FIRST SEARCH 
 def BEST_FIRST_SEARCH(start,goal):
     frontier=[]
     reached={}
@@ -85,7 +80,6 @@ def BEST_FIRST_SEARCH(start,goal):
 
     return None,nodes_explored
 
-# ---------------- RUN ----------------
 path,explored=BEST_FIRST_SEARCH("Syracuse","Chicago")
 
 print("Path:",path)

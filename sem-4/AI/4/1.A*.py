@@ -1,7 +1,5 @@
 
 
-# BEST FIRST SEARCH (f(n) = g(n) + h(n)) USING MATRIX
-
 cities = [
     "Chicago","Detroit","Cleveland","Indianapolis","Columbus",
     "Pittsburgh","Buffalo","Syracuse","NewYork","Philadelphia",
