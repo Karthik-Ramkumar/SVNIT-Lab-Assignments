@@ -9,7 +9,7 @@ rule_matrix = [
     ['MoveLeft', 'clean',      'MoveRight'],  # B
     ['MoveLeft', 'MoveLeft',  'clean']        # C
 ]
-
+# it will know where it is and clean or move based on position
 location = 'A' 
 
 def move(loc, action):

@@ -8,7 +8,7 @@ emergencyStates = ['neutral', 'active']
 # percept (trainDetected, obstaclePresent, emergencyLever)
 # action (gateArm, siren, trainSignal)
 
-# RULE TABLE [train, obstacle, emergency, actionIndex]
+# rule table - [train, obstacle, emergency, actionIndex]
 
 ruleTable = [
  ['detected','obstacle','neutral',0],
@@ -21,18 +21,18 @@ ruleTable = [
  ['notDetected','clear','neutral',3]
 ]
 
-#  ACTION TABLE [gate, siren, signal, cost]
+#  action tablee [gate, siren, signal, cost]
 
 actionTable = [
- ['lower','on','red',5],     # action 0
- ['lower','on','red',4],     # action 1
- ['lower','on','green',3],   # action 2
- ['raise','off','green',1]   # action 3
+ ['lower','on','red',10],     # action 0
+ ['lower','on','red',3],     # action 1
+ ['lower','on','green',1],      # action 2
+ ['raise','off','green',0]   # action 3
 ]
 
 location = 'levelCrossing'
 
-print("percept (train, obstacle, emergency)\taction (gate, siren, signal, cost)\tlocation")
+print("percept (train, obstacle, emergency)\taction (gate, siren, signal, cost)")
 print("-------------------------------------------------------------------------------------")
 
 for step in range(10):
@@ -50,4 +50,4 @@ for step in range(10):
 
     action = actionTable[actionIndex]
 
-    print(percept,"\t",action,"\t",location)
+    print(percept,"\t",action,"\t")
