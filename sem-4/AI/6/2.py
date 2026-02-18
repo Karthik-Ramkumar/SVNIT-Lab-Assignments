@@ -1,5 +1,3 @@
-# 0 = empty, 1 = obstacle, 2 = start, 3 = reward
-
 maze = [
     [2, 0, 0, 0, 1],
     [0, 1, 0, 0, 3],
@@ -11,16 +9,16 @@ maze = [
 rows = 5
 cols = 5
 
-# movements: Left, Right, Up, Down
+# L U R D
 actions = [(-1,0),(1,0),(0,-1),(0,1)]
 
-# find start
+# finding start
 for i in range(rows):
     for j in range(cols):
         if maze[i][j] == 2:
             start = (i,j)
 
-# collect rewards
+# finding all rewards
 rewards = []
 for i in range(rows):
     for j in range(cols):
@@ -28,7 +26,7 @@ for i in range(rows):
             rewards.append((i,j))
 
 def heuristic(a,b):
-    return abs(a[0]-b[0]) + abs(a[1]-b[1])   # Manhattan
+    return abs(a[0]-b[0]) + abs(a[1]-b[1])   # mahanttan distance
 
 def astar(start, goal):
 
@@ -38,15 +36,15 @@ def astar(start, goal):
 
     while open_list:
 
-        # choose node with minimum f = g + h
+        # choosing node with min( f = g + h)
         best_index = 0
-        best_f = open_list[0][1] + heuristic(open_list[0][0], goal)
+        best_next_choice = open_list[0][1] + heuristic(open_list[0][0], goal)
 
         for i in range(len(open_list)):
             state, g = open_list[i]
             f = g + heuristic(state, goal)
-            if f < best_f:
-                best_f = f
+            if f < best_next_choice:
+                best_next_choice = f
                 best_index = i
 
         state, g = open_list.pop(best_index)
