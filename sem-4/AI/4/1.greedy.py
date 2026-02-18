@@ -28,9 +28,9 @@ graph = [
 ]
 
 h = {
-"Chicago":0,"Detroit":283,"Cleveland":345,"Indianapolis":182,"Columbus":320,"Pittsburgh":460,
-"Buffalo":540,"Syracuse":690,"NewYork":790,"Philadelphia":760,"Baltimore":700,"Boston":980,"Providence":1030,
-"Portland":1090
+"Chicago":860,"Detroit":610,"Cleveland":550,"Indianapolis":780,"Columbus":640,"Pittsburgh":470,
+"Buffalo":400,"Syracuse":260,"NewYork":215,"Philadelphia":270,"Baltimore":360,"Boston":0,
+"Providence":50,"Portland":107
 }
 class Node:
     def __init__(self,state,parent=None,cost=0):
