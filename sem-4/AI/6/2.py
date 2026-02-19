@@ -26,11 +26,11 @@ for i in range(rows):
             rewards.append((i,j))
 
 def heuristic(a,b):
-    return abs(a[0]-b[0]) + abs(a[1]-b[1])   # mahanttan distance
+    return abs(a[0]-b[0]) + abs(a[1]-b[1])   #mahanttan distance
 
 def astar(start, goal):
 
-    open_list = [(start, 0)]   # (state, g)
+    open_list = [(start, 0)]   #(state, goal) #nodes generated but not yet explored
     parent = {}
     closed = []
 
@@ -55,26 +55,27 @@ def astar(start, goal):
                 path.append(state)
                 state = parent[state]
             path.append(start)
-            path.reverse()
+            path.reverse() # path is constructed in reverse order cause of stack, so we reverse it to get the correct order
             return path
 
         closed.append(state)
 
+        # expanding current node and handling neighbours
         for move in actions:
             nx = state[0] + move[0]
             ny = state[1] + move[1]
-            new_state = (nx,ny)
+            new_state = (nx,ny) #generating all 4 neighbours
 
             if 0 <= nx < rows and 0 <= ny < cols:
-                if maze[nx][ny] != 1 and new_state not in closed:
+                if maze[nx][ny] != 1 and new_state not in closed: #checking if valid move and not already explored
 
-                    new_g = g + 1
+                    new_g = g + 1 #new cost
                     found = False
 
-                    for i in range(len(open_list)):
+                    for i in range(len(open_list)): #checking if this new neighbour is there in list 
                         if open_list[i][0] == new_state:
                             found = True
-                            if new_g < open_list[i][1]:
+                            if new_g < open_list[i][1]: # if already discovered do this and update if cost is smaller
                                 open_list[i] = (new_state, new_g)
                                 parent[new_state] = state
                             break
@@ -89,8 +90,7 @@ current = start
 visited_tiles = []
 
 while rewards:
-
-    # choose nearest reward by heuristic
+# here i am choosing goal state by heuristic also
     nearest = rewards[0]
     min_h = heuristic(current, nearest)
 
