@@ -157,3 +157,58 @@ for i in range(50):
     if status == "Solved":
         sa_success += 1
 print("Simulated Annealing Success:", sa_success, "/50")
+
+print("\n===== FINAL COMPARISON (50 Runs Each) =====\n")
+
+# ---------------- First Choice ----------------
+fc_success = 0
+fc_total_steps = 0
+
+for i in range(50):
+    board = random_board()
+    final_h, steps, status = first_choice(board)
+    fc_total_steps += steps
+    if status == "Solved":
+        fc_success += 1
+
+print("First Choice Hill Climbing")
+print("Success :", fc_success, "/50")
+print("Failure :", 50 - fc_success)
+print("Success Rate :", (fc_success/50)*100, "%")
+print("Average Steps :", fc_total_steps/50)
+print("------------------------------------------")
+
+
+# ---------------- Random Restart ----------------
+rr_total_restarts = 0
+rr_total_steps = 0
+
+for i in range(50):
+    restarts, steps = random_restart()
+    rr_total_restarts += restarts
+    rr_total_steps += steps
+
+print("Random Restart Hill Climbing")
+print("Success : 50 / 50 (Always succeeds)")
+print("Average Restarts :", rr_total_restarts/50)
+print("Average Steps :", rr_total_steps/50)
+print("------------------------------------------")
+
+
+# ---------------- Simulated Annealing ----------------
+sa_success = 0
+sa_total_steps = 0
+
+for i in range(50):
+    board = random_board()
+    final_h, steps, status = simulated_annealing(board)
+    sa_total_steps += steps
+    if status == "Solved":
+        sa_success += 1
+
+print("Simulated Annealing")
+print("Success :", sa_success, "/50")
+print("Failure :", 50 - sa_success)
+print("Success Rate :", (sa_success/50)*100, "%")
+print("Average Steps :", sa_total_steps/50)
+print("------------------------------------------")

@@ -1,18 +1,7 @@
-# Board representation:
-# index = column (0–7)
-# value = row (0–7)
+import random
 
 def random_board():
-    board = []
-seed = 54321
-
-def random_board():
-    global seed
-    board = []
-    for i in range(8):
-        seed = (seed * 1103515245 + 12345) % 2147483648
-        board.append(seed % 8)
-    return board
+    return [random.randint(0, 7) for _ in range(8)]
 
 def heuristic(board):
     h = 0
@@ -43,27 +32,31 @@ def steepest_ascent(board):
             current[col] = original_row
 
         if best_h >= current_h:
-            return current_h, best_h, steps, ("Solved" if current_h == 0 else "Fail")
+            return current_h, steps, ("Solved" if current_h == 0 else "Fail")
 
         current = best[:]
         current_h = best_h
         steps += 1
 
-
-# Run 50 random boards
-print("Run | Initial H | Final H | Steps | Status")
-print("---------------------------------------------")
+print(f"{'Run':<5} | {'Initial H':<10} | {'Final H':<8} | {'Steps':<6} | {'Status'}")
+print("-" * 50)
 
 fail_count = 0
+success_count = 0
 
 for i in range(50):
     board = random_board()
     initial_h = heuristic(board)
-    init, final, steps, status = steepest_ascent(board)
+    final_h, steps, status = steepest_ascent(board)
 
     if status == "Fail":
         fail_count += 1
+    else:
+        success_count += 1
 
-    print(i+1, "   ", initial_h, "        ", final, "       ", steps, "    ", status)
+    print(f"{i+1:<5} | {initial_h:<10} | {final_h:<8} | {steps:<6} | {status}")
 
-print("\nTotal Fails (Local Minima found):", fail_count)
+print("\n--- Statistics ---")
+print(f"Total Successes: {success_count}")
+print(f"Total Fails (Local Minima): {fail_count}")
+print(f"Success Rate: {(success_count/50)*100}%")
