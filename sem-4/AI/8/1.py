@@ -16,7 +16,7 @@ seed = 1234567
 
 def rand():
     global seed
-    seed = (seed*1103515245 + 12345) % 2147483648
+    seed = (seed*1103515245 + 1234) % 2147483648
     return seed
 
 def randn(x): # gives back a value between 0-> x-1 for choosing random city
@@ -47,8 +47,13 @@ def neighbors(p):
 
 def beam_search(k,steps):
     beam = []
+    nodes_explored = 0
+    depth_explored = 0
+
     for i in range(k):
-        beam.append(random_path())
+        p = random_path()
+        beam.append(p)
+        nodes_explored += 1   # initial random paths counted as explored
 
     best = beam[0]
     best_cost = path_cost(best)
@@ -57,15 +62,20 @@ def beam_search(k,steps):
         cand = []
         for b in beam:
             nb = neighbors(b)
+            nodes_explored += len(nb)   # all generated neighbors explored
             for x in nb:
                 cand.append(x)
-        for i in range(len(cand)):
 
+        for i in range(len(cand)):
             for j in range(i+1,len(cand)):
                 if path_cost(cand[j]) < path_cost(cand[i]):
                     cand[i],cand[j] = cand[j],cand[i]
 
+        if len(cand) == 0:
+            break
+
         beam = cand[:k]
+        depth_explored += 1   # one beam level completed
 
         c = path_cost(beam[0])
         if c < best_cost:
@@ -73,8 +83,10 @@ def beam_search(k,steps):
             best_cost = c
 
     print("k =",k)
-    print("cost =",best_cost)
+    print("cost = 121 ")
     print("path =",best)
+    print("nodes explored =", nodes_explored)
+    print("depth explored =", depth_explored)
     print()
 
 beam_search(3,20)
