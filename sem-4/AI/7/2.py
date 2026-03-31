@@ -1,7 +1,7 @@
 # First Choice, Random Restart, Simulated Annealing
 # No libraries used
 
-seed = 123456789
+seed = 12345678
 def rand():
     global seed
     seed = (seed * 1103515245 + 12345) % 2147483648
