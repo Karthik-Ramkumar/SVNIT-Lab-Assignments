@@ -1,6 +1,3 @@
-# Gujarat Map Coloring using CSP (Constraint Satisfaction Problem)
-# No two adjacent districts should have the same color
-
 districts = [
     "Kachchh", "Banaskantha", "Patan", "Mehsana", "Sabarkantha",
     "Gandhinagar", "Ahmedabad", "Surendranagar", "Rajkot", "Jamnagar",
@@ -9,8 +6,6 @@ districts = [
     "Narmada", "Surat", "Navsari", "Valsad", "Dangs"
 ]
 
-# Adjacency list (approximate based on the given map)
-# If two districts share a boundary, they are neighbors
 neighbors = {
     "Kachchh": ["Banaskantha", "Surendranagar", "Jamnagar"],
 
@@ -63,43 +58,43 @@ neighbors = {
     "Dangs": ["Narmada", "Surat", "Navsari", "Valsad"]
 }
 
-def is_safe(district, color, assignment):
+def is_safe(district, color, assignment): # checks to see if i colour this place will it clash with neighbouring colours?
     for neighbor in neighbors[district]:
         if neighbor in assignment and assignment[neighbor] == color:
             return False
     return True
 
-def select_unassigned_district(assignment):
-    # MRV-like heuristic: choose the unassigned district with highest degree first
+def choose_next(assignment):
+    # we are picking neighbour with most neighbours first
     unassigned = [d for d in districts if d not in assignment]
     unassigned.sort(key=lambda d: len(neighbors[d]), reverse=True)
     return unassigned[0] if unassigned else None
 
-def solve_map_coloring(colors, assignment):
+def backtrack_algo(colors, assignment):
     if len(assignment) == len(districts):
         return True
 
-    district = select_unassigned_district(assignment)
+    district = choose_next(assignment)
 
     for color in colors:
         if is_safe(district, color, assignment):
             assignment[district] = color
 
-            if solve_map_coloring(colors, assignment):
+            if backtrack_algo(colors, assignment):
                 return True
 
-            del assignment[district]   # backtrack
+            del assignment[district]   # backtracking
 
     return False
 
 def find_minimum_coloring():
-    color_names = ["Red", "Green", "Blue", "Yellow"]  # max 4 needed for planar maps
+    color_names = ["Red", "Green", "Blue", "Yellow"] # for maps max is only 4 colors
 
     for num_colors in range(1, 5):
         colors = color_names[:num_colors]
         assignment = {}
 
-        if solve_map_coloring(colors, assignment):
+        if backtrack_algo(colors, assignment):
             return num_colors, assignment
 
     return None, None

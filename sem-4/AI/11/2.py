@@ -1,7 +1,3 @@
-# Cryptarithmetic CSP: SEND + MORE = MONEY
-# Each letter has a unique digit
-# S and M cannot be 0
-
 letters = ['S', 'E', 'N', 'D', 'M', 'O', 'R', 'Y']
 used = [0] * 10
 solution_found = 0
