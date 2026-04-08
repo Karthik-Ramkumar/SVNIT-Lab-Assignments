@@ -1,5 +1,5 @@
 letters = ['S', 'E', 'N', 'D', 'M', 'O', 'R', 'Y']
-used = [0] * 10
+used = [0] * 10 # keeping track of which digits are used
 solution_found = 0
 
 def solve(index, values):
