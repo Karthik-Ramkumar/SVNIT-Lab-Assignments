@@ -2,13 +2,13 @@ letters = ['S', 'E', 'N', 'D', 'M', 'O', 'R', 'Y']
 used = [0] * 10 # keeping track of which digits are used
 solution_found = 0
 
-def solve(index, values):
+def solve(letter, values):
     global solution_found
 
     if solution_found == 1:
         return
 
-    if index == len(letters):
+    if letter == len(letters):
         S = values['S']
         E = values['E']
         N = values['N']
@@ -41,7 +41,7 @@ def solve(index, values):
 
         return
 
-    ch = letters[index]
+    ch = letters[letter]
 
     for digit in range(10):
         if used[digit] == 0:
@@ -51,7 +51,7 @@ def solve(index, values):
             values[ch] = digit
             used[digit] = 1
 
-            solve(index + 1, values)
+            solve(letter + 1, values)
 
             used[digit] = 0
             del values[ch]
