@@ -87,7 +87,7 @@ def backtrack_algo(colors, assignment):
 
     return False
 
-def find_minimum_coloring():
+def min_colours_needed():
     color_names = ["Red", "Green", "Blue", "Yellow"] # for maps max is only 4 colors
 
     for num_colors in range(1, 5):
@@ -100,13 +100,13 @@ def find_minimum_coloring():
     return None, None
 
 def main():
-    min_colors, solution = find_minimum_coloring()
+    min_colors, solution = min_colours_needed()
 
     if solution is None:
         print("No solution found.")
         return
 
-    print("Minimum number of colors needed:", min_colors)
+    print("minimum num of colors needed:", min_colors)
     print("\nDistrict -> Color")
     for district in districts:
         print(f"{district:15} -> {solution[district]}")
