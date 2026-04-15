@@ -16,19 +16,16 @@ grid = [
 N = 9
 TOTAL = 81
 
-# -----------------------------
 # Convert (row, col) <-> index
-# -----------------------------
+
 def idx(r, c):
     return r * 9 + c
 
 def rc(index):
     return index // 9, index % 9
 
-# -----------------------------
 # Build adjacency matrix (81x81)
 # 1 means Xi and Xj have constraint Xi != Xj
-# -----------------------------
 adj = [[0 for _ in range(TOTAL)] for _ in range(TOTAL)]
 
 for r1 in range(9):
@@ -47,10 +44,7 @@ for r1 in range(9):
                 if same_row or same_col or same_box:
                     adj[i][j] = 1
 
-# -----------------------------
-# Domains as list of sets
 # domains[i] = possible values for variable i
-# -----------------------------
 domains = [set() for _ in range(TOTAL)]
 
 for r in range(9):
@@ -64,11 +58,9 @@ for r in range(9):
 # Save initial domain sizes for statistics
 initial_sizes = [len(domains[i]) for i in range(TOTAL)]
 
-# -----------------------------
 # REVISE(Xi, Xj) for Sudoku Xi != Xj
 # Remove x from Di if no y in Dj satisfies x != y
 # In Sudoku, this only happens when Dj = {x}
-# -----------------------------
 def revise(domains, xi, xj):
     revised = False
     to_remove = set()
@@ -88,9 +80,6 @@ def revise(domains, xi, xj):
 
     return revised, len(to_remove)
 
-# -----------------------------
-# AC-3 Algorithm
-# -----------------------------
 def ac3(domains, adj):
     queue = deque()
     total_removed = 0
@@ -118,26 +107,18 @@ def ac3(domains, adj):
 
     return True, total_removed
 
-# -----------------------------
-# Run AC-3
-# -----------------------------
+
 result, total_removed = ac3(domains, adj)
 
-# -----------------------------
-# Count total arcs
-# Since matrix is directed for AC-3, count all 1s
-# -----------------------------
+
 arc_count = 0
 for i in range(TOTAL):
     for j in range(TOTAL):
         if adj[i][j] == 1:
             arc_count += 1
 
-# -----------------------------
-# Print remaining domain sizes
-# If solved -> print value
-# Else print domain size
-# -----------------------------
+#   If solved -> print value
+#  Else print domain size
 print("Sudoku AC-3 using Adjacency Matrix")
 print("-" * 40)
 print("Total directed arcs generated:", arc_count)
@@ -155,9 +136,7 @@ for r in range(9):
             row_out.append(str(len(domains[i])))
     print(" ".join(row_out))
 
-# -----------------------------
-# Extra final check
-# -----------------------------
+
 zero_domain = False
 all_singleton = True
 
@@ -175,9 +154,9 @@ elif all_singleton:
 else:
     print("AC-3 pruned the search space, but puzzle is not fully solved. Backtracking (or more inference) is still needed.")
 
-# -----------------------------
-# Optional: print actual remaining domains
-# -----------------------------
+
+
+
 print("\nRemaining Domains:")
 for r in range(9):
     for c in range(9):

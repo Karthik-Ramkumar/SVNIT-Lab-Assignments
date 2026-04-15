@@ -32,9 +32,7 @@ def get_neighbors_connected(var):
     i = var_index[var]
     return [variables[j] for j, connected in enumerate(constraint_matrix[i]) if connected == 1]
 
-# The revise step checks whether the domain of xi needs to be reduced
-# because of the constraint between Xi and Xj.
-# Here the constraint is Xi != Xj.
+# Can every value in xi be supported by some value in xj?
 def revise(domains, xi, xj):
     revised = False
     to_remove = set()
@@ -66,12 +64,11 @@ def ac3(domains):
     trace = []
     step_count = 0
 
-    # Start by adding every connected pair from the adjacency matrix.
+    #  adding all arcs
     for xi in variables:
         for xj in get_neighbors_connected(xi):
             queue.append((xi, xj))
 
-    # Process each arc in the queue until there are no more arcs left.
     while queue:
         xi, xj = queue.popleft()
         revised, removed = revise(domains, xi, xj)
@@ -105,24 +102,18 @@ def print_domains(domains):
         print(f"{var}: {sorted(list(domains[var]))}")
 
 
-# Main program starts here.
-# First, we show the initial domains.
 print("Initial Domains (with P1 = R1):")
 print_domains(domains)
 
-# Run AC-3 on the current domains.
 consistent, trace, final_domains = ac3(domains)
 
-# Show the first few arc-reduction steps that were recorded.
 print("\nFirst 5 Arc-Reduction Trace Steps:")
 for i, t in enumerate(trace, 1):
     print(f"{i}. {t}")
 
-# Show the final domains after AC-3 finishes.
 print("\nFinal Domains After AC-3:")
 print_domains(final_domains)
 
-# Print whether the CSP stayed consistent or failed.
 print("\nConsistency Check:")
 if consistent:
     print("The CSP is arc-consistent after AC-3.")
