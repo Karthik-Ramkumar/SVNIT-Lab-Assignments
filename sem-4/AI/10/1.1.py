@@ -57,7 +57,6 @@ def gradient_descent_kmeans(points, k=3, learningRate=0.01, max_iter=1000, tol=1
     return centers, labels, sse_list, total_sse, iteration + 1
 
 
-# newton raphson
 #this algo moves centre to exact centroid of the cluster in one update hence its faster than gradient descen
 def newton_raphson_kmeans(points, k=3, max_iter=3, tol=1e-6):
     # same fixed initial centers for fair comparison
@@ -90,11 +89,9 @@ def newton_raphson_kmeans(points, k=3, max_iter=3, tol=1e-6):
 
 
 gd_centers, gd_labels, gd_sse_list, gd_total_sse, gd_iters = gradient_descent_kmeans(
-    coords, k=3, learningRate=0.01, max_iter=1000
-)
+    coords, k=3, learningRate=0.01, max_iter=1000)
 nr_centers, nr_labels, nr_sse_list, nr_total_sse, nr_iters = newton_raphson_kmeans(
-    coords, k=3, max_iter=100
-)
+    coords, k=3, max_iter=100)
 
 print("\n gradient descent method")
 for i, center in enumerate(gd_centers):
