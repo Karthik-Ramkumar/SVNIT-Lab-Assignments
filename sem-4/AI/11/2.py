@@ -1,5 +1,5 @@
 letters = ['S', 'E', 'N', 'D', 'M', 'O', 'R', 'Y']
-used = [0] * 10 # keeping track of which digits are used
+digits_used = [0] * 10 # keeping track of which digits are used
 solution_found = 0
 
 def solve(letter, values):
@@ -21,7 +21,7 @@ def solve(letter, values):
         send = S * 1000 + E * 100 + N * 10 + D
         more = M * 1000 + O * 100 + R * 10 + E
         money = M * 10000 + O * 1000 + N * 100 + E * 10 + Y
-
+    # checking if the equation holds true for the current assignment of digits to letters
         if send + more == money:
             print("Solution found:\n")
             print("S =", S)
@@ -44,16 +44,16 @@ def solve(letter, values):
     ch = letters[letter]
 
     for digit in range(10):
-        if used[digit] == 0:
+        if digits_used[digit] == 0:
             if (ch == 'S' or ch == 'M') and digit == 0:
                 continue
 
             values[ch] = digit
-            used[digit] = 1
+            digits_used[digit] = 1
 
             solve(letter + 1, values)
 
-            used[digit] = 0
+            digits_used[digit] = 0
             del values[ch]
 
 values = {}

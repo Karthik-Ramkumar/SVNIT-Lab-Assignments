@@ -12,7 +12,6 @@ class Symbol:
 P = Symbol('P')
 Q = Symbol('Q')
 R = Symbol('R')
-# If needed, you can also create named negation symbols like:
 # notP = Symbol('negation of P')
 # notQ = Symbol('negation of Q')
 
