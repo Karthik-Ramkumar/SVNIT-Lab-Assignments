@@ -1,7 +1,7 @@
 from collections import deque
 
 # Hard Sudoku puzzle (0 = empty)
-grid = [
+sudoku_puzzle = [
     [0, 0, 0, 0, 6, 0, 0, 0, 0],
     [0, 5, 9, 0, 0, 0, 0, 0, 8],
     [2, 0, 0, 0, 0, 8, 0, 0, 0],
@@ -50,10 +50,10 @@ domains = [set() for _ in range(TOTAL)]
 for r in range(9):
     for c in range(9):
         i = idx(r, c)
-        if grid[r][c] == 0:
+        if sudoku_puzzle[r][c] == 0:
             domains[i] = set(range(1, 10))
         else:
-            domains[i] = {grid[r][c]}
+            domains[i] = {sudoku_puzzle[r][c]}
 
 # Save initial domain sizes for statistics
 initial_sizes = [len(domains[i]) for i in range(TOTAL)]
@@ -80,7 +80,7 @@ def revise(domains, xi, xj):
 
     return revised, len(to_remove)
 
-def ac3(domains, adj):
+def arc3(domains, adj):
     queue = deque()
     total_removed = 0
 
@@ -108,7 +108,7 @@ def ac3(domains, adj):
     return True, total_removed
 
 
-result, total_removed = ac3(domains, adj)
+result, total_removed = arc3(domains, adj)
 
 
 arc_count = 0

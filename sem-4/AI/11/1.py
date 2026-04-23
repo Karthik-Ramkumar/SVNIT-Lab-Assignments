@@ -1,4 +1,4 @@
-districts = [
+distrct = [
     "Kachchh", "Banaskantha", "Patan", "Mehsana", "Sabarkantha",
     "Gandhinagar", "Ahmedabad", "Surendranagar", "Rajkot", "Jamnagar",
     "Porbandar", "Junagadh", "Amreli", "Bhavnagar", "Anand",
@@ -58,7 +58,7 @@ neighbors = {
     "Dangs": ["Narmada", "Surat", "Navsari", "Valsad"]
 }
 
-def is_safe(district, color, assignment): # checks to see if i colour this place will it clash with neighbouring colours?
+def IsSafe(district, color, assignment): # checks to see if i colour this place will it clash with neighbouring colours?
     for neighbor in neighbors[district]:
         if neighbor in assignment and assignment[neighbor] == color:
             return False
@@ -66,18 +66,18 @@ def is_safe(district, color, assignment): # checks to see if i colour this place
 
 def choose_next(assignment):
     # we are picking neighbour with most neighbours first
-    unassigned = [d for d in districts if d not in assignment]
+    unassigned = [d for d in distrct if d not in assignment]
     unassigned.sort(key=lambda d: len(neighbors[d]), reverse=True)
     return unassigned[0] if unassigned else None
 
 def backtrack_algo(colors, assignment):
-    if len(assignment) == len(districts):
+    if len(assignment) == len(distrct):
         return True
 
     district = choose_next(assignment)
 
     for color in colors:
-        if is_safe(district, color, assignment):
+        if IsSafe(district, color, assignment):
             assignment[district] = color
 
             if backtrack_algo(colors, assignment):
@@ -108,7 +108,7 @@ def main():
 
     print("minimum num of colors needed:", min_colors)
     print("\nDistrict -> Color")
-    for district in districts:
+    for district in distrct:
         print(f"{district:15} -> {solution[district]}")
 
 if __name__ == "__main__":

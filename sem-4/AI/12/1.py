@@ -35,7 +35,7 @@ def get_neighbors_connected(var):
 # Can every value in xi be supported by some value in xj?
 def revise(domains, xi, xj):
     revised = False
-    to_remove = set()
+    need_remove = set()
 
     # For every possible value in xi's domain, check if there is
     # at least one different value in xj's domain that supports it.
@@ -47,14 +47,14 @@ def revise(domains, xi, xj):
                 break
         # If no supporting value is found, remove x from xi's domain.
         if not supported:
-            to_remove.add(x)
+            need_remove.add(x)
 
     # Apply the removals if needed.
-    if to_remove:
-        domains[xi] -= to_remove
+    if need_remove:
+        domains[xi] -= need_remove
         revised = True
 
-    return revised, to_remove
+    return revised, need_remove
 
 
 # AC-3 removes values that are not arc-consistent.

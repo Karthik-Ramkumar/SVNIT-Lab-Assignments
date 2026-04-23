@@ -27,13 +27,13 @@ def sumSquaredError(points, centers, labels): # measuing distance of city to ass
         total_sse += sse
     return sse_list, total_sse
 
-def gradient_descent_kmeans(points, k=3, learningRate=0.01, max_iter=1000, tol=1e-6):
+def gradient_descent_kmeans(points, k=3, learningRate=0.01, maxIter=1000, tol=1e-6):
     # fixed initial centers for reproducibility
     np.random.seed(42) # seed is used so that we get same initial centers every time
     indices = np.random.choice(len(points), k, replace=False)
     centers = points[indices].copy()
 
-    for iteration in range(max_iter):
+    for iteration in range(maxIter):
         labels = assignCluster(points, centers)
         old_centers = centers.copy()
         for i in range(k):
@@ -43,10 +43,10 @@ def gradient_descent_kmeans(points, k=3, learningRate=0.01, max_iter=1000, tol=1
             n = len(cluster_points)
 
             # gradient of SSE wrt center = 2*n*center - 2*sum(points)
-            grad = 2 * n * centers[i] - 2 * np.sum(cluster_points, axis=0) # move in direction of airport which reduces sse
+            gradient = 2 * n * centers[i] - 2 * np.sum(cluster_points, axis=0) # move in direction of airport which reduces sse
 
             # gradient descent update
-            centers[i] = centers[i] - learningRate * grad
+            centers[i] = centers[i] - learningRate * gradient
 
         shift = np.linalg.norm(centers - old_centers) # we compute how big of a change we get. if it is small we stop the alho
         if shift < tol:
@@ -89,7 +89,7 @@ def newton_raphson_kmeans(points, k=3, max_iter=3, tol=1e-6):
 
 
 gd_centers, gd_labels, gd_sse_list, gd_total_sse, gd_iters = gradient_descent_kmeans(
-    coords, k=3, learningRate=0.01, max_iter=1000)
+    coords, k=3, learningRate=0.01, maxIter=1000)
 nr_centers, nr_labels, nr_sse_list, nr_total_sse, nr_iters = newton_raphson_kmeans(
     coords, k=3, max_iter=100)
 
