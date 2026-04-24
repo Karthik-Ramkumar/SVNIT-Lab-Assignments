@@ -6,7 +6,7 @@ nodes_explored = 0
 max_depth_reached = 0
 
 
-class TicTacToe:
+class tictactoe:
     def TO_MOVE(self, state):
         x_count = 0
         o_count = 0
@@ -34,8 +34,8 @@ class TicTacToe:
         new_state[action] = self.TO_MOVE(state)
         return new_state
 
-    def IS_TERMINAL(self, state):
-        if self.winner(state) is not None:
+    def terminal_check(self, state):
+        if self.is_winner(state) is not None:
             return True
 
         for cell in state:
@@ -45,7 +45,7 @@ class TicTacToe:
         return True
 
     def UTILITY(self, state, player_symbol):
-        winner = self.winner(state)
+        winner = self.is_winner(state)
 
         if winner == player_symbol:
             return 1
@@ -54,7 +54,7 @@ class TicTacToe:
         else:
             return -1
 
-    def winner(self, state):
+    def is_winner(self, state):
         wins = [
             [0, 1, 2], [3, 4, 5], [6, 7, 8],
             [0, 3, 6], [1, 4, 7], [2, 5, 8],
@@ -219,7 +219,7 @@ def visualize_tree(game, state, mode, depth, max_depth, prefix, is_last, action_
 def performance_test():
     global nodes_explored, max_depth_reached
 
-    game = TicTacToe()
+    game = tictactoe()
     state = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
     nodes_explored = 0
@@ -240,7 +240,7 @@ def performance_test():
 def play_game():
     global nodes_explored, max_depth_reached
 
-    game = TicTacToe()
+    game = tictactoe()
     state = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
     print("Human = X, AI = O")
@@ -273,9 +273,9 @@ def play_game():
 
             state = game.RESULT(state, move)
 
-        if game.IS_TERMINAL(state):
+        if game.terminal_check(state):
             print_board(state)
-            w = game.winner(state)
+            w = game.is_winner(state)
 
             if w is None:
                 print("Draw")
@@ -287,7 +287,7 @@ def play_game():
 def show_tree():
     global player
 
-    game = TicTacToe()
+    game = tictactoe()
     state = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
     player = game.TO_MOVE(state)
