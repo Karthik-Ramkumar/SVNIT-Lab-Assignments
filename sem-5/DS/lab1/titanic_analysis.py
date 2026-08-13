@@ -4,18 +4,16 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def main():
-    # Part I: Frequency Analysis
     print("Part I: Frequency Analysis ")
     
-    # Load the Titanic dataset
-    df = pd.read_csv('titanic.csv')
+    data = pd.read_csv('titanic.csv')
     
-    # Generate a frequency table for the passenger class
-    # Calculate absolute frequency
-    absolute_freq = df['pclass'].value_counts().sort_index()
+    # frequency table for the passenger class
+    # absolute frequency
+    absolute_freq = data['pclass'].value_counts().sort_index()
     
     # Calculate relative frequency (%)
-    relative_freq = df['pclass'].value_counts(normalize=True).sort_index() * 100
+    relative_freq = data['pclass'].value_counts(normalize=True).sort_index() * 100
     
     # Calculate cumulative frequency
     cumulative_freq = absolute_freq.cumsum()
@@ -32,25 +30,25 @@ def main():
     print("\n Part II: Probability Analysis ")
     
     # Create a contingency table between Sex and Survived using pd.crosstab()
-    contingency_table = pd.crosstab(df['sex'], df['survived'], margins=True, margins_name="Total")
+    contingency_table = pd.crosstab(data['sex'], data['survived'], margins=True, margins_name="Total")
     print("\nContingency Table (Sex vs Survived):")
     print(contingency_table)
     
     # Calculate joint probability
-    joint_prob = pd.crosstab(df['sex'], df['survived'], normalize='all')
+    joint_prob = pd.crosstab(data['sex'], data['survived'], normalize='all')
     print("\nJoint Probabilities:")
     print(joint_prob)
     
     # Calculate marginal probabilities
-    marginal_prob_sex = df['sex'].value_counts(normalize=True)
-    marginal_prob_survived = df['survived'].value_counts(normalize=True)
+    marginal_prob_sex = data['sex'].value_counts(normalize=True)
+    marginal_prob_survived = data['survived'].value_counts(normalize=True)
     print("\nMarginal Probabilities (Sex):")
     print(marginal_prob_sex)
     print("\nMarginal Probabilities (Survived):")
     print(marginal_prob_survived)
     
     # Calculate conditional probabilities
-    cond_prob = pd.crosstab(df['sex'], df['survived'], normalize='index')
+    cond_prob = pd.crosstab(data['sex'], data['survived'], normalize='index')
     print("\nConditional Probabilities P(Survived | Sex):")
     print(cond_prob)
 
@@ -58,7 +56,7 @@ def main():
     print("\n Part III: Correlation Analysis")
     
     # Select the Age and Fare columns
-    age_fare_df = df[['age', 'fare']].copy()
+    age_fare_df = data[['age', 'fare']].copy()
     
     # Handle missing values (dropping rows with missing Age or Fare)
     age_fare_df = age_fare_df.dropna()
