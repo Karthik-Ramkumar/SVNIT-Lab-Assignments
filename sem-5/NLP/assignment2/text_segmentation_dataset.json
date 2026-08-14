@@ -1,0 +1,6511 @@
+{
+  "metadata": {
+    "vocabulary_size": 1500,
+    "test_case_count": 1000,
+    "total_corpus_words": 735040
+  },
+  "word_counts": {
+    "the": 69971,
+    "of": 36412,
+    "and": 28853,
+    "to": 26158,
+    "a": 23195,
+    "in": 21337,
+    "that": 10594,
+    "is": 10109,
+    "was": 9815,
+    "he": 9548,
+    "for": 9489,
+    "it": 8760,
+    "with": 7289,
+    "as": 7253,
+    "his": 6996,
+    "on": 6741,
+    "be": 6377,
+    "at": 5372,
+    "by": 5306,
+    "i": 5164,
+    "this": 5145,
+    "had": 5133,
+    "not": 4610,
+    "are": 4394,
+    "but": 4381,
+    "from": 4370,
+    "or": 4206,
+    "have": 3942,
+    "an": 3740,
+    "they": 3620,
+    "which": 3561,
+    "one": 3292,
+    "you": 3286,
+    "were": 3284,
+    "her": 3036,
+    "all": 3001,
+    "she": 2860,
+    "there": 2728,
+    "would": 2714,
+    "their": 2669,
+    "we": 2652,
+    "him": 2619,
+    "been": 2472,
+    "has": 2437,
+    "when": 2331,
+    "who": 2252,
+    "will": 2245,
+    "more": 2215,
+    "if": 2198,
+    "no": 2139,
+    "out": 2097,
+    "so": 1985,
+    "said": 1961,
+    "what": 1908,
+    "up": 1890,
+    "its": 1858,
+    "about": 1815,
+    "into": 1791,
+    "than": 1790,
+    "them": 1788,
+    "can": 1772,
+    "only": 1748,
+    "other": 1702,
+    "new": 1635,
+    "some": 1618,
+    "could": 1601,
+    "time": 1598,
+    "these": 1573,
+    "two": 1412,
+    "may": 1402,
+    "then": 1380,
+    "do": 1363,
+    "first": 1361,
+    "any": 1344,
+    "my": 1318,
+    "now": 1314,
+    "such": 1303,
+    "like": 1292,
+    "our": 1252,
+    "over": 1236,
+    "man": 1207,
+    "me": 1181,
+    "even": 1170,
+    "most": 1159,
+    "made": 1125,
+    "also": 1069,
+    "after": 1069,
+    "did": 1044,
+    "many": 1030,
+    "before": 1016,
+    "must": 1013,
+    "af": 996,
+    "through": 971,
+    "back": 966,
+    "years": 950,
+    "where": 937,
+    "much": 937,
+    "your": 923,
+    "way": 908,
+    "well": 897,
+    "down": 895,
+    "should": 888,
+    "because": 883,
+    "each": 877,
+    "just": 872,
+    "those": 850,
+    "people": 847,
+    "too": 834,
+    "how": 834,
+    "little": 831,
+    "state": 807,
+    "good": 806,
+    "very": 796,
+    "make": 794,
+    "world": 787,
+    "still": 782,
+    "see": 772,
+    "own": 772,
+    "men": 763,
+    "work": 762,
+    "long": 752,
+    "here": 750,
+    "get": 749,
+    "both": 730,
+    "between": 730,
+    "life": 715,
+    "being": 712,
+    "under": 707,
+    "never": 697,
+    "day": 687,
+    "same": 686,
+    "another": 684,
+    "know": 683,
+    "while": 680,
+    "last": 676,
+    "us": 675,
+    "might": 672,
+    "great": 665,
+    "old": 661,
+    "year": 658,
+    "off": 639,
+    "come": 630,
+    "since": 628,
+    "against": 627,
+    "go": 626,
+    "came": 622,
+    "right": 613,
+    "used": 611,
+    "take": 610,
+    "three": 610,
+    "himself": 603,
+    "states": 603,
+    "few": 601,
+    "house": 591,
+    "use": 591,
+    "during": 585,
+    "without": 583,
+    "again": 577,
+    "place": 570,
+    "american": 569,
+    "around": 562,
+    "however": 552,
+    "home": 547,
+    "small": 542,
+    "found": 536,
+    "thought": 517,
+    "went": 507,
+    "say": 504,
+    "part": 500,
+    "once": 499,
+    "general": 498,
+    "high": 497,
+    "upon": 495,
+    "school": 493,
+    "every": 491,
+    "does": 485,
+    "got": 482,
+    "united": 482,
+    "left": 480,
+    "number": 472,
+    "course": 465,
+    "war": 464,
+    "until": 461,
+    "always": 458,
+    "away": 456,
+    "something": 450,
+    "fact": 447,
+    "water": 445,
+    "though": 440,
+    "public": 438,
+    "less": 437,
+    "put": 437,
+    "think": 433,
+    "almost": 432,
+    "hand": 431,
+    "enough": 430,
+    "took": 426,
+    "far": 426,
+    "head": 424,
+    "yet": 419,
+    "government": 418,
+    "system": 416,
+    "set": 414,
+    "better": 414,
+    "told": 413,
+    "night": 411,
+    "nothing": 411,
+    "end": 409,
+    "why": 404,
+    "called": 401,
+    "eyes": 401,
+    "find": 400,
+    "going": 399,
+    "look": 399,
+    "asked": 398,
+    "later": 397,
+    "knew": 395,
+    "point": 395,
+    "next": 394,
+    "program": 394,
+    "city": 393,
+    "business": 393,
+    "group": 390,
+    "give": 389,
+    "toward": 386,
+    "young": 385,
+    "let": 384,
+    "days": 384,
+    "room": 384,
+    "president": 382,
+    "side": 381,
+    "social": 380,
+    "present": 377,
+    "given": 377,
+    "several": 377,
+    "order": 376,
+    "national": 375,
+    "possible": 374,
+    "rather": 373,
+    "second": 373,
+    "face": 371,
+    "per": 371,
+    "among": 370,
+    "form": 370,
+    "often": 369,
+    "important": 369,
+    "things": 368,
+    "looked": 367,
+    "early": 366,
+    "white": 365,
+    "john": 362,
+    "case": 362,
+    "large": 361,
+    "four": 360,
+    "need": 360,
+    "big": 360,
+    "become": 359,
+    "within": 359,
+    "felt": 357,
+    "children": 355,
+    "along": 355,
+    "saw": 352,
+    "best": 351,
+    "church": 348,
+    "ever": 344,
+    "least": 343,
+    "power": 342,
+    "development": 334,
+    "seemed": 333,
+    "thing": 333,
+    "light": 333,
+    "family": 331,
+    "interest": 330,
+    "want": 328,
+    "members": 325,
+    "mind": 325,
+    "area": 324,
+    "country": 324,
+    "others": 323,
+    "although": 321,
+    "turned": 320,
+    "done": 319,
+    "open": 318,
+    "god": 316,
+    "service": 315,
+    "problem": 313,
+    "certain": 313,
+    "kind": 313,
+    "different": 312,
+    "thus": 312,
+    "began": 312,
+    "door": 312,
+    "help": 311,
+    "sense": 311,
+    "means": 310,
+    "whole": 309,
+    "matter": 308,
+    "perhaps": 307,
+    "itself": 304,
+    "york": 302,
+    "times": 300,
+    "law": 299,
+    "human": 299,
+    "line": 298,
+    "above": 296,
+    "name": 294,
+    "example": 292,
+    "action": 291,
+    "company": 290,
+    "hands": 289,
+    "local": 288,
+    "show": 288,
+    "whether": 286,
+    "five": 286,
+    "history": 286,
+    "gave": 285,
+    "today": 284,
+    "either": 284,
+    "act": 283,
+    "feet": 283,
+    "across": 282,
+    "taken": 281,
+    "past": 281,
+    "quite": 281,
+    "anything": 280,
+    "seen": 279,
+    "having": 279,
+    "death": 277,
+    "experience": 276,
+    "body": 276,
+    "week": 275,
+    "half": 275,
+    "really": 275,
+    "word": 274,
+    "field": 274,
+    "car": 274,
+    "words": 274,
+    "already": 273,
+    "themselves": 270,
+    "information": 269,
+    "tell": 268,
+    "shall": 268,
+    "together": 267,
+    "college": 267,
+    "money": 265,
+    "period": 265,
+    "held": 264,
+    "keep": 264,
+    "sure": 263,
+    "probably": 261,
+    "free": 259,
+    "seems": 259,
+    "political": 258,
+    "real": 258,
+    "cannot": 258,
+    "behind": 258,
+    "question": 257,
+    "air": 257,
+    "office": 255,
+    "making": 255,
+    "brought": 253,
+    "miss": 253,
+    "whose": 251,
+    "special": 250,
+    "major": 247,
+    "heard": 247,
+    "problems": 247,
+    "federal": 246,
+    "became": 246,
+    "study": 246,
+    "ago": 246,
+    "moment": 246,
+    "available": 245,
+    "known": 245,
+    "result": 244,
+    "street": 244,
+    "economic": 243,
+    "boy": 242,
+    "position": 241,
+    "reason": 241,
+    "change": 240,
+    "south": 240,
+    "board": 239,
+    "individual": 239,
+    "job": 238,
+    "am": 237,
+    "society": 237,
+    "areas": 236,
+    "west": 235,
+    "close": 234,
+    "turn": 233,
+    "community": 231,
+    "true": 231,
+    "love": 231,
+    "court": 230,
+    "force": 230,
+    "full": 230,
+    "cost": 229,
+    "seem": 229,
+    "wife": 228,
+    "future": 227,
+    "age": 227,
+    "wanted": 226,
+    "voice": 226,
+    "department": 225,
+    "center": 224,
+    "woman": 224,
+    "control": 223,
+    "common": 223,
+    "policy": 222,
+    "necessary": 222,
+    "following": 221,
+    "front": 221,
+    "sometimes": 221,
+    "six": 220,
+    "girl": 220,
+    "clear": 219,
+    "further": 218,
+    "land": 218,
+    "provide": 216,
+    "feel": 216,
+    "party": 216,
+    "able": 216,
+    "mother": 216,
+    "music": 216,
+    "education": 214,
+    "university": 214,
+    "child": 213,
+    "effect": 213,
+    "students": 213,
+    "level": 213,
+    "run": 212,
+    "stood": 212,
+    "military": 212,
+    "town": 212,
+    "short": 212,
+    "morning": 211,
+    "total": 211,
+    "outside": 210,
+    "rate": 209,
+    "figure": 209,
+    "art": 208,
+    "century": 207,
+    "class": 207,
+    "washington": 206,
+    "north": 206,
+    "usually": 206,
+    "plan": 205,
+    "leave": 205,
+    "therefore": 205,
+    "evidence": 204,
+    "top": 204,
+    "million": 204,
+    "sound": 204,
+    "black": 203,
+    "strong": 202,
+    "hard": 202,
+    "tax": 201,
+    "various": 201,
+    "says": 200,
+    "believe": 200,
+    "type": 200,
+    "value": 200,
+    "play": 200,
+    "surface": 200,
+    "soon": 199,
+    "mean": 199,
+    "near": 198,
+    "lines": 198,
+    "table": 198,
+    "peace": 198,
+    "modern": 198,
+    "road": 197,
+    "red": 197,
+    "book": 197,
+    "personal": 196,
+    "process": 196,
+    "situation": 196,
+    "minutes": 196,
+    "increase": 195,
+    "schools": 195,
+    "idea": 195,
+    "english": 195,
+    "alone": 195,
+    "women": 195,
+    "gone": 195,
+    "nor": 195,
+    "living": 194,
+    "america": 194,
+    "started": 194,
+    "longer": 193,
+    "cut": 192,
+    "finally": 191,
+    "secretary": 191,
+    "nature": 191,
+    "private": 191,
+    "third": 190,
+    "months": 189,
+    "section": 189,
+    "greater": 188,
+    "call": 188,
+    "fire": 187,
+    "expected": 187,
+    "needed": 187,
+    "kept": 186,
+    "ground": 186,
+    "view": 186,
+    "values": 186,
+    "everything": 185,
+    "pressure": 185,
+    "dark": 185,
+    "basis": 184,
+    "space": 184,
+    "east": 183,
+    "father": 183,
+    "required": 182,
+    "union": 182,
+    "spirit": 182,
+    "complete": 182,
+    "except": 181,
+    "wrote": 181,
+    "moved": 181,
+    "support": 180,
+    "return": 180,
+    "conditions": 180,
+    "recent": 179,
+    "attention": 179,
+    "late": 179,
+    "particular": 179,
+    "live": 177,
+    "hope": 177,
+    "costs": 176,
+    "else": 176,
+    "brown": 176,
+    "taking": 175,
+    "forces": 175,
+    "nations": 175,
+    "beyond": 175,
+    "stage": 175,
+    "read": 174,
+    "report": 174,
+    "coming": 174,
+    "hours": 174,
+    "person": 174,
+    "inside": 174,
+    "dead": 174,
+    "material": 174,
+    "instead": 173,
+    "lost": 173,
+    "heart": 173,
+    "looking": 173,
+    "low": 173,
+    "miles": 173,
+    "data": 173,
+    "added": 172,
+    "pay": 172,
+    "amount": 172,
+    "followed": 172,
+    "feeling": 172,
+    "single": 172,
+    "makes": 172,
+    "research": 171,
+    "including": 171,
+    "basic": 171,
+    "hundred": 171,
+    "move": 171,
+    "industry": 171,
+    "cold": 171,
+    "simply": 171,
+    "developed": 170,
+    "tried": 170,
+    "hold": 169,
+    "reached": 169,
+    "committee": 168,
+    "island": 167,
+    "defense": 167,
+    "equipment": 167,
+    "actually": 166,
+    "shown": 166,
+    "son": 165,
+    "central": 165,
+    "religious": 165,
+    "river": 165,
+    "getting": 164,
+    "beginning": 164,
+    "sort": 164,
+    "ten": 164,
+    "received": 163,
+    "doing": 163,
+    "terms": 163,
+    "trying": 163,
+    "rest": 163,
+    "medical": 162,
+    "care": 162,
+    "especially": 162,
+    "friends": 162,
+    "picture": 162,
+    "indeed": 162,
+    "administration": 161,
+    "fine": 161,
+    "subject": 161,
+    "difficult": 161,
+    "building": 160,
+    "higher": 160,
+    "wall": 160,
+    "simple": 160,
+    "meeting": 159,
+    "walked": 159,
+    "floor": 158,
+    "foreign": 158,
+    "bring": 158,
+    "similar": 157,
+    "passed": 157,
+    "range": 157,
+    "paper": 157,
+    "property": 156,
+    "natural": 156,
+    "final": 156,
+    "training": 156,
+    "county": 155,
+    "police": 155,
+    "cent": 155,
+    "international": 155,
+    "growth": 155,
+    "market": 155,
+    "talk": 154,
+    "start": 154,
+    "england": 154,
+    "written": 154,
+    "hear": 153,
+    "suddenly": 153,
+    "story": 153,
+    "issue": 152,
+    "congress": 152,
+    "needs": 152,
+    "answer": 152,
+    "hall": 152,
+    "likely": 151,
+    "working": 151,
+    "countries": 151,
+    "considered": 151,
+    "earth": 150,
+    "sat": 150,
+    "purpose": 149,
+    "meet": 149,
+    "labor": 149,
+    "results": 149,
+    "entire": 149,
+    "happened": 149,
+    "william": 148,
+    "cases": 148,
+    "stand": 148,
+    "difference": 148,
+    "production": 148,
+    "hair": 148,
+    "involved": 147,
+    "fall": 147,
+    "stock": 147,
+    "food": 147,
+    "earlier": 146,
+    "increased": 146,
+    "whom": 146,
+    "particularly": 146,
+    "paid": 145,
+    "sent": 145,
+    "effort": 145,
+    "knowledge": 145,
+    "hour": 145,
+    "letter": 145,
+    "club": 145,
+    "using": 145,
+    "below": 145,
+    "thinking": 145,
+    "yes": 144,
+    "christian": 144,
+    "blue": 143,
+    "ready": 143,
+    "bill": 143,
+    "deal": 143,
+    "points": 143,
+    "trade": 143,
+    "certainly": 143,
+    "ideas": 143,
+    "industrial": 143,
+    "square": 143,
+    "boys": 143,
+    "methods": 142,
+    "addition": 142,
+    "method": 142,
+    "bad": 142,
+    "due": 142,
+    "girls": 142,
+    "moral": 142,
+    "decided": 141,
+    "reading": 141,
+    "statement": 141,
+    "weeks": 141,
+    "neither": 141,
+    "nearly": 141,
+    "directly": 141,
+    "showed": 141,
+    "throughout": 141,
+    "according": 140,
+    "questions": 140,
+    "color": 140,
+    "kennedy": 140,
+    "anyone": 140,
+    "try": 140,
+    "services": 139,
+    "programs": 139,
+    "nation": 139,
+    "lay": 139,
+    "french": 139,
+    "size": 138,
+    "remember": 138,
+    "physical": 138,
+    "record": 137,
+    "member": 137,
+    "comes": 137,
+    "understand": 137,
+    "southern": 137,
+    "western": 137,
+    "strength": 137,
+    "population": 136,
+    "normal": 136,
+    "merely": 135,
+    "district": 135,
+    "volume": 135,
+    "concerned": 135,
+    "appeared": 135,
+    "temperature": 135,
+    "aid": 134,
+    "trouble": 134,
+    "trial": 134,
+    "summer": 134,
+    "direction": 134,
+    "ran": 134,
+    "sales": 133,
+    "list": 133,
+    "continued": 133,
+    "friend": 133,
+    "evening": 133,
+    "maybe": 133,
+    "literature": 133,
+    "generally": 132,
+    "association": 132,
+    "provided": 132,
+    "led": 132,
+    "army": 132,
+    "met": 132,
+    "influence": 132,
+    "opened": 131,
+    "former": 131,
+    "science": 131,
+    "student": 131,
+    "step": 131,
+    "changes": 131,
+    "chance": 131,
+    "husband": 131,
+    "hot": 130,
+    "series": 130,
+    "average": 130,
+    "works": 130,
+    "month": 130,
+    "cause": 130,
+    "effective": 129,
+    "george": 129,
+    "planning": 129,
+    "systems": 129,
+    "direct": 129,
+    "soviet": 129,
+    "stopped": 129,
+    "wrong": 129,
+    "lead": 129,
+    "myself": 129,
+    "piece": 129,
+    "theory": 129,
+    "ask": 128,
+    "worked": 128,
+    "freedom": 128,
+    "organization": 128,
+    "clearly": 128,
+    "movement": 128,
+    "ways": 128,
+    "press": 127,
+    "somewhat": 127,
+    "spring": 127,
+    "efforts": 127,
+    "consider": 127,
+    "meaning": 127,
+    "bed": 127,
+    "fear": 127,
+    "lot": 127,
+    "treatment": 127,
+    "beautiful": 127,
+    "note": 127,
+    "forms": 127,
+    "placed": 126,
+    "hotel": 126,
+    "truth": 126,
+    "apparently": 125,
+    "degree": 125,
+    "groups": 125,
+    "plant": 125,
+    "carried": 125,
+    "wide": 125,
+    "respect": 125,
+    "herself": 125,
+    "numbers": 125,
+    "manner": 124,
+    "reaction": 124,
+    "easy": 124,
+    "farm": 124,
+    "immediately": 123,
+    "running": 123,
+    "approach": 123,
+    "game": 123,
+    "recently": 123,
+    "larger": 123,
+    "lower": 123,
+    "charge": 122,
+    "couple": 122,
+    "de": 122,
+    "daily": 122,
+    "eye": 122,
+    "performance": 122,
+    "feed": 122,
+    "oh": 122,
+    "march": 121,
+    "persons": 121,
+    "understanding": 121,
+    "arms": 121,
+    "opportunity": 121,
+    "c": 121,
+    "blood": 121,
+    "additional": 120,
+    "technical": 120,
+    "fiscal": 120,
+    "radio": 120,
+    "described": 120,
+    "stop": 120,
+    "progress": 120,
+    "steps": 119,
+    "test": 119,
+    "chief": 119,
+    "reported": 119,
+    "served": 119,
+    "based": 119,
+    "main": 119,
+    "determined": 119,
+    "image": 119,
+    "decision": 119,
+    "window": 119,
+    "religion": 119,
+    "aj": 118,
+    "gun": 118,
+    "responsibility": 118,
+    "middle": 118,
+    "europe": 118,
+    "british": 118,
+    "character": 118,
+    "learned": 117,
+    "horse": 117,
+    "writing": 117,
+    "appear": 117,
+    "account": 117,
+    "ones": 116,
+    "serious": 116,
+    "activity": 116,
+    "types": 116,
+    "green": 116,
+    "length": 116,
+    "lived": 115,
+    "audience": 115,
+    "letters": 115,
+    "returned": 115,
+    "obtained": 115,
+    "nuclear": 115,
+    "specific": 115,
+    "corner": 115,
+    "forward": 115,
+    "activities": 115,
+    "slowly": 115,
+    "doubt": 114,
+    "justice": 114,
+    "moving": 114,
+    "latter": 114,
+    "gives": 114,
+    "straight": 114,
+    "hit": 114,
+    "plane": 114,
+    "quality": 114,
+    "design": 114,
+    "obviously": 114,
+    "operation": 113,
+    "plans": 113,
+    "shot": 113,
+    "seven": 113,
+    "choice": 113,
+    "poor": 113,
+    "staff": 113,
+    "function": 113,
+    "figures": 113,
+    "parts": 113,
+    "stay": 113,
+    "saying": 113,
+    "include": 113,
+    "born": 113,
+    "pattern": 113,
+    "cars": 112,
+    "whatever": 112,
+    "sun": 112,
+    "faith": 111,
+    "pool": 111,
+    "hospital": 110,
+    "corps": 110,
+    "wish": 110,
+    "lack": 110,
+    "completely": 110,
+    "heavy": 110,
+    "waiting": 110,
+    "speak": 110,
+    "ball": 110,
+    "standard": 110,
+    "extent": 110,
+    "visit": 109,
+    "democratic": 109,
+    "firm": 109,
+    "income": 109,
+    "ahead": 109,
+    "deep": 109,
+    "language": 109,
+    "principle": 109,
+    "none": 108,
+    "price": 108,
+    "designed": 108,
+    "indicated": 108,
+    "analysis": 108,
+    "distance": 108,
+    "expect": 108,
+    "established": 108,
+    "products": 108,
+    "effects": 108,
+    "growing": 108,
+    "importance": 108,
+    "continue": 107,
+    "serve": 107,
+    "determine": 107,
+    "cities": 107,
+    "elements": 107,
+    "negro": 107,
+    "leaders": 107,
+    "division": 107,
+    "pretty": 107,
+    "easily": 107,
+    "existence": 107,
+    "attitude": 107,
+    "stress": 107,
+    "afternoon": 106,
+    "limited": 106,
+    "hardly": 106,
+    "agreement": 106,
+    "factors": 106,
+    "scene": 106,
+    "remained": 106,
+    "closed": 106,
+    "write": 106,
+    "applied": 106,
+    "health": 105,
+    "married": 105,
+    "suggested": 105,
+    "attack": 105,
+    "rhode": 105,
+    "interested": 105,
+    "station": 105,
+    "professional": 105,
+    "drive": 105,
+    "season": 105,
+    "reach": 105,
+    "b": 105,
+    "despite": 104,
+    "current": 104,
+    "spent": 104,
+    "eight": 104,
+    "covered": 104,
+    "role": 104,
+    "played": 104,
+    "becomes": 104,
+    "date": 103,
+    "council": 103,
+    "race": 103,
+    "unit": 103,
+    "commission": 103,
+    "original": 103,
+    "mouth": 103,
+    "reasons": 103,
+    "studies": 103,
+    "exactly": 103,
+    "machine": 103,
+    "built": 103,
+    "teeth": 103,
+    "relations": 102,
+    "rise": 102,
+    "demand": 102,
+    "prepared": 102,
+    "related": 102,
+    "rates": 102,
+    "news": 102,
+    "supply": 102,
+    "james": 101,
+    "director": 101,
+    "sunday": 101,
+    "bit": 101,
+    "raised": 101,
+    "events": 101,
+    "unless": 101,
+    "officer": 101,
+    "dropped": 101,
+    "playing": 101,
+    "trees": 101,
+    "standing": 101,
+    "doctor": 100,
+    "places": 100,
+    "facilities": 100,
+    "walk": 100,
+    "energy": 100,
+    "thomas": 100,
+    "talking": 100,
+    "meant": 100,
+    "clay": 100,
+    "sides": 100,
+    "gas": 99,
+    "filled": 99,
+    "techniques": 99,
+    "june": 99,
+    "knows": 99,
+    "glass": 99,
+    "jazz": 99,
+    "poet": 99,
+    "actual": 99,
+    "fight": 98,
+    "concern": 98,
+    "caught": 98,
+    "share": 98,
+    "popular": 98,
+    "mass": 98,
+    "claim": 98,
+    "entered": 98,
+    "chicago": 98,
+    "happy": 98,
+    "bridge": 98,
+    "institutions": 98,
+    "style": 98,
+    "follow": 97,
+    "dollars": 97,
+    "communist": 97,
+    "status": 97,
+    "included": 97,
+    "thousand": 97,
+    "christ": 97,
+    "heat": 97,
+    "radiation": 97,
+    "materials": 97,
+    "cattle": 97,
+    "suppose": 97,
+    "primary": 96,
+    "accepted": 96,
+    "books": 96,
+    "charles": 96,
+    "sitting": 96,
+    "conference": 96,
+    "opinion": 96,
+    "usual": 96,
+    "churches": 96,
+    "film": 96,
+    "giving": 96,
+    "behavior": 96,
+    "considerable": 96,
+    "funds": 95,
+    "construction": 95,
+    "attempt": 95,
+    "changed": 95,
+    "proper": 95,
+    "successful": 95,
+    "marriage": 95,
+    "sea": 95,
+    "oil": 95,
+    "sir": 95,
+    "hell": 95,
+    "wait": 94,
+    "sign": 94,
+    "worth": 94,
+    "source": 94,
+    "highly": 94,
+    "park": 94,
+    "discussion": 94,
+    "everyone": 94,
+    "practice": 94,
+    "arm": 94,
+    "tradition": 94,
+    "shows": 94,
+    "someone": 94,
+    "authority": 93,
+    "older": 93,
+    "annual": 93,
+    "project": 93,
+    "americans": 93,
+    "lord": 93,
+    "success": 93,
+    "remain": 93,
+    "principal": 92,
+    "leadership": 92,
+    "jack": 92,
+    "obvious": 92,
+    "fell": 92,
+    "thin": 92,
+    "pieces": 92,
+    "management": 91,
+    "measure": 91,
+    "parents": 91,
+    "security": 91,
+    "base": 91,
+    "entirely": 91,
+    "civil": 91,
+    "frequently": 91,
+    "records": 91,
+    "structure": 91,
+    "dinner": 91,
+    "weight": 91,
+    "condition": 91,
+    "mike": 91,
+    "objective": 91,
+    "complex": 91,
+    "produced": 90,
+    "noted": 90,
+    "caused": 90,
+    "equal": 90,
+    "balance": 90,
+    "purposes": 90,
+    "corporation": 90,
+    "dance": 90,
+    "kitchen": 90,
+    "failure": 89,
+    "pass": 89,
+    "goes": 89,
+    "names": 89,
+    "quickly": 89,
+    "regard": 89,
+    "published": 89,
+    "famous": 89,
+    "develop": 89,
+    "london": 89,
+    "clothes": 89,
+    "laws": 88,
+    "announced": 88,
+    "carry": 88,
+    "cover": 88,
+    "moreover": 88,
+    "add": 88,
+    "greatest": 88,
+    "check": 88,
+    "enemy": 88,
+    "leaving": 88,
+    "key": 88,
+    "manager": 88,
+    "active": 88,
+    "break": 88,
+    "king": 88,
+    "bottom": 88,
+    "pain": 88,
+    "relationship": 88,
+    "sources": 88,
+    "poetry": 88,
+    "assistance": 87,
+    "operating": 87,
+    "battle": 87,
+    "companies": 87,
+    "fixed": 87,
+    "possibility": 87,
+    "mary": 87,
+    "product": 87,
+    "spoke": 87,
+    "units": 87,
+    "touch": 87,
+    "bright": 87,
+    "finished": 87,
+    "carefully": 87,
+    "facts": 87,
+    "previous": 86,
+    "citizens": 86,
+    "takes": 86,
+    "allowed": 86,
+    "require": 86,
+    "workers": 86,
+    "build": 86,
+    "patient": 86,
+    "financial": 86,
+    "philosophy": 86,
+    "loss": 86,
+    "rose": 86,
+    "died": 86,
+    "scientific": 86,
+    "otherwise": 86,
+    "inches": 86,
+    "significant": 86,
+    "seeing": 86,
+    "distribution": 85,
+    "marked": 85,
+    "post": 85,
+    "rules": 85,
+    "capital": 85,
+    "captain": 85,
+    "relatively": 85,
+    "classes": 85,
+    "variety": 85,
+    "stated": 85,
+    "shape": 85,
+    "stations": 85,
+    "german": 85,
+    "musical": 85,
+    "concept": 85,
+    "reports": 84,
+    "proposed": 84,
+    "begin": 84,
+    "impossible": 84,
+    "affairs": 84,
+    "named": 84,
+    "circumstances": 84,
+    "learn": 84,
+    "remains": 84,
+    "appears": 84,
+    "strange": 84,
+    "catholic": 84,
+    "operations": 84,
+    "collection": 84,
+    "aware": 84,
+    "sex": 84,
+    "broad": 84,
+    "henry": 83,
+    "robert": 83,
+    "governor": 83,
+    "offered": 83,
+    "bank": 83,
+    "team": 83,
+    "yesterday": 83,
+    "requirements": 83,
+    "capacity": 83,
+    "speed": 83,
+    "prevent": 83,
+    "regular": 83,
+    "officers": 83,
+    "houses": 83,
+    "mark": 83,
+    "opening": 83,
+    "spread": 83,
+    "winter": 83,
+    "ship": 83,
+    "slightly": 83,
+    "remembered": 83,
+    "interests": 83,
+    "sight": 83,
+    "bar": 82,
+    "produce": 82,
+    "crisis": 82,
+    "youth": 82,
+    "presented": 82,
+    "interesting": 82,
+    "fresh": 82,
+    "train": 82,
+    "instance": 82,
+    "drink": 82,
+    "poems": 82,
+    "agreed": 81,
+    "campaign": 81,
+    "event": 81,
+    "subjects": 81,
+    "forced": 81,
+    "nine": 81,
+    "essential": 81,
+    "immediate": 81,
+    "lives": 81,
+    "file": 81,
+    "provides": 81,
+    "watch": 81,
+    "opposite": 81,
+    "apartment": 81,
+    "created": 81,
+    "germany": 81,
+    "trip": 81,
+    "neck": 81,
+    "watched": 81,
+    "index": 81,
+    "cells": 81,
+    "session": 80,
+    "offer": 80,
+    "fully": 80,
+    "teacher": 80,
+    "recognized": 80,
+    "providence": 80,
+    "explained": 80,
+    "indicate": 80,
+    "twenty": 80,
+    "lady": 80,
+    "russian": 80,
+    "features": 80,
+    "gray": 80,
+    "term": 79,
+    "studied": 79,
+    "sam": 79,
+    "economy": 79,
+    "reduced": 79,
+    "maximum": 79,
+    "separate": 79,
+    "procedure": 79,
+    "atmosphere": 79,
+    "desire": 79,
+    "mentioned": 79,
+    "reality": 79,
+    "expression": 79,
+    "differences": 79,
+    "fair": 78,
+    "enter": 78,
+    "traditional": 78,
+    "mission": 78,
+    "favor": 78,
+    "looks": 78,
+    "secret": 78,
+    "fast": 78,
+    "picked": 78,
+    "coffee": 78,
+    "smaller": 78,
+    "edge": 78,
+    "tone": 78,
+    "beside": 78,
+    "literary": 78,
+    "election": 77,
+    "judge": 77,
+    "title": 77,
+    "permit": 77,
+    "address": 77,
+    "rights": 77,
+    "vocational": 77,
+    "laid": 77,
+    "response": 77,
+    "believed": 77,
+    "model": 77,
+    "solid": 77,
+    "follows": 77,
+    "editor": 77,
+    "t": 77,
+    "anode": 77,
+    "receive": 76,
+    "quiet": 76,
+    "telephone": 76,
+    "hearing": 76,
+    "buildings": 76,
+    "formed": 76,
+    "nice": 76,
+    "watching": 76,
+    "memory": 76,
+    "presence": 76,
+    "difficulty": 76,
+    "region": 76,
+    "knife": 76,
+    "p": 76,
+    "bottle": 76,
+    "personnel": 75,
+    "fit": 75,
+    "official": 75,
+    "vote": 75,
+    "junior": 75,
+    "treated": 75,
+    "expressed": 75,
+    "planned": 75,
+    "round": 75,
+    "dog": 75,
+    "virginia": 75,
+    "killed": 75,
+    "camp": 75,
+    "stayed": 75,
+    "murder": 75,
+    "removed": 75,
+    "rock": 75,
+    "france": 75,
+    "turning": 75,
+    "pointed": 74,
+    "november": 74,
+    "selected": 74,
+    "berlin": 74,
+    "claims": 74,
+    "increasing": 74,
+    "leader": 74,
+    "positive": 74,
+    "frame": 74,
+    "gain": 74,
+    "twice": 74,
+    "failed": 74,
+    "nobody": 74,
+    "send": 74,
+    "ability": 74,
+    "fourth": 74,
+    "interior": 74,
+    "jewish": 74,
+    "store": 74,
+    "faculty": 74,
+    "standards": 74,
+    "rich": 74,
+    "contrast": 74,
+    "observed": 74,
+    "nevertheless": 73,
+    "brief": 73,
+    "louis": 73,
+    "individuals": 73,
+    "rule": 73,
+    "powers": 73,
+    "advantage": 73,
+    "discovered": 73,
+    "pulled": 73,
+    "writer": 73,
+    "chapter": 73,
+    "writers": 73,
+    "brother": 73,
+    "valley": 73,
+    "membership": 73,
+    "die": 73,
+    "items": 72,
+    "daughter": 72,
+    "platform": 72,
+    "allow": 72,
+    "ordinary": 72,
+    "jones": 72,
+    "faces": 72,
+    "accept": 72,
+    "plus": 72,
+    "master": 72,
+    "legal": 72,
+    "hill": 72,
+    "fighting": 72,
+    "resources": 72,
+    "increases": 72,
+    "assumed": 72,
+    "sharp": 72,
+    "everybody": 72,
+    "broke": 72,
+    "command": 72,
+    "evil": 72,
+    "wants": 72,
+    "village": 72,
+    "phase": 72,
+    "russia": 72,
+    "detail": 72,
+    "morgan": 72,
+    "somehow": 72,
+    "fields": 72,
+    "familiar": 72,
+    "upper": 72,
+    "wine": 72,
+    "boat": 72,
+    "april": 71,
+    "unity": 71,
+    "richard": 71,
+    "responsible": 71,
+    "factor": 71,
+    "chosen": 71,
+    "principles": 71,
+    "constant": 71,
+    "proved": 71,
+    "carrying": 71,
+    "mercer": 71,
+    "column": 71,
+    "forth": 71,
+    "beauty": 71,
+    "compared": 71,
+    "approximately": 71,
+    "du": 71,
+    "historical": 71,
+    "smiled": 71,
+    "universe": 71,
+    "calls": 70,
+    "san": 70,
+    "educational": 70,
+    "independent": 70,
+    "danger": 70,
+    "dogs": 70,
+    "waited": 70,
+    "rain": 70,
+    "song": 70,
+    "naturally": 70,
+    "rome": 70,
+    "box": 70,
+    "buy": 70,
+    "shelter": 70,
+    "drawn": 70,
+    "dust": 70,
+    "communism": 70,
+    "exchange": 70,
+    "sections": 70,
+    "walls": 70,
+    "foot": 70,
+    "aircraft": 70
+  },
+  "test_cases": [
+    {
+      "input": "itthatthecitytakestepstothisproblem",
+      "ground_truth": "it that the city take steps to this problem",
+      "word_count": 9
+    },
+    {
+      "input": "oftitlelawwasalsobythe",
+      "ground_truth": "of title law was also by the",
+      "word_count": 7
+    },
+    {
+      "input": "failuretodothiswillcontinuetoplaceaon",
+      "ground_truth": "failure to do this will continue to place a on",
+      "word_count": 10
+    },
+    {
+      "input": "onotherthethat",
+      "ground_truth": "on other the that",
+      "word_count": 4
+    },
+    {
+      "input": "williamforfromhiswifeincourt",
+      "ground_truth": "william for from his wife in court",
+      "word_count": 7
+    },
+    {
+      "input": "thecouplewasmarried",
+      "ground_truth": "the couple was married",
+      "word_count": 4
+    },
+    {
+      "input": "theyhaveasonwilliamandadaughterof",
+      "ground_truth": "they have a son william and a daughter of",
+      "word_count": 9
+    },
+    {
+      "input": "forthesaidthatanpropertyhasbeenagreedupon",
+      "ground_truth": "for the said that an property has been agreed upon",
+      "word_count": 10
+    },
+    {
+      "input": "thetheasandhisageas",
+      "ground_truth": "the the as and his age as",
+      "word_count": 7
+    },
+    {
+      "input": "ithisageasandplaceofas",
+      "ground_truth": "it his age as and place of as",
+      "word_count": 8
+    },
+    {
+      "input": "thehomeisataj",
+      "ground_truth": "the home is at aj",
+      "word_count": 5
+    },
+    {
+      "input": "henrywasontheasthe",
+      "ground_truth": "henry was on the as the",
+      "word_count": 6
+    },
+    {
+      "input": "hasbeenofwithofonebriefsince",
+      "ground_truth": "has been of with of one brief since",
+      "word_count": 8
+    },
+    {
+      "input": "hispoliticalgoesbacktohiselectiontocitycouncilin",
+      "ground_truth": "his political goes back to his election to city council in",
+      "word_count": 11
+    },
+    {
+      "input": "thepresenttermofoffice",
+      "ground_truth": "the present term of office",
+      "word_count": 5
+    },
+    {
+      "input": "despitethetherewasavotetoenteraaccordingtowho",
+      "ground_truth": "despite the there was a vote to enter a according to who",
+      "word_count": 12
+    },
+    {
+      "input": "samstatedepartmentpublicrelationsdirectortoworkforcampaign",
+      "ground_truth": "sam state department public relations director to work for campaign",
+      "word_count": 10
+    },
+    {
+      "input": "hadbeenexpectedforsometime",
+      "ground_truth": "had been expected for some time",
+      "word_count": 6
+    },
+    {
+      "input": "whenthecampaignisexpectedtobecomeacampaignfor",
+      "ground_truth": "when the campaign is expected to become a campaign for",
+      "word_count": 10
+    },
+    {
+      "input": "likelywillthemillionissueearlierinthesessionashisfirst",
+      "ground_truth": "likely will the million issue earlier in the session as his first",
+      "word_count": 12
+    },
+    {
+      "input": "asimilarpassedinthebyavoteof",
+      "ground_truth": "a similar passed in the by a vote of",
+      "word_count": 9
+    },
+    {
+      "input": "butheaddedthatnoneofaskedhimtoofferthe",
+      "ground_truth": "but he added that none of asked him to offer the",
+      "word_count": 11
+    },
+    {
+      "input": "thewhichintothehousewillberead",
+      "ground_truth": "the which into the house will be read",
+      "word_count": 8
+    },
+    {
+      "input": "receivedinelectionandgot",
+      "ground_truth": "received in election and got",
+      "word_count": 5
+    },
+    {
+      "input": "ordinarywithastoodbyatthetoorder",
+      "ground_truth": "ordinary with a stood by at the to order",
+      "word_count": 9
+    },
+    {
+      "input": "thiswastheelectionieversawsaid",
+      "ground_truth": "this was the election i ever saw said",
+      "word_count": 8
+    },
+    {
+      "input": "beingatthewasjustlikebeingatchurch",
+      "ground_truth": "being at the was just like being at church",
+      "word_count": 9
+    },
+    {
+      "input": "iaofandwehaveabitoftrouble",
+      "ground_truth": "i a of and we have a bit of trouble",
+      "word_count": 10
+    },
+    {
+      "input": "thecampaigntotheelectionwasnotsoquiethowever",
+      "ground_truth": "the campaign to the election was not so quiet however",
+      "word_count": 10
+    },
+    {
+      "input": "itwasmarkedbycallsandof",
+      "ground_truth": "it was marked by calls and of",
+      "word_count": 7
+    },
+    {
+      "input": "duringtheelectioncampaignbothandreceivedtelephonecalls",
+      "ground_truth": "during the election campaign both and received telephone calls",
+      "word_count": 9
+    },
+    {
+      "input": "ordinarysaidhetoowastocallssoonafterhetheelection",
+      "ground_truth": "ordinary said he too was to calls soon after he the election",
+      "word_count": 12
+    },
+    {
+      "input": "saidtheordinaryapparentlymadegoodhis",
+      "ground_truth": "said the ordinary apparently made good his",
+      "word_count": 7
+    },
+    {
+      "input": "everythingwentrealthesaid",
+      "ground_truth": "everything went real the said",
+      "word_count": 5
+    },
+    {
+      "input": "thereabitoftrouble",
+      "ground_truth": "there a bit of trouble",
+      "word_count": 5
+    },
+    {
+      "input": "committeeofpricepropertyactseemedcertaindespitetheof",
+      "ground_truth": "committee of price property act seemed certain despite the of",
+      "word_count": 10
+    },
+    {
+      "input": "undercommitteerulesitwenttoaforoneweek",
+      "ground_truth": "under committee rules it went to a for one week",
+      "word_count": 10
+    },
+    {
+      "input": "ifyouinyoudosomethingtotheeconomyhesaid",
+      "ground_truth": "if you in you do something to the economy he said",
+      "word_count": 11
+    },
+    {
+      "input": "youtakeoutofmanyofdollars",
+      "ground_truth": "you take out of many of dollars",
+      "word_count": 7
+    },
+    {
+      "input": "hiswasbyseveralincludingofjonesofofandof",
+      "ground_truth": "his was by several including of jones of of and of",
+      "word_count": 11
+    },
+    {
+      "input": "thatthebillisprobablysincehesaiditwould",
+      "ground_truth": "that the bill is probably since he said it would",
+      "word_count": 10
+    },
+    {
+      "input": "therewasnoasthepassedthebillontothehouse",
+      "ground_truth": "there was no as the passed the bill on to the house",
+      "word_count": 12
+    },
+    {
+      "input": "maygettohearaonhorseracesoonbetweenredand",
+      "ground_truth": "may get to hear a on horse race soon between red and",
+      "word_count": 12
+    },
+    {
+      "input": "gettingmorelettersthanonhorseracesaid",
+      "ground_truth": "getting more letters than on horse race said",
+      "word_count": 8
+    },
+    {
+      "input": "tomypoliticalonit",
+      "ground_truth": "to my political on it",
+      "word_count": 5
+    },
+    {
+      "input": "anfromsangotonhisofonthe",
+      "ground_truth": "an from san got on his of on the",
+      "word_count": 9
+    },
+    {
+      "input": "thequicklythroughitsofhousebythethreeonthe",
+      "ground_truth": "the quickly through its of house by the three on the",
+      "word_count": 11
+    },
+    {
+      "input": "anotherauthorityofthedistrict",
+      "ground_truth": "another authority of the district",
+      "word_count": 5
+    },
+    {
+      "input": "twotaxwerepassed",
+      "ground_truth": "two tax were passed",
+      "word_count": 4
+    },
+    {
+      "input": "itwasoneofaseriesofbytheresearch",
+      "ground_truth": "it was one of a series of by the research",
+      "word_count": 10
+    },
+    {
+      "input": "statedecidedagainsttakingaonwhatkindofwouldtopay",
+      "ground_truth": "state decided against taking a on what kind of would to pay",
+      "word_count": 12
+    },
+    {
+      "input": "allmemberswithexceptbilljoneswhowas",
+      "ground_truth": "all members with except bill jones who was",
+      "word_count": 8
+    },
+    {
+      "input": "losttothewaterneedsofbigcities",
+      "ground_truth": "lost to the water needs of big cities",
+      "word_count": 8
+    },
+    {
+      "input": "mostofthefirewasbyagainstand",
+      "ground_truth": "most of the fire was by against and",
+      "word_count": 8
+    },
+    {
+      "input": "thewerelikeofdeofmissionsamofandof",
+      "ground_truth": "the were like of de of mission sam of and of",
+      "word_count": 11
+    },
+    {
+      "input": "thisisapoorbillsaid",
+      "ground_truth": "this is a poor bill said",
+      "word_count": 6
+    },
+    {
+      "input": "andworthcanvote",
+      "ground_truth": "and worth can vote",
+      "word_count": 4
+    },
+    {
+      "input": "thiswouldhelpthelittle",
+      "ground_truth": "this would help the little",
+      "word_count": 5
+    },
+    {
+      "input": "anormalworkincollegeishours",
+      "ground_truth": "a normal work in college is hours",
+      "word_count": 7
+    },
+    {
+      "input": "theofthecollegewouldbeingeneralsubjects",
+      "ground_truth": "the of the college would be in general subjects",
+      "word_count": 9
+    },
+    {
+      "input": "collegeinarenotrequiredtohavetheeducation",
+      "ground_truth": "college in are not required to have the education",
+      "word_count": 9
+    },
+    {
+      "input": "oftheimmediatelyasofthe",
+      "ground_truth": "of the immediately as of the",
+      "word_count": 6
+    },
+    {
+      "input": "willwhowillatthecloseofthepresentschoolterm",
+      "ground_truth": "will who will at the close of the present school term",
+      "word_count": 11
+    },
+    {
+      "input": "andoctorofeducationdegreefromtheuniversityof",
+      "ground_truth": "an doctor of education degree from the university of",
+      "word_count": 9
+    },
+    {
+      "input": "inadditionhasstudiedatrhodeislandstatecollegeandof",
+      "ground_truth": "in addition has studied at rhode island state college and of",
+      "word_count": 11
+    },
+    {
+      "input": "duringhiscollegewascaptainofhisteamandwasa",
+      "ground_truth": "during his college was captain of his team and was a",
+      "word_count": 11
+    },
+    {
+      "input": "thereportcalledinoneofthemostseriousoffamilyand",
+      "ground_truth": "the report called in one of the most serious of family and",
+      "word_count": 12
+    },
+    {
+      "input": "thesehesaidaretwooftheprincipalforfamilyto",
+      "ground_truth": "these he said are two of the principal for family to",
+      "word_count": 11
+    },
+    {
+      "input": "othermadebythecommitteeare",
+      "ground_truth": "other made by the committee are",
+      "word_count": 6
+    },
+    {
+      "input": "researchassoonaspossibleontheandofand",
+      "ground_truth": "research as soon as possible on the and of and",
+      "word_count": 10
+    },
+    {
+      "input": "madethewhenheaskedjudgetohisaseparatetrial",
+      "ground_truth": "made the when he asked judge to his a separate trial",
+      "word_count": 11
+    },
+    {
+      "input": "madethewhilethewasoutofthe",
+      "ground_truth": "made the while the was out of the",
+      "word_count": 8
+    },
+    {
+      "input": "themaybehighlytomytoldthecourt",
+      "ground_truth": "the may be highly to my told the court",
+      "word_count": 9
+    },
+    {
+      "input": "someoftheindicatedtheyknewtheywereproperty",
+      "ground_truth": "some of the indicated they knew they were property",
+      "word_count": 9
+    },
+    {
+      "input": "judgeovertheandyoumeansomeofthemadethis",
+      "ground_truth": "judge over the and you mean some of the made this",
+      "word_count": 11
+    },
+    {
+      "input": "thereisaamongthe",
+      "ground_truth": "there is a among the",
+      "word_count": 5
+    },
+    {
+      "input": "hesaidevidencewasobtainedinofthelegalrightsofcitizens",
+      "ground_truth": "he said evidence was obtained in of the legal rights of citizens",
+      "word_count": 12
+    },
+    {
+      "input": "toeightofthecases",
+      "ground_truth": "to eight of the cases",
+      "word_count": 5
+    },
+    {
+      "input": "hadbeenbroughtagainstpersonsinbyspecial",
+      "ground_truth": "had been brought against persons in by special",
+      "word_count": 8
+    },
+    {
+      "input": "forelectionintheofthethisprocedure",
+      "ground_truth": "for election in the of the this procedure",
+      "word_count": 8
+    },
+    {
+      "input": "hasthatwasusedin",
+      "ground_truth": "has that was used in",
+      "word_count": 5
+    },
+    {
+      "input": "hesaidthisaveryseriousofthecourt",
+      "ground_truth": "he said this a very serious of the court",
+      "word_count": 9
+    },
+    {
+      "input": "hadbeenthisweektohearsevencasespersons",
+      "ground_truth": "had been this week to hear seven cases persons",
+      "word_count": 9
+    },
+    {
+      "input": "twoothercasesalsowereunder",
+      "ground_truth": "two other cases also were under",
+      "word_count": 6
+    },
+    {
+      "input": "itwasincongresslastyear",
+      "ground_truth": "it was in congress last year",
+      "word_count": 6
+    },
+    {
+      "input": "costuptoayear",
+      "ground_truth": "cost up to a year",
+      "word_count": 5
+    },
+    {
+      "input": "similartaxwouldbeonthoseunderthesystem",
+      "ground_truth": "similar tax would be on those under the system",
+      "word_count": 9
+    },
+    {
+      "input": "bothfigureswouldgohigherinlateryears",
+      "ground_truth": "both figures would go higher in later years",
+      "word_count": 8
+    },
+    {
+      "input": "thesewouldbepaidforoutofgeneralnot",
+      "ground_truth": "these would be paid for out of general not",
+      "word_count": 9
+    },
+    {
+      "input": "fullofhomeforuptodaysfollowingfromahospital",
+      "ground_truth": "full of home for up to days following from a hospital",
+      "word_count": 11
+    },
+    {
+      "input": "hospitalserviceforallcostsinofapatient",
+      "ground_truth": "hospital service for all costs in of a patient",
+      "word_count": 9
+    },
+    {
+      "input": "communityservicesathomeforuptodaysan",
+      "ground_truth": "community services at home for up to days an",
+      "word_count": 9
+    },
+    {
+      "input": "thisisnotaprogramof",
+      "ground_truth": "this is not a program of",
+      "word_count": 6
+    },
+    {
+      "input": "itisaprogramofofhealthcostswithfreedomofchoice",
+      "ground_truth": "it is a program of of health costs with freedom of choice",
+      "word_count": 12
+    },
+    {
+      "input": "everypersonwillhisowndoctorandhospital",
+      "ground_truth": "every person will his own doctor and hospital",
+      "word_count": 8
+    },
+    {
+      "input": "theplandoesnotcoverdoctor",
+      "ground_truth": "the plan does not cover doctor",
+      "word_count": 6
+    },
+    {
+      "input": "theywouldstillbepaidbythepatient",
+      "ground_truth": "they would still be paid by the patient",
+      "word_count": 8
+    },
+    {
+      "input": "heaskedforanothermillionfortostatesto",
+      "ground_truth": "he asked for another million for to states to",
+      "word_count": 9
+    },
+    {
+      "input": "hefurtherproposedofanfor",
+      "ground_truth": "he further proposed of an for",
+      "word_count": 6
+    },
+    {
+      "input": "healsoaskedcongresstoofanationalchildhealth",
+      "ground_truth": "he also asked congress to of a national child health",
+      "word_count": 10
+    },
+    {
+      "input": "hedidnotsaybyhowmuch",
+      "ground_truth": "he did not say by how much",
+      "word_count": 7
+    },
+    {
+      "input": "reactiontothewasalongexpectedlines",
+      "ground_truth": "reaction to the was along expected lines",
+      "word_count": 7
+    },
+    {
+      "input": "wholastyearunderthesocialsecuritysystemtheplan",
+      "ground_truth": "who last year under the social security system the plan",
+      "word_count": 10
+    },
+    {
+      "input": "thosewhoasimilarplanlastyearthe",
+      "ground_truth": "those who a similar plan last year the",
+      "word_count": 8
+    },
+    {
+      "input": "underwhitehousepressuretherobertasthefederalchief",
+      "ground_truth": "under white house pressure the robert as the federal chief",
+      "word_count": 10
+    },
+    {
+      "input": "onlywereonthefloorandtherewasnorecordvote",
+      "ground_truth": "only were on the floor and there was no record vote",
+      "word_count": 11
+    },
+    {
+      "input": "anumberofandwasheard",
+      "ground_truth": "a number of and was heard",
+      "word_count": 6
+    },
+    {
+      "input": "onedescribedtheofsecretaryofstateas",
+      "ground_truth": "one described the of secretary of state as",
+      "word_count": 8
+    },
+    {
+      "input": "theyontheaidofthecountriestheconferencetothis",
+      "ground_truth": "they on the aid of the countries the conference to this",
+      "word_count": 11
+    },
+    {
+      "input": "theunitedstatesthatanyfuturewouldnotbecomecommunist",
+      "ground_truth": "the united states that any future would not become communist",
+      "word_count": 10
+    },
+    {
+      "input": "howeffectivehavekennedyadministrationfirstforeignpolicybeeninwithcommunist",
+      "ground_truth": "how effective have kennedy administration first foreign policy been in with communist",
+      "word_count": 12
+    },
+    {
+      "input": "formerrichardincalledforaandpolicytowardthesovietunion",
+      "ground_truth": "former richard in called for a and policy toward the soviet union",
+      "word_count": 12
+    },
+    {
+      "input": "hewasofwhatheispresidenttobetoo",
+      "ground_truth": "he was of what he is president to be too",
+      "word_count": 10
+    },
+    {
+      "input": "forhispartwouldinwithoutspecific",
+      "ground_truth": "for his part would in without specific",
+      "word_count": 7
+    },
+    {
+      "input": "effortsweremadetofromadministration",
+      "ground_truth": "efforts were made to from administration",
+      "word_count": 6
+    },
+    {
+      "input": "onnucleartestwereandchanged",
+      "ground_truth": "on nuclear test were and changed",
+      "word_count": 6
+    },
+    {
+      "input": "butthusfartherehasbeennoresponseinkind",
+      "ground_truth": "but thus far there has been no response in kind",
+      "word_count": 10
+    },
+    {
+      "input": "againandagainitaskedthetothemilitarysituationin",
+      "ground_truth": "again and again it asked the to the military situation in",
+      "word_count": 11
+    },
+    {
+      "input": "butthetheatanevenrate",
+      "ground_truth": "but the the at an even rate",
+      "word_count": 7
+    },
+    {
+      "input": "wasupandpreparedplansforwiththemilitaryin",
+      "ground_truth": "was up and prepared plans for with the military in",
+      "word_count": 10
+    },
+    {
+      "input": "theadministrationitselfinfavorofa",
+      "ground_truth": "the administration itself in favor of a",
+      "word_count": 7
+    },
+    {
+      "input": "onefactorwasthestatementofofoftheforeignrelationscommittee",
+      "ground_truth": "one factor was the statement of of of the foreign relations committee",
+      "word_count": 12
+    },
+    {
+      "input": "eastprovidencenowhasnocivildefenseprogram",
+      "ground_truth": "east providence now has no civil defense program",
+      "word_count": 8
+    },
+    {
+      "input": "heisnotinterestedinbeingnamedadirector",
+      "ground_truth": "he is not interested in being named a director",
+      "word_count": 9
+    },
+    {
+      "input": "oneofthesemenisformerfirechiefjohnhesaid",
+      "ground_truth": "one of these men is former fire chief john he said",
+      "word_count": 11
+    },
+    {
+      "input": "wouldgotothepoint",
+      "ground_truth": "would go to the point",
+      "word_count": 5
+    },
+    {
+      "input": "awastothepress",
+      "ground_truth": "a was to the press",
+      "word_count": 5
+    },
+    {
+      "input": "hewillthenthestudycommitteewiththegovernorsaid",
+      "ground_truth": "he will then the study committee with the governor said",
+      "word_count": 10
+    },
+    {
+      "input": "itthatsundaysalesprovidegreattothelocalgovernment",
+      "ground_truth": "it that sunday sales provide great to the local government",
+      "word_count": 10
+    },
+    {
+      "input": "thatwasbeforeistudiedlaw",
+      "ground_truth": "that was before i studied law",
+      "word_count": 6
+    },
+    {
+      "input": "someofmyworkersweremeforanofficeintheparty",
+      "ground_truth": "some of my workers were me for an office in the party",
+      "word_count": 12
+    },
+    {
+      "input": "thewithwhomistudiedlawmeoffthe",
+      "ground_truth": "the with whom i studied law me off the",
+      "word_count": 9
+    },
+    {
+      "input": "hemetotherightthefree",
+      "ground_truth": "he me to the right the free",
+      "word_count": 7
+    },
+    {
+      "input": "farfromreallybeingisinindustrialrelations",
+      "ground_truth": "far from really being is in industrial relations",
+      "word_count": 8
+    },
+    {
+      "input": "afterthisithinkweshouldcertainlyfollowthroughonithe",
+      "ground_truth": "after this i think we should certainly follow through on it he",
+      "word_count": 12
+    },
+    {
+      "input": "increasingcanbeexpectedincomingweeksitwasindicated",
+      "ground_truth": "increasing can be expected in coming weeks it was indicated",
+      "word_count": 10
+    },
+    {
+      "input": "nothinghasbeendoneyettotakeadvantageofthe",
+      "ground_truth": "nothing has been done yet to take advantage of the",
+      "word_count": 10
+    },
+    {
+      "input": "atpresentallmustbetakentodistrictcourtfor",
+      "ground_truth": "at present all must be taken to district court for",
+      "word_count": 10
+    },
+    {
+      "input": "howcanamanwithanydegreeofcommonchargethis",
+      "ground_truth": "how can a man with any degree of common charge this",
+      "word_count": 11
+    },
+    {
+      "input": "jonessaidhehadmadeapersonalattackonapastpresident",
+      "ground_truth": "jones said he had made a personal attack on a past president",
+      "word_count": 12
+    },
+    {
+      "input": "theaudiencelastnightdidnotwitheitherortoof",
+      "ground_truth": "the audience last night did not with either or to of",
+      "word_count": 11
+    },
+    {
+      "input": "spokeontheofhavinganopenprimary",
+      "ground_truth": "spoke on the of having an open primary",
+      "word_count": 8
+    },
+    {
+      "input": "hethenintowhattheshouldbeinthecampaign",
+      "ground_truth": "he then into what the should be in the campaign",
+      "word_count": 10
+    },
+    {
+      "input": "earliersaidinastatement",
+      "ground_truth": "earlier said in a statement",
+      "word_count": 5
+    },
+    {
+      "input": "ithinkthatallamericanswillthemadeaboutpresidentbyrichard",
+      "ground_truth": "i think that all americans will the made about president by richard",
+      "word_count": 12
+    },
+    {
+      "input": "itcanonlyto",
+      "ground_truth": "it can only to",
+      "word_count": 4
+    },
+    {
+      "input": "announcedtheofofasstateofthewomenforjonescommittee",
+      "ground_truth": "announced the of of as state of the women for jones committee",
+      "word_count": 12
+    },
+    {
+      "input": "ispresidentoftheclubandisacounty",
+      "ground_truth": "is president of the club and is a county",
+      "word_count": 9
+    },
+    {
+      "input": "addedthathewouldaskforuseofinthestateby",
+      "ground_truth": "added that he would ask for use of in the state by",
+      "word_count": 12
+    },
+    {
+      "input": "afromhiswithainthenumberofinthestate",
+      "ground_truth": "a from his with a in the number of in the state",
+      "word_count": 12
+    },
+    {
+      "input": "inhewasstateandchiefofthefiresection",
+      "ground_truth": "in he was state and chief of the fire section",
+      "word_count": 10
+    },
+    {
+      "input": "healsoandtheradiosystemwithacentralcontrolstation",
+      "ground_truth": "he also and the radio system with a central control station",
+      "word_count": 11
+    },
+    {
+      "input": "heregularfordistrictfireandfirstaidtrainingforsection",
+      "ground_truth": "he regular for district fire and first aid training for section",
+      "word_count": 11
+    },
+    {
+      "input": "buthaveawellplannedforwardlookingplatform",
+      "ground_truth": "but have a well planned forward looking platform",
+      "word_count": 8
+    },
+    {
+      "input": "hesaidyoucanseeoftheattackontheadministration",
+      "ground_truth": "he said you can see of the attack on the administration",
+      "word_count": 11
+    },
+    {
+      "input": "henewtobecomeafullintheofpresidentkennedy",
+      "ground_truth": "he new to become a full in the of president kennedy",
+      "word_count": 11
+    },
+    {
+      "input": "wemustkeeptheofnewtheformercourtjudgesaid",
+      "ground_truth": "we must keep the of new the former court judge said",
+      "word_count": 11
+    },
+    {
+      "input": "greenplanforlargeofopenlandfromtheofdevelopment",
+      "ground_truth": "green plan for large of open land from the of development",
+      "word_count": 11
+    },
+    {
+      "input": "theplanwillprovidemillionforofopenlandbythestate",
+      "ground_truth": "the plan will provide million for of open land by the state",
+      "word_count": 12
+    },
+    {
+      "input": "theothermillionistobetoonabasis",
+      "ground_truth": "the other million is to be to on a basis",
+      "word_count": 10
+    },
+    {
+      "input": "wouldnotontaxorotherinwhichtheareinvolved",
+      "ground_truth": "would not on tax or other in which the are involved",
+      "word_count": 11
+    },
+    {
+      "input": "nottowiththe",
+      "ground_truth": "not to with the",
+      "word_count": 4
+    },
+    {
+      "input": "sheservedonetermonthenationalcommittee",
+      "ground_truth": "she served one term on the national committee",
+      "word_count": 8
+    },
+    {
+      "input": "somethisattemptasevidencethathimselfasthantheparty",
+      "ground_truth": "some this attempt as evidence that himself as than the party",
+      "word_count": 11
+    },
+    {
+      "input": "lastnighttheatthehomeforadiscussionofthesituation",
+      "ground_truth": "last night the at the home for a discussion of the situation",
+      "word_count": 12
+    },
+    {
+      "input": "butseemstohaveassumedhewouldbegiventherightto",
+      "ground_truth": "but seems to have assumed he would be given the right to",
+      "word_count": 12
+    },
+    {
+      "input": "thespokeyesterdayattheunitedonthecollegeinthe",
+      "ground_truth": "the spoke yesterday at the united on the college in the",
+      "word_count": 11
+    },
+    {
+      "input": "itcomefromme",
+      "ground_truth": "it come from me",
+      "word_count": 4
+    },
+    {
+      "input": "aofpublicagainstingovernmentisin",
+      "ground_truth": "a of public against in government is in",
+      "word_count": 8
+    },
+    {
+      "input": "thereisafeelingintheairoftoward",
+      "ground_truth": "there is a feeling in the air of toward",
+      "word_count": 9
+    },
+    {
+      "input": "seeseehesays",
+      "ground_truth": "see see he says",
+      "word_count": 4
+    },
+    {
+      "input": "thehandisout",
+      "ground_truth": "the hand is out",
+      "word_count": 4
+    },
+    {
+      "input": "buttherearereasonsforthecurrentonthesubject",
+      "ground_truth": "but there are reasons for the current on the subject",
+      "word_count": 10
+    },
+    {
+      "input": "aofhighlyhasthepublicwithinthelastyear",
+      "ground_truth": "a of highly has the public within the last year",
+      "word_count": 10
+    },
+    {
+      "input": "dayafterdaysomenewisreported",
+      "ground_truth": "day after day some new is reported",
+      "word_count": 7
+    },
+    {
+      "input": "angeneralisto",
+      "ground_truth": "an general is to",
+      "word_count": 4
+    },
+    {
+      "input": "congressanotherweekwithforthetwo",
+      "ground_truth": "congress another week with for the two",
+      "word_count": 7
+    },
+    {
+      "input": "intheseveralareexpectedtopasswithoutanymajoror",
+      "ground_truth": "in the several are expected to pass without any major or",
+      "word_count": 11
+    },
+    {
+      "input": "thebillisnowinthehouserulescommittee",
+      "ground_truth": "the bill is now in the house rules committee",
+      "word_count": 9
+    },
+    {
+      "input": "itisexpectedtobereportedoutbutthisisalittle",
+      "ground_truth": "it is expected to be reported out but this is a little",
+      "word_count": 12
+    },
+    {
+      "input": "hasbeeninthehospitalbutisexpectedback",
+      "ground_truth": "has been in the hospital but is expected back",
+      "word_count": 9
+    },
+    {
+      "input": "thebillisexpectedtostrongbytheofsouthernand",
+      "ground_truth": "the bill is expected to strong by the of southern and",
+      "word_count": 11
+    },
+    {
+      "input": "thedemocraticleadershiphowevertopassitthisweek",
+      "ground_truth": "the democratic leadership however to pass it this week",
+      "word_count": 9
+    },
+    {
+      "input": "italsoprovidesforfundstoclearandhelpbuild",
+      "ground_truth": "it also provides for funds to clear and help build",
+      "word_count": 10
+    },
+    {
+      "input": "theyarejamesofandthomasof",
+      "ground_truth": "they are james of and thomas of",
+      "word_count": 7
+    },
+    {
+      "input": "threegroupstomeet",
+      "ground_truth": "three groups to meet",
+      "word_count": 4
+    },
+    {
+      "input": "inthethathasbeenforwouldbespentthroughandprivate",
+      "ground_truth": "in the that has been for would be spent through and private",
+      "word_count": 12
+    },
+    {
+      "input": "sixofthesewereproposedbyreligiousgroups",
+      "ground_truth": "six of these were proposed by religious groups",
+      "word_count": 8
+    },
+    {
+      "input": "whenhethehotelsaid",
+      "ground_truth": "when he the hotel said",
+      "word_count": 5
+    },
+    {
+      "input": "thegovernmentisforit",
+      "ground_truth": "the government is for it",
+      "word_count": 5
+    },
+    {
+      "input": "thegovernmentforallitsworkers",
+      "ground_truth": "the government for all its workers",
+      "word_count": 6
+    },
+    {
+      "input": "iworkforthegovernmenttheamericansaid",
+      "ground_truth": "i work for the government the american said",
+      "word_count": 8
+    },
+    {
+      "input": "samethinghesaid",
+      "ground_truth": "same thing he said",
+      "word_count": 4
+    },
+    {
+      "input": "andthensomethereisamoreproblem",
+      "ground_truth": "and then some there is a more problem",
+      "word_count": 8
+    },
+    {
+      "input": "directorofthecorpsiscertainthattheycan",
+      "ground_truth": "director of the corps is certain that they can",
+      "word_count": 9
+    },
+    {
+      "input": "wasintheofthesuccessful",
+      "ground_truth": "was in the of the successful",
+      "word_count": 6
+    },
+    {
+      "input": "inmorethancommunistwerepresentinthosecountries",
+      "ground_truth": "in more than communist were present in those countries",
+      "word_count": 9
+    },
+    {
+      "input": "isthemostunitednationsmemberwithmorethan",
+      "ground_truth": "is the most united nations member with more than",
+      "word_count": 9
+    },
+    {
+      "input": "isduethisweek",
+      "ground_truth": "is due this week",
+      "word_count": 4
+    },
+    {
+      "input": "theistofollowtheselines",
+      "ground_truth": "the is to follow these lines",
+      "word_count": 6
+    },
+    {
+      "input": "thedecisionwasmadeinbyofthegovernment",
+      "ground_truth": "the decision was made in by of the government",
+      "word_count": 9
+    },
+    {
+      "input": "thelattertwoare",
+      "ground_truth": "the latter two are",
+      "word_count": 4
+    },
+    {
+      "input": "anagreementamongtheonagovernmentwouldtheir",
+      "ground_truth": "an agreement among the on a government would their",
+      "word_count": 9
+    },
+    {
+      "input": "butnoonewas",
+      "ground_truth": "but no one was",
+      "word_count": 4
+    },
+    {
+      "input": "theofthehaswitheachweek",
+      "ground_truth": "the of the has with each week",
+      "word_count": 7
+    },
+    {
+      "input": "youngdaughterreadthestatement",
+      "ground_truth": "young daughter read the statement",
+      "word_count": 5
+    },
+    {
+      "input": "theyhadatogetherinanatmosphereofunderstandingandshesaid",
+      "ground_truth": "they had a together in an atmosphere of understanding and she said",
+      "word_count": 12
+    },
+    {
+      "input": "todealwithprinciples",
+      "ground_truth": "to deal with principles",
+      "word_count": 4
+    },
+    {
+      "input": "heisaofnewandschoolhighschoolandbusinesscollege",
+      "ground_truth": "he is a of new and school high school and business college",
+      "word_count": 12
+    },
+    {
+      "input": "fromjuneuntilservedinthearmyaircorps",
+      "ground_truth": "from june until served in the army air corps",
+      "word_count": 9
+    },
+    {
+      "input": "whileintheserviceheradioschoolatfieldin",
+      "ground_truth": "while in the service he radio school at field in",
+      "word_count": 10
+    },
+    {
+      "input": "heismarriedtotheformerandhasadaughter",
+      "ground_truth": "he is married to the former and has a daughter",
+      "word_count": 10
+    },
+    {
+      "input": "butfromanonecanapproachit",
+      "ground_truth": "but from a none can approach it",
+      "word_count": 7
+    },
+    {
+      "input": "greatofhistoryhavebeenalongthenowaboutyearsold",
+      "ground_truth": "great of history have been along the now about years old",
+      "word_count": 11
+    },
+    {
+      "input": "theyweretheandtheywantedtovote",
+      "ground_truth": "they were the and they wanted to vote",
+      "word_count": 8
+    },
+    {
+      "input": "alsothedepartmentofjusticebuildingiswhereoverthefederalof",
+      "ground_truth": "also the department of justice building is where over the federal of",
+      "word_count": 12
+    },
+    {
+      "input": "streetcarrundownthecenterofwithlinesthatare",
+      "ground_truth": "street car run down the center of with lines that are",
+      "word_count": 11
+    },
+    {
+      "input": "manywillbeandpointssquareoppositethewhitehouse",
+      "ground_truth": "many will be and points square opposite the white house",
+      "word_count": 10
+    },
+    {
+      "input": "movingpastthestandandsquarewillbeatleastunits",
+      "ground_truth": "moving past the stand and square will be at least units",
+      "word_count": 11
+    },
+    {
+      "input": "divisiononeofthewillbetheservice",
+      "ground_truth": "division one of the will be the service",
+      "word_count": 8
+    },
+    {
+      "input": "divisionthreewillbebythefollowedbystates",
+      "ground_truth": "division three will be by the followed by states",
+      "word_count": 9
+    },
+    {
+      "input": "divisionfourwillbebythefollowedbystates",
+      "ground_truth": "division four will be by the followed by states",
+      "word_count": 9
+    },
+    {
+      "input": "divisionfivebytheairforcefollowedbystates",
+      "ground_truth": "division five by the air force followed by states",
+      "word_count": 9
+    },
+    {
+      "input": "whatdoesofferinpoliticalandin",
+      "ground_truth": "what does offer in political and in",
+      "word_count": 7
+    },
+    {
+      "input": "thefavoraspecialsessionmorethanlikelyearlyintheyear",
+      "ground_truth": "the favor a special session more than likely early in the year",
+      "word_count": 12
+    },
+    {
+      "input": "isnotexpectedtobeabletothepressure",
+      "ground_truth": "is not expected to be able to the pressure",
+      "word_count": 9
+    },
+    {
+      "input": "theyearwillprobablystartoutwithstillthemostissue",
+      "ground_truth": "the year will probably start out with still the most issue",
+      "word_count": 11
+    },
+    {
+      "input": "theadministrationcouldnotsaywhymillionwasneededforaprogram",
+      "ground_truth": "the administration could not say why million was needed for a program",
+      "word_count": 12
+    },
+    {
+      "input": "thetaxbillwillbeupforinthehousewhenthe",
+      "ground_truth": "the tax bill will be up for in the house when the",
+      "word_count": 12
+    },
+    {
+      "input": "hecouldspecialofthe",
+      "ground_truth": "he could special of the",
+      "word_count": 5
+    },
+    {
+      "input": "actuallywouldhavetointhesoon",
+      "ground_truth": "actually would have to in the soon",
+      "word_count": 7
+    },
+    {
+      "input": "manyarealreadyandoverthebattleto",
+      "ground_truth": "many are already and over the battle to",
+      "word_count": 8
+    },
+    {
+      "input": "thisisnotthesortofthingmostwouldcareto",
+      "ground_truth": "this is not the sort of thing most would care to",
+      "word_count": 11
+    },
+    {
+      "input": "thiswouldbeinwiththeconcernintheadministrationtheof",
+      "ground_truth": "this would be in with the concern in the administration the of",
+      "word_count": 12
+    },
+    {
+      "input": "itcouldbecomeanprobleminthecomingfiscalyear",
+      "ground_truth": "it could become an problem in the coming fiscal year",
+      "word_count": 10
+    },
+    {
+      "input": "theofbackisanoneforanygovernor",
+      "ground_truth": "the of back is an one for any governor",
+      "word_count": 9
+    },
+    {
+      "input": "ofthelossinthejobhaveashighas",
+      "ground_truth": "of the loss in the job have as high as",
+      "word_count": 10
+    },
+    {
+      "input": "theconcernthentookontheprojectbutgotpaidsaid",
+      "ground_truth": "the concern then took on the project but got paid said",
+      "word_count": 11
+    },
+    {
+      "input": "thechargeofwasthedevelopmentinanwhichalsobroughtthese",
+      "ground_truth": "the charge of was the development in an which also brought these",
+      "word_count": 12
+    },
+    {
+      "input": "thecityhasforthefullamountoftheperformancethe",
+      "ground_truth": "the city has for the full amount of the performance the",
+      "word_count": 11
+    },
+    {
+      "input": "theisthepartitsorganizationplayedintheproject",
+      "ground_truth": "the is the part its organization played in the project",
+      "word_count": 10
+    },
+    {
+      "input": "hasbeenonoffromthe",
+      "ground_truth": "has been on of from the",
+      "word_count": 6
+    },
+    {
+      "input": "thecompanyandthebothofforunderthefederallaw",
+      "ground_truth": "the company and the both of for under the federal law",
+      "word_count": 11
+    },
+    {
+      "input": "iamtakingthepositionthatthewasclearlysaid",
+      "ground_truth": "i am taking the position that the was clearly said",
+      "word_count": 10
+    },
+    {
+      "input": "thefailuretoworkonalongthe",
+      "ground_truth": "the failure to work on along the",
+      "word_count": 7
+    },
+    {
+      "input": "thecalledforof",
+      "ground_truth": "the called for of",
+      "word_count": 4
+    },
+    {
+      "input": "thecitypaidforworkonofwhichnomorethanwere",
+      "ground_truth": "the city paid for work on of which no more than were",
+      "word_count": 12
+    },
+    {
+      "input": "saidtheconcerntodotheatacostofforeach",
+      "ground_truth": "said the concern to do the at a cost of for each",
+      "word_count": 12
+    },
+    {
+      "input": "thefromandofwhichthesameofficersaswasper",
+      "ground_truth": "the from and of which the same officers as was per",
+      "word_count": 11
+    },
+    {
+      "input": "butaddedfromotherfromtoper",
+      "ground_truth": "but added from other from to per",
+      "word_count": 7
+    },
+    {
+      "input": "saidthecitypaidonlytothecompany",
+      "ground_truth": "said the city paid only to the company",
+      "word_count": 8
+    },
+    {
+      "input": "weknowthefullamountuntilwegetafullreportsaid",
+      "ground_truth": "we know the full amount until we get a full report said",
+      "word_count": 12
+    },
+    {
+      "input": "wecanclaimonthemaximumamountofthesaid",
+      "ground_truth": "we can claim on the maximum amount of the said",
+      "word_count": 10
+    },
+    {
+      "input": "youjustseethecityfor",
+      "ground_truth": "you just see the city for",
+      "word_count": 6
+    },
+    {
+      "input": "thatweknowenoughtoforthefullamount",
+      "ground_truth": "that we know enough to for the full amount",
+      "word_count": 9
+    },
+    {
+      "input": "wewanttofindoutwhoknewaboutitsaid",
+      "ground_truth": "we want to find out who knew about it said",
+      "word_count": 10
+    },
+    {
+      "input": "certainpeoplemusthaveknownaboutit",
+      "ground_truth": "certain people must have known about it",
+      "word_count": 7
+    },
+    {
+      "input": "theisthewholemattersaid",
+      "ground_truth": "the is the whole matter said",
+      "word_count": 6
+    },
+    {
+      "input": "hisbeforecitycommittee",
+      "ground_truth": "his before city committee",
+      "word_count": 4
+    },
+    {
+      "input": "forwiththeincreasedwouldmeananofayearsaid",
+      "ground_truth": "for with the increased would mean an of a year said",
+      "word_count": 11
+    },
+    {
+      "input": "thewouldincreasetheforhousesandtoaroom",
+      "ground_truth": "the would increase the for houses and to a room",
+      "word_count": 10
+    },
+    {
+      "input": "thecostofanowiswithanannualof",
+      "ground_truth": "the cost of a now is with an annual of",
+      "word_count": 10
+    },
+    {
+      "input": "saidthatsingleaccountforoftheinsome",
+      "ground_truth": "said that single account for of the in some",
+      "word_count": 9
+    },
+    {
+      "input": "atodoganfromvirginiawhoraiseddogs",
+      "ground_truth": "a to dog an from virginia who raised dogs",
+      "word_count": 9
+    },
+    {
+      "input": "thewouldincreasefromforandfortoaadog",
+      "ground_truth": "the would increase from for and for to a a dog",
+      "word_count": 11
+    },
+    {
+      "input": "hereportedthattheforcareincludedtothe",
+      "ground_truth": "he reported that the for care included to the",
+      "word_count": 9
+    },
+    {
+      "input": "topaysixasdogandtodog",
+      "ground_truth": "to pay six as dog and to dog",
+      "word_count": 8
+    },
+    {
+      "input": "thecityisnotfortheservicescoveredbythehesaid",
+      "ground_truth": "the city is not for the services covered by the he said",
+      "word_count": 12
+    },
+    {
+      "input": "thenewalsowasbyofandandhealth",
+      "ground_truth": "the new also was by of and and health",
+      "word_count": 9
+    },
+    {
+      "input": "thewillbepresentedinopencourttopresidentjudgewilliamsaid",
+      "ground_truth": "the will be presented in open court to president judge william said",
+      "word_count": 12
+    },
+    {
+      "input": "hewascaughtthedayafterthewasandgivena",
+      "ground_truth": "he was caught the day after the was and given a",
+      "word_count": 11
+    },
+    {
+      "input": "ofthewasrobert",
+      "ground_truth": "of the was robert",
+      "word_count": 4
+    },
+    {
+      "input": "hisstartedtheofafterwasforthe",
+      "ground_truth": "his started the of after was for the",
+      "word_count": 8
+    },
+    {
+      "input": "thecommissionalsoaplanthatwouldforintheproject",
+      "ground_truth": "the commission also a plan that would for in the project",
+      "word_count": 11
+    },
+    {
+      "input": "oneofthecallsforthenewtoafor",
+      "ground_truth": "one of the calls for the new to a for",
+      "word_count": 10
+    },
+    {
+      "input": "theisbyislandand",
+      "ground_truth": "the is by island and",
+      "word_count": 5
+    },
+    {
+      "input": "theplancallsfortheprojectintowhichwouldbeto",
+      "ground_truth": "the plan calls for the project into which would be to",
+      "word_count": 11
+    },
+    {
+      "input": "thewhichonoriginalplansranthroughthecenterofthedevelopment",
+      "ground_truth": "the which on original plans ran through the center of the development",
+      "word_count": 12
+    },
+    {
+      "input": "thewouldoverintheproject",
+      "ground_truth": "the would over in the project",
+      "word_count": 6
+    },
+    {
+      "input": "hewasinhospital",
+      "ground_truth": "he was in hospital",
+      "word_count": 4
+    },
+    {
+      "input": "wifeandtwoofhisjohnandwereinsidethehouse",
+      "ground_truth": "wife and two of his john and were inside the house",
+      "word_count": 11
+    },
+    {
+      "input": "theboysaidthehimoutofbedandagainstthewall",
+      "ground_truth": "the boy said the him out of bed and against the wall",
+      "word_count": 12
+    },
+    {
+      "input": "thesenttheofthecarovertheofthehouse",
+      "ground_truth": "the sent the of the car over the of the house",
+      "word_count": 11
+    },
+    {
+      "input": "theleftfrontfeetaway",
+      "ground_truth": "the left front feet away",
+      "word_count": 5
+    },
+    {
+      "input": "policesaidtheeitherorwasapparentlyplacedundertheleftfront",
+      "ground_truth": "police said the either or was apparently placed under the left front",
+      "word_count": 12
+    },
+    {
+      "input": "itwasfirstbelievedthewastothe",
+      "ground_truth": "it was first believed the was to the",
+      "word_count": 8
+    },
+    {
+      "input": "awasofferedbythelocalincity",
+      "ground_truth": "a was offered by the local in city",
+      "word_count": 8
+    },
+    {
+      "input": "isofthelocalandisamemberofitscommittee",
+      "ground_truth": "is of the local and is a member of its committee",
+      "word_count": 11
+    },
+    {
+      "input": "bothhavebeenactiveintheassociation",
+      "ground_truth": "both have been active in the association",
+      "word_count": 7
+    },
+    {
+      "input": "hasthemilitarythelastmonths",
+      "ground_truth": "has the military the last months",
+      "word_count": 6
+    },
+    {
+      "input": "hasbeendistrictitwasannouncedbycharlesdistrict",
+      "ground_truth": "has been district it was announced by charles district",
+      "word_count": 9
+    },
+    {
+      "input": "hasbeeninsincenovember",
+      "ground_truth": "has been in since november",
+      "word_count": 5
+    },
+    {
+      "input": "heisaofuniversityandthecollegeoflaw",
+      "ground_truth": "he is a of university and the college of law",
+      "word_count": 10
+    },
+    {
+      "input": "heismarriedandthefatherofthreechildren",
+      "ground_truth": "he is married and the father of three children",
+      "word_count": 9
+    },
+    {
+      "input": "calledforonthepartofamericans",
+      "ground_truth": "called for on the part of americans",
+      "word_count": 7
+    },
+    {
+      "input": "themeetingofwarinwillhearafrommark",
+      "ground_truth": "the meeting of war in will hear a from mark",
+      "word_count": 10
+    },
+    {
+      "input": "hiscallsforainattheclub",
+      "ground_truth": "his calls for a in at the club",
+      "word_count": 8
+    },
+    {
+      "input": "hewillspeaktouniversityyoungnightin",
+      "ground_truth": "he will speak to university young night in",
+      "word_count": 8
+    },
+    {
+      "input": "onhewillgotofortheinofascountyjudge",
+      "ground_truth": "on he will go to for the in of as county judge",
+      "word_count": 12
+    },
+    {
+      "input": "thedinnerisbylaborandisfor",
+      "ground_truth": "the dinner is by labor and is for",
+      "word_count": 8
+    },
+    {
+      "input": "otherforthedinnerincludegreenandlaborandall",
+      "ground_truth": "other for the dinner include green and labor and all",
+      "word_count": 10
+    },
+    {
+      "input": "threeonthewaterdistrictboardofhave",
+      "ground_truth": "three on the water district board of have",
+      "word_count": 8
+    },
+    {
+      "input": "theelectionwillbefromto",
+      "ground_truth": "the election will be from to",
+      "word_count": 6
+    },
+    {
+      "input": "willbeinthewateroffice",
+      "ground_truth": "will be in the water office",
+      "word_count": 6
+    },
+    {
+      "input": "richardandisbyfortheterm",
+      "ground_truth": "richard and is by for the term",
+      "word_count": 7
+    },
+    {
+      "input": "williamisinhisbymilesand",
+      "ground_truth": "william is in his by miles and",
+      "word_count": 7
+    },
+    {
+      "input": "fivetheplacebysecretary",
+      "ground_truth": "five the place by secretary",
+      "word_count": 5
+    },
+    {
+      "input": "thistermarejamesjamesand",
+      "ground_truth": "this term are james james and",
+      "word_count": 6
+    },
+    {
+      "input": "thecouncilinanefforttothebasicin",
+      "ground_truth": "the council in an effort to the basic in",
+      "word_count": 9
+    },
+    {
+      "input": "thecouncilagreeditshouldmorestateitsinandonthe",
+      "ground_truth": "the council agreed it should more state its in and on the",
+      "word_count": 12
+    },
+    {
+      "input": "manychangesinvolvedand",
+      "ground_truth": "many changes involved and",
+      "word_count": 4
+    },
+    {
+      "input": "thefirstofofthenow",
+      "ground_truth": "the first of of the now",
+      "word_count": 6
+    },
+    {
+      "input": "thethirdinsixpointstheofthelordchristand",
+      "ground_truth": "the third in six points the of the lord christ and",
+      "word_count": 11
+    },
+    {
+      "input": "thelifeofchrist",
+      "ground_truth": "the life of christ",
+      "word_count": 4
+    },
+    {
+      "input": "hisworkonthe",
+      "ground_truth": "his work on the",
+      "word_count": 4
+    },
+    {
+      "input": "hisfromthedead",
+      "ground_truth": "his from the dead",
+      "word_count": 4
+    },
+    {
+      "input": "andhistotherighthandofgod",
+      "ground_truth": "and his to the right hand of god",
+      "word_count": 8
+    },
+    {
+      "input": "afternoonthewasforhissecondtermasgeneralofofgod",
+      "ground_truth": "afternoon the was for his second term as general of of god",
+      "word_count": 12
+    },
+    {
+      "input": "electioncameonthe",
+      "ground_truth": "election came on the",
+      "word_count": 4
+    },
+    {
+      "input": "showthatoneoutofthreeamericanshaswiththechurch",
+      "ground_truth": "show that one out of three americans has with the church",
+      "word_count": 11
+    },
+    {
+      "input": "inthislightweneedchurchesinwherewehave",
+      "ground_truth": "in this light we need churches in where we have",
+      "word_count": 10
+    },
+    {
+      "input": "insouthernnewenglandwehave",
+      "ground_truth": "in southern new england we have",
+      "word_count": 6
+    },
+    {
+      "input": "weneedinrhodeislandwehavenonehesaid",
+      "ground_truth": "we need in rhode island we have none he said",
+      "word_count": 10
+    },
+    {
+      "input": "tothiswouldsomechangesinmethodshesaid",
+      "ground_truth": "to this would some changes in methods he said",
+      "word_count": 9
+    },
+    {
+      "input": "aviewofproposedplans",
+      "ground_truth": "a view of proposed plans",
+      "word_count": 5
+    },
+    {
+      "input": "byeverymeansallofgodchurchestostartnewchurches",
+      "ground_truth": "by every means all of god churches to start new churches",
+      "word_count": 11
+    },
+    {
+      "input": "mentooropennewchurchesinpopulation",
+      "ground_truth": "men to or open new churches in population",
+      "word_count": 8
+    },
+    {
+      "input": "fortofrommonthsasinchurches",
+      "ground_truth": "for to from months as in churches",
+      "word_count": 7
+    },
+    {
+      "input": "judgecharlesallmadebydefenseintrial",
+      "ground_truth": "judge charles all made by defense in trial",
+      "word_count": 8
+    },
+    {
+      "input": "wereofofseparatetrialofand",
+      "ground_truth": "were of of separate trial of and",
+      "word_count": 7
+    },
+    {
+      "input": "withonedownintheawalkandsecondas",
+      "ground_truth": "with one down in the a walk and second as",
+      "word_count": 10
+    },
+    {
+      "input": "inanefforttowaswideandinthe",
+      "ground_truth": "in an effort to was wide and in the",
+      "word_count": 9
+    },
+    {
+      "input": "threeweregettingaandone",
+      "ground_truth": "three were getting a and one",
+      "word_count": 6
+    },
+    {
+      "input": "bythefromthelastfallallowednoinhisandthe",
+      "ground_truth": "by the from the last fall allowed no in his and the",
+      "word_count": 12
+    },
+    {
+      "input": "thenthreefailedtoproduce",
+      "ground_truth": "then three failed to produce",
+      "word_count": 5
+    },
+    {
+      "input": "deepintotheatshorttostartthe",
+      "ground_truth": "deep into the at short to start the",
+      "word_count": 8
+    },
+    {
+      "input": "thenalongtoleftcentertoboth",
+      "ground_truth": "then a long to left center to both",
+      "word_count": 8
+    },
+    {
+      "input": "theonthecityinthewentlikethis",
+      "ground_truth": "the on the city in the went like this",
+      "word_count": 9
+    },
+    {
+      "input": "itwasadifficultchanceandahit",
+      "ground_truth": "it was a difficult chance and a hit",
+      "word_count": 8
+    },
+    {
+      "input": "thenintoafastplay",
+      "ground_truth": "then into a fast play",
+      "word_count": 5
+    },
+    {
+      "input": "totoupoverthewallinleftcenter",
+      "ground_truth": "to to up over the wall in left center",
+      "word_count": 9
+    },
+    {
+      "input": "whothehighofandinona",
+      "ground_truth": "who the high of and in on a",
+      "word_count": 8
+    },
+    {
+      "input": "averagethespringat",
+      "ground_truth": "average the spring at",
+      "word_count": 4
+    },
+    {
+      "input": "theinclosetothanhisweightlastspring",
+      "ground_truth": "the in close to than his weight last spring",
+      "word_count": 9
+    },
+    {
+      "input": "hetooffanadditionaleightbeforethecampthreeweeks",
+      "ground_truth": "he to off an additional eight before the camp three weeks",
+      "word_count": 11
+    },
+    {
+      "input": "brownandthearetotheamericanin",
+      "ground_truth": "brown and the are to the american in",
+      "word_count": 8
+    },
+    {
+      "input": "andaretosharetheagainsttheartin",
+      "ground_truth": "and are to share the against the art in",
+      "word_count": 9
+    },
+    {
+      "input": "thenowhasbeenasa",
+      "ground_truth": "the now has been as a",
+      "word_count": 6
+    },
+    {
+      "input": "theearlierlastfallthandid",
+      "ground_truth": "the earlier last fall than did",
+      "word_count": 6
+    },
+    {
+      "input": "itwasthefirstoftwobywhowasinato",
+      "ground_truth": "it was the first of two by who was in a to",
+      "word_count": 12
+    },
+    {
+      "input": "werenotinsuchasthebeforetheofthreecity",
+      "ground_truth": "were not in such as the before the of three city",
+      "word_count": 11
+    },
+    {
+      "input": "justbeforetwohourslateincompanywith",
+      "ground_truth": "just before two hours late in company with",
+      "word_count": 8
+    },
+    {
+      "input": "oftheboardofandpublicrelationsdirectorjack",
+      "ground_truth": "of the board of and public relations director jack",
+      "word_count": 9
+    },
+    {
+      "input": "theirwassaidwhenasometotheoftheplane",
+      "ground_truth": "their was said when a some to the of the plane",
+      "word_count": 11
+    },
+    {
+      "input": "nowfortheisallfortheamericantothewest",
+      "ground_truth": "now for the is all for the american to the west",
+      "word_count": 11
+    },
+    {
+      "input": "buttheybroughtintooaddedold",
+      "ground_truth": "but they brought in too added old",
+      "word_count": 7
+    },
+    {
+      "input": "thenreallyhavetogo",
+      "ground_truth": "then really have to go",
+      "word_count": 5
+    },
+    {
+      "input": "shewasmovinguptothedepartmentafteraevent",
+      "ground_truth": "she was moving up to the department after a event",
+      "word_count": 10
+    },
+    {
+      "input": "bothwereunderthemeetmarkofsetinby",
+      "ground_truth": "both were under the meet mark of set in by",
+      "word_count": 10
+    },
+    {
+      "input": "ofawhohastwochildrenfinishedin",
+      "ground_truth": "of a who has two children finished in",
+      "word_count": 8
+    },
+    {
+      "input": "hisleftinthelastgameoftheseason",
+      "ground_truth": "his left in the last game of the season",
+      "word_count": 9
+    },
+    {
+      "input": "awhoevenknowthefourthinconferenceafterthree",
+      "ground_truth": "a who even know the fourth in conference after three",
+      "word_count": 10
+    },
+    {
+      "input": "timestilleverytimeaarmycorpsgoesintothefield",
+      "ground_truth": "time still every time a army corps goes into the field",
+      "word_count": 11
+    },
+    {
+      "input": "becausehealreadyhaspointsin",
+      "ground_truth": "because he already has points in",
+      "word_count": 6
+    },
+    {
+      "input": "butaskwhatpositionheandgettheresponse",
+      "ground_truth": "but ask what position he and get the response",
+      "word_count": 9
+    },
+    {
+      "input": "afromnothingbut",
+      "ground_truth": "a from nothing but",
+      "word_count": 4
+    },
+    {
+      "input": "soistartedonitinspringtraining",
+      "ground_truth": "so i started on it in spring training",
+      "word_count": 8
+    },
+    {
+      "input": "cametoinbuthiseffortswerebya",
+      "ground_truth": "came to in but his efforts were by a",
+      "word_count": 9
+    },
+    {
+      "input": "hewentintothearmyinmarchandreturnedtwoyearslater",
+      "ground_truth": "he went into the army in march and returned two years later",
+      "word_count": 12
+    },
+    {
+      "input": "buthewasinandmerelypresentlastseason",
+      "ground_truth": "but he was in and merely present last season",
+      "word_count": 9
+    },
+    {
+      "input": "placeisamatterof",
+      "ground_truth": "place is a matter of",
+      "word_count": 5
+    },
+    {
+      "input": "onceyougetthefeelofitnotmuchtoit",
+      "ground_truth": "once you get the feel of it not much to it",
+      "word_count": 11
+    },
+    {
+      "input": "practiceyoutogetyourdown",
+      "ground_truth": "practice you to get your down",
+      "word_count": 6
+    },
+    {
+      "input": "kindoflikeifyouaclubveryoftenyouroff",
+      "ground_truth": "kind of like if you a club very often your off",
+      "word_count": 11
+    },
+    {
+      "input": "howeveronlyaboutorpointsduringeachpracticesession",
+      "ground_truth": "however only about or points during each practice session",
+      "word_count": 9
+    },
+    {
+      "input": "ifyoutoomuchyourdeadheexplained",
+      "ground_truth": "if you too much your dead he explained",
+      "word_count": 8
+    },
+    {
+      "input": "jamesalreadyhashistotalforhisseasonwhenheon",
+      "ground_truth": "james already has his total for his season when he on",
+      "word_count": 11
+    },
+    {
+      "input": "henowhasinduringthree",
+      "ground_truth": "he now has in during three",
+      "word_count": 6
+    },
+    {
+      "input": "jackainthewashingtonstategamebutbereadyfor",
+      "ground_truth": "jack a in the washington state game but be ready for",
+      "word_count": 11
+    },
+    {
+      "input": "hehadfourinthetopfour",
+      "ground_truth": "he had four in the top four",
+      "word_count": 7
+    },
+    {
+      "input": "theplaythisweek",
+      "ground_truth": "the play this week",
+      "word_count": 4
+    },
+    {
+      "input": "weneededitandwegotit",
+      "ground_truth": "we needed it and we got it",
+      "word_count": 7
+    },
+    {
+      "input": "expressedparticularattheofendhappyand",
+      "ground_truth": "expressed particular at the of end happy and",
+      "word_count": 8
+    },
+    {
+      "input": "bothturnedintopforthesecondstraightgame",
+      "ground_truth": "both turned in top for the second straight game",
+      "word_count": 9
+    },
+    {
+      "input": "hedowntheandmadekeyoftimes",
+      "ground_truth": "he down the and made key of times",
+      "word_count": 8
+    },
+    {
+      "input": "andhecausedthethatsetupour",
+      "ground_truth": "and he caused the that set up our",
+      "word_count": 8
+    },
+    {
+      "input": "hebrokethatboyairforceintwoandhimfromthe",
+      "ground_truth": "he broke that boy air force in two and him from the",
+      "word_count": 12
+    },
+    {
+      "input": "ontheinthelate",
+      "ground_truth": "on the in the late",
+      "word_count": 5
+    },
+    {
+      "input": "onewasonapassfromtheafteranpassinto",
+      "ground_truth": "one was on a pass from the after an pass into",
+      "word_count": 11
+    },
+    {
+      "input": "assoonasitstartedtoformitsaid",
+      "ground_truth": "as soon as it started to form it said",
+      "word_count": 9
+    },
+    {
+      "input": "hereallyhimheitforaloss",
+      "ground_truth": "he really him he it for a loss",
+      "word_count": 8
+    },
+    {
+      "input": "hejustlaybackthereandwaitedforitsaid",
+      "ground_truth": "he just lay back there and waited for it said",
+      "word_count": 10
+    },
+    {
+      "input": "healmostbroughtitbackalltheway",
+      "ground_truth": "he almost brought it back all the way",
+      "word_count": 8
+    },
+    {
+      "input": "exceptforcentermikeandmikethetobesoundfor",
+      "ground_truth": "except for center mike and mike the to be sound for",
+      "word_count": 11
+    },
+    {
+      "input": "isveryforthegamesaid",
+      "ground_truth": "is very for the game said",
+      "word_count": 6
+    },
+    {
+      "input": "beoutofactionallthisweek",
+      "ground_truth": "be out of action all this week",
+      "word_count": 7
+    },
+    {
+      "input": "thereissomeinhis",
+      "ground_truth": "there is some in his",
+      "word_count": 5
+    },
+    {
+      "input": "hasnotplayedsinceainthewith",
+      "ground_truth": "has not played since a in the with",
+      "word_count": 8
+    },
+    {
+      "input": "lookingalotbetterandabletorunexplained",
+      "ground_truth": "looking a lot better and able to run explained",
+      "word_count": 9
+    },
+    {
+      "input": "workhardandsaidandprobablywillhaveagood",
+      "ground_truth": "work hard and said and probably will have a good",
+      "word_count": 10
+    },
+    {
+      "input": "willplaytheatininanightgame",
+      "ground_truth": "will play the at in in a night game",
+      "word_count": 9
+    },
+    {
+      "input": "foralmostamonthbya",
+      "ground_truth": "for almost a month by a",
+      "word_count": 6
+    },
+    {
+      "input": "wouldthatproblemjustasweheadthatway",
+      "ground_truth": "would that problem just as we head that way",
+      "word_count": 9
+    },
+    {
+      "input": "infactourwholeunitdidagoodjob",
+      "ground_truth": "in fact our whole unit did a good job",
+      "word_count": 9
+    },
+    {
+      "input": "thethegamethroughballcontrolwithonly",
+      "ground_truth": "the the game through ball control with only",
+      "word_count": 8
+    },
+    {
+      "input": "theprincipalintheballwasgivingittothe",
+      "ground_truth": "the principal in the ball was giving it to the",
+      "word_count": 10
+    },
+    {
+      "input": "hewascalledupontimesmorethanalloftheotherand",
+      "ground_truth": "he was called upon times more than all of the other and",
+      "word_count": 12
+    },
+    {
+      "input": "againstwashingtonstategavetheatotalofandanewhigh",
+      "ground_truth": "against washington state gave the a total of and a new high",
+      "word_count": 12
+    },
+    {
+      "input": "offorthehadatotalof",
+      "ground_truth": "of for the had a total of",
+      "word_count": 7
+    },
+    {
+      "input": "inandtobuthasthebestrecordpergameto",
+      "ground_truth": "in and to but has the best record per game to",
+      "word_count": 11
+    },
+    {
+      "input": "ahasthebestdefenseagainstpergame",
+      "ground_truth": "a has the best defense against per game",
+      "word_count": 8
+    },
+    {
+      "input": "continuedhisnightasthemadeittwostraightover",
+      "ground_truth": "continued his night as the made it two straight over",
+      "word_count": 10
+    },
+    {
+      "input": "sixandwalkedonlyinthethird",
+      "ground_truth": "six and walked only in the third",
+      "word_count": 7
+    },
+    {
+      "input": "hehasgivenonlytheonepassinhisanfora",
+      "ground_truth": "he has given only the one pass in his an for a",
+      "word_count": 12
+    },
+    {
+      "input": "thefirstofhistwoagainsttoopentheattack",
+      "ground_truth": "the first of his two against to open the attack",
+      "word_count": 10
+    },
+    {
+      "input": "afteroutwalkedandhome",
+      "ground_truth": "after out walked and home",
+      "word_count": 5
+    },
+    {
+      "input": "thenmovedacrosswithalinedrivetoleft",
+      "ground_truth": "then moved across with a line drive to left",
+      "word_count": 9
+    },
+    {
+      "input": "abaseontothebutwasdownbyforthe",
+      "ground_truth": "a base on to the but was down by for the",
+      "word_count": 11
+    },
+    {
+      "input": "tothecornerandandforthe",
+      "ground_truth": "to the corner and and for the",
+      "word_count": 7
+    },
+    {
+      "input": "theaddedtheirlastrunintheonandbyand",
+      "ground_truth": "the added their last run in the on and by and",
+      "word_count": 11
+    },
+    {
+      "input": "theballovertheleftforthethirdruninthe",
+      "ground_truth": "the ball over the left for the third run in the",
+      "word_count": 11
+    },
+    {
+      "input": "forthreeoftheeight",
+      "ground_truth": "for three of the eight",
+      "word_count": 5
+    },
+    {
+      "input": "thewaswellbutthewasmuchtoodark",
+      "ground_truth": "the was well but the was much too dark",
+      "word_count": 9
+    },
+    {
+      "input": "marywasbackatthe",
+      "ground_truth": "mary was back at the",
+      "word_count": 5
+    },
+    {
+      "input": "amongthewasthenotedwhoiswhenoffthestage",
+      "ground_truth": "among the was the noted who is when off the stage",
+      "word_count": 11
+    },
+    {
+      "input": "anotherwillbeontheagainstjohnatnight",
+      "ground_truth": "another will be on the against john at night",
+      "word_count": 9
+    },
+    {
+      "input": "isstillbyasideandwillmisshisturn",
+      "ground_truth": "is still by a side and will miss his turn",
+      "word_count": 10
+    },
+    {
+      "input": "ofhadlittletroubleintakingadecisionoverofherenight",
+      "ground_truth": "of had little trouble in taking a decision over of here night",
+      "word_count": 12
+    },
+    {
+      "input": "wasonwithhisfourthsingleofthegameatocenter",
+      "ground_truth": "was on with his fourth single of the game a to center",
+      "word_count": 12
+    },
+    {
+      "input": "hecameallthewayaroundonhitbefore",
+      "ground_truth": "he came all the way around on hit before",
+      "word_count": 9
+    },
+    {
+      "input": "redsaidnighthewasthroughplaying",
+      "ground_truth": "red said night he was through playing",
+      "word_count": 7
+    },
+    {
+      "input": "hadithetolda",
+      "ground_truth": "had it he told a",
+      "word_count": 5
+    },
+    {
+      "input": "thiswasthefirstwordfromonhis",
+      "ground_truth": "this was the first word from on his",
+      "word_count": 8
+    },
+    {
+      "input": "gotonlysixinforaaverageinthefirst",
+      "ground_truth": "got only six in for a average in the first",
+      "word_count": 10
+    },
+    {
+      "input": "theunioncityofsanstoppedinforafewminutes",
+      "ground_truth": "the union city of san stopped in for a few minutes",
+      "word_count": 11
+    },
+    {
+      "input": "writerofthestandardwenttohistotalkwithhim",
+      "ground_truth": "writer of the standard went to his to talk with him",
+      "word_count": 11
+    },
+    {
+      "input": "thesaidtoithinkyouwanttotalktohim",
+      "ground_truth": "the said to i think you want to talk to him",
+      "word_count": 11
+    },
+    {
+      "input": "probablygetaballonthehead",
+      "ground_truth": "probably get a ball on the head",
+      "word_count": 7
+    },
+    {
+      "input": "buthadgoneintothestation",
+      "ground_truth": "but had gone into the station",
+      "word_count": 6
+    },
+    {
+      "input": "walkeduptohimatthestand",
+      "ground_truth": "walked up to him at the stand",
+      "word_count": 7
+    },
+    {
+      "input": "itoldhimwhoiwasandhewasquitecold",
+      "ground_truth": "i told him who i was and he was quite cold",
+      "word_count": 11
+    },
+    {
+      "input": "butheupafterawhile",
+      "ground_truth": "but he up after a while",
+      "word_count": 6
+    },
+    {
+      "input": "hesaidhehadneverto",
+      "ground_truth": "he said he had never to",
+      "word_count": 6
+    },
+    {
+      "input": "isbillwriterforthewhoassaying",
+      "ground_truth": "is bill writer for the who as saying",
+      "word_count": 8
+    },
+    {
+      "input": "suddenlymyaregone",
+      "ground_truth": "suddenly my are gone",
+      "word_count": 4
+    },
+    {
+      "input": "bothofcoursewereandfurtherthefactthatisthenational",
+      "ground_truth": "both of course were and further the fact that is the national",
+      "word_count": 12
+    },
+    {
+      "input": "ofthetwotheprobablyreachedthemost",
+      "ground_truth": "of the two the probably reached the most",
+      "word_count": 8
+    },
+    {
+      "input": "andoneoftheandwishiwasandabig",
+      "ground_truth": "and one of the and wish i was and a big",
+      "word_count": 11
+    },
+    {
+      "input": "theandhappyoffhisnewasoneofthosegooddays",
+      "ground_truth": "the and happy off his new as one of those good days",
+      "word_count": 12
+    },
+    {
+      "input": "onlytwodiditbeforeahomeaudience",
+      "ground_truth": "only two did it before a home audience",
+      "word_count": 8
+    },
+    {
+      "input": "bigdaytherunningabouttheofand",
+      "ground_truth": "big day the running about the of and",
+      "word_count": 8
+    },
+    {
+      "input": "therecordbookshoweverwouldfavorthe",
+      "ground_truth": "the record books however would favor the",
+      "word_count": 7
+    },
+    {
+      "input": "oncethefigurewas",
+      "ground_truth": "once the figure was",
+      "word_count": 4
+    },
+    {
+      "input": "averageofispointsbeyond",
+      "ground_truth": "average of is points beyond",
+      "word_count": 5
+    },
+    {
+      "input": "itwillbeahowateamwillsuddenlystartaftera",
+      "ground_truth": "it will be a how a team will suddenly start after a",
+      "word_count": 12
+    },
+    {
+      "input": "actuallytheyweretodoanythingaboutthepolicy",
+      "ground_truth": "actually they were to do anything about the policy",
+      "word_count": 9
+    },
+    {
+      "input": "therearetwomoresundaywhenthesituationwill",
+      "ground_truth": "there are two more sunday when the situation will",
+      "word_count": 9
+    },
+    {
+      "input": "aastheinafirst",
+      "ground_truth": "a as the in a first",
+      "word_count": 6
+    },
+    {
+      "input": "foraoffbillhenryduringanotherinthefourth",
+      "ground_truth": "for a off bill henry during another in the fourth",
+      "word_count": 10
+    },
+    {
+      "input": "thealsotookadvantageofthree",
+      "ground_truth": "the also took advantage of three",
+      "word_count": 6
+    },
+    {
+      "input": "theofhadonlytwoto",
+      "ground_truth": "the of had only two to",
+      "word_count": 6
+    },
+    {
+      "input": "onlytheofwashingtoninandofthelouisinhadthe",
+      "ground_truth": "only the of washington in and of the louis in had the",
+      "word_count": 12
+    },
+    {
+      "input": "thelineforthewastodaytohead",
+      "ground_truth": "the line for the was today to head",
+      "word_count": 8
+    },
+    {
+      "input": "receivedaatabelievedtobebetweenandayear",
+      "ground_truth": "received a at a believed to be between and a year",
+      "word_count": 11
+    },
+    {
+      "input": "hewhoattheendoflastseason",
+      "ground_truth": "he who at the end of last season",
+      "word_count": 8
+    },
+    {
+      "input": "thehadbeenexpected",
+      "ground_truth": "the had been expected",
+      "word_count": 4
+    },
+    {
+      "input": "thewholedthetothetitlewasbythelast",
+      "ground_truth": "the who led the to the title was by the last",
+      "word_count": 11
+    },
+    {
+      "input": "inthepasttheclubon",
+      "ground_truth": "in the past the club on",
+      "word_count": 6
+    },
+    {
+      "input": "howeverisastrongofaattackbetweenrunningand",
+      "ground_truth": "however is a strong of a attack between running and",
+      "word_count": 10
+    },
+    {
+      "input": "anforcedtoaftertheseason",
+      "ground_truth": "an forced to after the season",
+      "word_count": 6
+    },
+    {
+      "input": "hebeganhisatcentralcatholichighschoolin",
+      "ground_truth": "he began his at central catholic high school in",
+      "word_count": 9
+    },
+    {
+      "input": "heremainedthereforfouryearsbeforemovingtoin",
+      "ground_truth": "he remained there for four years before moving to in",
+      "word_count": 10
+    },
+    {
+      "input": "hewasthereoneseasonbeforetheasan",
+      "ground_truth": "he was there one season before the as an",
+      "word_count": 9
+    },
+    {
+      "input": "fouryearslaterhetotakeasimilarjobwiththegreen",
+      "ground_truth": "four years later he to take a similar job with the green",
+      "word_count": 12
+    },
+    {
+      "input": "thehimforstaffin",
+      "ground_truth": "the him for staff in",
+      "word_count": 5
+    },
+    {
+      "input": "beganhisnewjobtoday",
+      "ground_truth": "began his new job today",
+      "word_count": 5
+    },
+    {
+      "input": "ataintheroomofthewereforthe",
+      "ground_truth": "at a in the room of the were for the",
+      "word_count": 10
+    },
+    {
+      "input": "theofcommitteewillbeonthebytheofthe",
+      "ground_truth": "the of committee will be on the by the of the",
+      "word_count": 11
+    },
+    {
+      "input": "billtheworldseriesoftheandtheformermanagerofthe",
+      "ground_truth": "bill the world series of the and the former manager of the",
+      "word_count": 12
+    },
+    {
+      "input": "willreceivethegood",
+      "ground_truth": "will receive the good",
+      "word_count": 4
+    },
+    {
+      "input": "willberecognizedforhisservicetoandwillgetthewilliam",
+      "ground_truth": "will be recognized for his service to and will get the william",
+      "word_count": 12
+    },
+    {
+      "input": "towillgothemercerastheoftheyear",
+      "ground_truth": "to will go the mercer as the of the year",
+      "word_count": 10
+    },
+    {
+      "input": "hiswastoanationalteamforthiscity",
+      "ground_truth": "his was to a national team for this city",
+      "word_count": 9
+    },
+    {
+      "input": "theoftheandthetoleftnewyorkwithonlythe",
+      "ground_truth": "the of the and the to left new york with only the",
+      "word_count": 12
+    },
+    {
+      "input": "despiteandmovedforward",
+      "ground_truth": "despite and moved forward",
+      "word_count": 4
+    },
+    {
+      "input": "thenewyorkisbycharles",
+      "ground_truth": "the new york is by charles",
+      "word_count": 6
+    },
+    {
+      "input": "effortsfigureinthenew",
+      "ground_truth": "efforts figure in the new",
+      "word_count": 5
+    },
+    {
+      "input": "andhiswifemaketheirhomeatpoint",
+      "ground_truth": "and his wife make their home at point",
+      "word_count": 8
+    },
+    {
+      "input": "billandroundoutthefamily",
+      "ground_truth": "bill and round out the family",
+      "word_count": 6
+    },
+    {
+      "input": "henewyorkuniversitybeforetouniversityinwashington",
+      "ground_truth": "he new york university before to university in washington",
+      "word_count": 9
+    },
+    {
+      "input": "heplayedtherewhileworkingtowardalawdegree",
+      "ground_truth": "he played there while working toward a law degree",
+      "word_count": 9
+    },
+    {
+      "input": "laterandthelongislandaprofessionalteam",
+      "ground_truth": "later and the long island a professional team",
+      "word_count": 8
+    },
+    {
+      "input": "hewastheforoldinthenational",
+      "ground_truth": "he was the for old in the national",
+      "word_count": 8
+    },
+    {
+      "input": "ontheandoftheamericanwillmeetwiththegeneralmanager",
+      "ground_truth": "on the and of the american will meet with the general manager",
+      "word_count": 12
+    },
+    {
+      "input": "isinlineforabig",
+      "ground_truth": "is in line for a big",
+      "word_count": 6
+    },
+    {
+      "input": "thedinnerwillbeheldatthehotel",
+      "ground_truth": "the dinner will be held at the hotel",
+      "word_count": 8
+    },
+    {
+      "input": "inandwillbeastheteaminthelastjunein",
+      "ground_truth": "in and will be as the team in the last june in",
+      "word_count": 12
+    },
+    {
+      "input": "thenationalandallthedistrictincludingthealsowillreceive",
+      "ground_truth": "the national and all the district including the also will receive",
+      "word_count": 11
+    },
+    {
+      "input": "thewillgotojohnofandforhisof",
+      "ground_truth": "the will go to john of and for his of",
+      "word_count": 10
+    },
+    {
+      "input": "theprincipalwillbeof",
+      "ground_truth": "the principal will be of",
+      "word_count": 5
+    },
+    {
+      "input": "hasbeenafigureinoverthepastmonths",
+      "ground_truth": "has been a figure in over the past months",
+      "word_count": 9
+    },
+    {
+      "input": "hethetheunitedstatesopenandarecordinmoney",
+      "ground_truth": "he the the united states open and a record in money",
+      "word_count": 11
+    },
+    {
+      "input": "buthealsosomethingthathimtoeverywhoeverashot",
+      "ground_truth": "but he also something that him to every who ever a shot",
+      "word_count": 12
+    },
+    {
+      "input": "acoupleofweeksagoheaona",
+      "ground_truth": "a couple of weeks ago he a on a",
+      "word_count": 9
+    },
+    {
+      "input": "itmadehimhuman",
+      "ground_truth": "it made him human",
+      "word_count": 4
+    },
+    {
+      "input": "itwasneitheraspiritofnoratothethat",
+      "ground_truth": "it was neither a spirit of nor a to the that",
+      "word_count": 11
+    },
+    {
+      "input": "hemerelybecamebyaformofthatnooneandall",
+      "ground_truth": "he merely became by a form of that no one and all",
+      "word_count": 12
+    },
+    {
+      "input": "thentheandthetookoverwhiletheinthedistance",
+      "ground_truth": "then the and the took over while the in the distance",
+      "word_count": 11
+    },
+    {
+      "input": "ontheofaintohissecondshot",
+      "ground_truth": "on the of a into his second shot",
+      "word_count": 8
+    },
+    {
+      "input": "theballwentoffinaan",
+      "ground_truth": "the ball went off in a an",
+      "word_count": 7
+    },
+    {
+      "input": "hetriedagainandoncemoreoutof",
+      "ground_truth": "he tried again and once more out of",
+      "word_count": 8
+    },
+    {
+      "input": "hethenexttwooutofontheoppositeside",
+      "ground_truth": "he the next two out of on the opposite side",
+      "word_count": 10
+    },
+    {
+      "input": "itispossiblethatihesaid",
+      "ground_truth": "it is possible that i he said",
+      "word_count": 7
+    },
+    {
+      "input": "eachofthefourcosthimtwo",
+      "ground_truth": "each of the four cost him two",
+      "word_count": 7
+    },
+    {
+      "input": "soheupwitha",
+      "ground_truth": "so he up with a",
+      "word_count": 5
+    },
+    {
+      "input": "waslongwhotriedtokeep",
+      "ground_truth": "was long who tried to keep",
+      "word_count": 6
+    },
+    {
+      "input": "howmanyisthat",
+      "ground_truth": "how many is that",
+      "word_count": 4
+    },
+    {
+      "input": "askedatonestageofhisproject",
+      "ground_truth": "asked at one stage of his project",
+      "word_count": 7
+    },
+    {
+      "input": "mansaidmustbethe",
+      "ground_truth": "man said must be the",
+      "word_count": 5
+    },
+    {
+      "input": "norwerethereanyrulestohim",
+      "ground_truth": "nor were there any rules to him",
+      "word_count": 7
+    },
+    {
+      "input": "thisknowledgehascomeintoo",
+      "ground_truth": "this knowledge has come in too",
+      "word_count": 6
+    },
+    {
+      "input": "sentforthesecretaryoftheassociation",
+      "ground_truth": "sent for the secretary of the association",
+      "word_count": 7
+    },
+    {
+      "input": "yetheremainstheof",
+      "ground_truth": "yet he remains the of",
+      "word_count": 5
+    },
+    {
+      "input": "evenintotheruleswhenheissureright",
+      "ground_truth": "even into the rules when he is sure right",
+      "word_count": 9
+    },
+    {
+      "input": "howhefirstthein",
+      "ground_truth": "how he first the in",
+      "word_count": 5
+    },
+    {
+      "input": "ithappenedonthea",
+      "ground_truth": "it happened on the a",
+      "word_count": 5
+    },
+    {
+      "input": "icantheballi",
+      "ground_truth": "i can the ball i",
+      "word_count": 5
+    },
+    {
+      "input": "askedofanofficial",
+      "ground_truth": "asked of an official",
+      "word_count": 4
+    },
+    {
+      "input": "nosaidtheofficial",
+      "ground_truth": "no said the official",
+      "word_count": 4
+    },
+    {
+      "input": "youmustplayitwhereit",
+      "ground_truth": "you must play it where it",
+      "word_count": 6
+    },
+    {
+      "input": "wrongsaidamanwhoknowstherules",
+      "ground_truth": "wrong said a man who knows the rules",
+      "word_count": 8
+    },
+    {
+      "input": "doasyousaybutalsoplayaballandgeta",
+      "ground_truth": "do as you say but also play a ball and get a",
+      "word_count": 12
+    },
+    {
+      "input": "heafortheballawiththeone",
+      "ground_truth": "he a for the ball a with the one",
+      "word_count": 9
+    },
+    {
+      "input": "theinhisfavor",
+      "ground_truth": "the in his favor",
+      "word_count": 4
+    },
+    {
+      "input": "howeverthiswouldrequireaoftheseasonfromtoweeks",
+      "ground_truth": "however this would require a of the season from to weeks",
+      "word_count": 11
+    },
+    {
+      "input": "havetheproblemofatoneendandattheother",
+      "ground_truth": "have the problem of at one end and at the other",
+      "word_count": 11
+    },
+    {
+      "input": "nineoftheplayinandthereforefaceanin",
+      "ground_truth": "nine of the play in and therefore face an in",
+      "word_count": 10
+    },
+    {
+      "input": "ifthemanagerofthetheybebythestartthisseason",
+      "ground_truth": "if the manager of the they be by the start this season",
+      "word_count": 12
+    },
+    {
+      "input": "istheteamtosaidheretheotherday",
+      "ground_truth": "is the team to said here the other day",
+      "word_count": 9
+    },
+    {
+      "input": "theshowedtheycouldthefieldlastyear",
+      "ground_truth": "the showed they could the field last year",
+      "word_count": 8
+    },
+    {
+      "input": "thehavearecordthisyearandtheare",
+      "ground_truth": "the have a record this year and the are",
+      "word_count": 9
+    },
+    {
+      "input": "thedesiretogiveasmanyaspossible",
+      "ground_truth": "the desire to give as many as possible",
+      "word_count": 8
+    },
+    {
+      "input": "theagainstthesunday",
+      "ground_truth": "the against the sunday",
+      "word_count": 4
+    },
+    {
+      "input": "afteropendateplanstoopenwithagainsttheherenight",
+      "ground_truth": "after open date plans to open with against the here night",
+      "word_count": 11
+    },
+    {
+      "input": "isfromaneck",
+      "ground_truth": "is from a neck",
+      "word_count": 4
+    },
+    {
+      "input": "hasarecordagainstthedespiteonlyamarkin",
+      "ground_truth": "has a record against the despite only a mark in",
+      "word_count": 10
+    },
+    {
+      "input": "managersaidhedecidedbetweenandlawforgame",
+      "ground_truth": "manager said he decided between and law for game",
+      "word_count": 9
+    },
+    {
+      "input": "hasbothofhis",
+      "ground_truth": "has both of his",
+      "word_count": 4
+    },
+    {
+      "input": "afterayesterdayanopendatesaidthatwouldstayinthe",
+      "ground_truth": "after a yesterday an open date said that would stay in the",
+      "word_count": 12
+    },
+    {
+      "input": "ihavetostaywithforawhilesaid",
+      "ground_truth": "i have to stay with for a while said",
+      "word_count": 9
+    },
+    {
+      "input": "billwhiteshouldbeready",
+      "ground_truth": "bill white should be ready",
+      "word_count": 5
+    },
+    {
+      "input": "withagoingforimayuseincenter",
+      "ground_truth": "with a going for i may use in center",
+      "word_count": 9
+    },
+    {
+      "input": "practiceaboutminutesandhelookedgoodsaid",
+      "ground_truth": "practice about minutes and he looked good said",
+      "word_count": 8
+    },
+    {
+      "input": "heshouldbegettingbackinthebeforelong",
+      "ground_truth": "he should be getting back in the before long",
+      "word_count": 9
+    },
+    {
+      "input": "ourismuchbetterthanithasshown",
+      "ground_truth": "our is much better than it has shown",
+      "word_count": 8
+    },
+    {
+      "input": "despitethecameintotownwiththislistofbillandeach",
+      "ground_truth": "despite the came into town with this list of bill and each",
+      "word_count": 12
+    },
+    {
+      "input": "billwithandwithweretheonlytheirfeet",
+      "ground_truth": "bill with and with were the only their feet",
+      "word_count": 9
+    },
+    {
+      "input": "gettingfriendsomeforachangeandhehasbeengoodsaid",
+      "ground_truth": "getting friend some for a change and he has been good said",
+      "word_count": 12
+    },
+    {
+      "input": "hasbeentheball",
+      "ground_truth": "has been the ball",
+      "word_count": 4
+    },
+    {
+      "input": "onlastmaythestoodataonthat",
+      "ground_truth": "on last may the stood at a on that",
+      "word_count": 9
+    },
+    {
+      "input": "inthewereonmay",
+      "ground_truth": "in the were on may",
+      "word_count": 5
+    },
+    {
+      "input": "ayearlatertheywere",
+      "ground_truth": "a year later they were",
+      "word_count": 5
+    },
+    {
+      "input": "sincethelouisclubhasbeenbelowonmayjustfourtimes",
+      "ground_truth": "since the louis club has been below on may just four times",
+      "word_count": 12
+    },
+    {
+      "input": "thewereonmaybutwiththetopsince",
+      "ground_truth": "the were on may but with the top since",
+      "word_count": 9
+    },
+    {
+      "input": "thosetheirfirstandamarkandaleadbymay",
+      "ground_truth": "those their first and a mark and a lead by may",
+      "word_count": 11
+    },
+    {
+      "input": "theythelastnight",
+      "ground_truth": "they the last night",
+      "word_count": 4
+    },
+    {
+      "input": "themostwasthreewaysamongand",
+      "ground_truth": "the most was three ways among and",
+      "word_count": 7
+    },
+    {
+      "input": "theboyshadarespectforeachability",
+      "ground_truth": "the boys had a respect for each ability",
+      "word_count": 8
+    },
+    {
+      "input": "beattoagoodteamandwouldsaygetallright",
+      "ground_truth": "be at to a good team and would say get all right",
+      "word_count": 12
+    },
+    {
+      "input": "thewhothewerebyeditorofthe",
+      "ground_truth": "the who the were by editor of the",
+      "word_count": 8
+    },
+    {
+      "input": "thewasforhisperformanceagainstinlouis",
+      "ground_truth": "the was for his performance against in louis",
+      "word_count": 8
+    },
+    {
+      "input": "editorofthepresentedwithhis",
+      "ground_truth": "editor of the presented with his",
+      "word_count": 6
+    },
+    {
+      "input": "onthegivenhimwastheforto",
+      "ground_truth": "on the given him was the for to",
+      "word_count": 8
+    },
+    {
+      "input": "thisteamsetathatcouldbeinthefuturepointedout",
+      "ground_truth": "this team set a that could be in the future pointed out",
+      "word_count": 12
+    },
+    {
+      "input": "louisuniversityfoundawaytoagame",
+      "ground_truth": "louis university found a way to a game",
+      "word_count": 8
+    },
+    {
+      "input": "thewasagainstlast",
+      "ground_truth": "the was against last",
+      "word_count": 4
+    },
+    {
+      "input": "thegameopenedaweekforwashington",
+      "ground_truth": "the game opened a week for washington",
+      "word_count": 7
+    },
+    {
+      "input": "thearesettoplayatcollegeatandhaveaat",
+      "ground_truth": "the are set to play at college at and have a at",
+      "word_count": 12
+    },
+    {
+      "input": "iftruethatgivemorewhyhappyballproducemorebase",
+      "ground_truth": "if true that give more why happy ball produce more base",
+      "word_count": 11
+    },
+    {
+      "input": "andmeantasanota",
+      "ground_truth": "and meant as a not a",
+      "word_count": 6
+    },
+    {
+      "input": "thetruthisthoughthatmentodifferenttreatment",
+      "ground_truth": "the truth is though that men to different treatment",
+      "word_count": 9
+    },
+    {
+      "input": "toandhimintothethemanagersawasapossibility",
+      "ground_truth": "to and him into the the manager saw as a possibility",
+      "word_count": 11
+    },
+    {
+      "input": "theoldmanwasalmosttoo",
+      "ground_truth": "the old man was almost too",
+      "word_count": 6
+    },
+    {
+      "input": "themajordecidedthatratherthanbeledthecouldlead",
+      "ground_truth": "the major decided that rather than be led the could lead",
+      "word_count": 11
+    },
+    {
+      "input": "andwhatleadershipahasgivensofar",
+      "ground_truth": "and what leadership a has given so far",
+      "word_count": 8
+    },
+    {
+      "input": "daycameadayearlierforthanfortheandthisyear",
+      "ground_truth": "day came a day earlier for than for the and this year",
+      "word_count": 12
+    },
+    {
+      "input": "onlytheandaclosefriendswillbepresent",
+      "ground_truth": "only the and a close friends will be present",
+      "word_count": 9
+    },
+    {
+      "input": "thebrotherwillgiveherinmarriage",
+      "ground_truth": "the brother will give her in marriage",
+      "word_count": 7
+    },
+    {
+      "input": "inthesmallgroupwillbethejuniorand",
+      "ground_truth": "in the small group will be the junior and",
+      "word_count": 9
+    },
+    {
+      "input": "theparentsthewhoarefromawinterinforthe",
+      "ground_truth": "the parents the who are from a winter in for the",
+      "word_count": 11
+    },
+    {
+      "input": "andhisbrotherandhiswifewhowillfrom",
+      "ground_truth": "and his brother and his wife who will from",
+      "word_count": 9
+    },
+    {
+      "input": "willbebestman",
+      "ground_truth": "will be best man",
+      "word_count": 4
+    },
+    {
+      "input": "alsopresentwillbethechildrenand",
+      "ground_truth": "also present will be the children and",
+      "word_count": 7
+    },
+    {
+      "input": "theirfatherischarles",
+      "ground_truth": "their father is charles",
+      "word_count": 4
+    },
+    {
+      "input": "thechildrenwereherefortheandreturn",
+      "ground_truth": "the children were here for the and return",
+      "word_count": 8
+    },
+    {
+      "input": "andhiswillliveinhishouse",
+      "ground_truth": "and his will live in his house",
+      "word_count": 7
+    },
+    {
+      "input": "theywilltakeatriplater",
+      "ground_truth": "they will take a trip later",
+      "word_count": 6
+    },
+    {
+      "input": "backwiththemet",
+      "ground_truth": "back with the met",
+      "word_count": 4
+    },
+    {
+      "input": "inthenewplacethisshouldtobeanevening",
+      "ground_truth": "in the new place this should to be an evening",
+      "word_count": 10
+    },
+    {
+      "input": "henryofanewboardmemberwillbeofforthe",
+      "ground_truth": "henry of a new board member will be of for the",
+      "word_count": 11
+    },
+    {
+      "input": "asmallwillfollowintheparkarmshotel",
+      "ground_truth": "a small will follow in the park arms hotel",
+      "word_count": 9
+    },
+    {
+      "input": "willnotcomefromforthe",
+      "ground_truth": "will not come from for the",
+      "word_count": 6
+    },
+    {
+      "input": "ofwillgivehisinmarriage",
+      "ground_truth": "of will give his in marriage",
+      "word_count": 6
+    },
+    {
+      "input": "forinstancehasthreegroupsofinterestedincominghere",
+      "ground_truth": "for instance has three groups of interested in coming here",
+      "word_count": 10
+    },
+    {
+      "input": "evengoingtotrytogettheof",
+      "ground_truth": "even going to try to get the of",
+      "word_count": 8
+    },
+    {
+      "input": "willbefirststop",
+      "ground_truth": "will be first stop",
+      "word_count": 4
+    },
+    {
+      "input": "thenandtoromelondonandtolookover",
+      "ground_truth": "then and to rome london and to look over",
+      "word_count": 9
+    },
+    {
+      "input": "istheforreturn",
+      "ground_truth": "is the for return",
+      "word_count": 4
+    },
+    {
+      "input": "thedaughterinthethenextnight",
+      "ground_truth": "the daughter in the the next night",
+      "word_count": 7
+    },
+    {
+      "input": "alreadyhasherandsayshermother",
+      "ground_truth": "already has her and says her mother",
+      "word_count": 7
+    },
+    {
+      "input": "alsohavebeentotheafternoonofintheclub",
+      "ground_truth": "also have been to the afternoon of in the club",
+      "word_count": 10
+    },
+    {
+      "input": "missdanceinthewilluptheday",
+      "ground_truth": "miss dance in the will up the day",
+      "word_count": 8
+    },
+    {
+      "input": "thewhonowliveinarefriendsofthe",
+      "ground_truth": "the who now live in are friends of the",
+      "word_count": 9
+    },
+    {
+      "input": "missaofmissschoolstayedoninasagirl",
+      "ground_truth": "miss a of miss school stayed on in as a girl",
+      "word_count": 11
+    },
+    {
+      "input": "herwhoiswithafirmmanybooksfromenglishinto",
+      "ground_truth": "her who is with a firm many books from english into",
+      "word_count": 11
+    },
+    {
+      "input": "misswillinalso",
+      "ground_truth": "miss will in also",
+      "word_count": 4
+    },
+    {
+      "input": "aroundwellandagaintownbetweenyesterdaytohisinhand",
+      "ground_truth": "around well and again town between yesterday to his in hand",
+      "word_count": 11
+    },
+    {
+      "input": "ifsoonashetalkingyet",
+      "ground_truth": "if soon as he talking yet",
+      "word_count": 6
+    },
+    {
+      "input": "prettytheandtheasawriter",
+      "ground_truth": "pretty the and the as a writer",
+      "word_count": 7
+    },
+    {
+      "input": "andwatchforafromthisanytimenow",
+      "ground_truth": "and watch for a from this any time now",
+      "word_count": 9
+    },
+    {
+      "input": "runinnextweekatalreadyisa",
+      "ground_truth": "run in next week at already is a",
+      "word_count": 8
+    },
+    {
+      "input": "atthesamehassomethingtoabout",
+      "ground_truth": "at the same has something to about",
+      "word_count": 7
+    },
+    {
+      "input": "aaandcanwalk",
+      "ground_truth": "a a and can walk",
+      "word_count": 5
+    },
+    {
+      "input": "topfilmmakesanmanoutofthiscolumn",
+      "ground_truth": "top film makes an man out of this column",
+      "word_count": 9
+    },
+    {
+      "input": "aswewaybackprettyofthestaffintoday",
+      "ground_truth": "as we way back pretty of the staff in today",
+      "word_count": 10
+    },
+    {
+      "input": "wasadateofmanyofforyears",
+      "ground_truth": "was a date of many of for years",
+      "word_count": 8
+    },
+    {
+      "input": "thereisnosuchthingasantelephonebuildingdrive",
+      "ground_truth": "there is no such thing as an telephone building drive",
+      "word_count": 10
+    },
+    {
+      "input": "youcantothomaspostofficeboxchicago",
+      "ground_truth": "you can to thomas post office box chicago",
+      "word_count": 8
+    },
+    {
+      "input": "soifbymakesureyouthetotheabove",
+      "ground_truth": "so if by make sure you the to the above",
+      "word_count": 10
+    },
+    {
+      "input": "detodoaplayforthisseasonaoftime",
+      "ground_truth": "de to do a play for this season a of time",
+      "word_count": 11
+    },
+    {
+      "input": "movetoafteryearsin",
+      "ground_truth": "move to after years in",
+      "word_count": 5
+    },
+    {
+      "input": "dayandherdriveintodayfromanewengland",
+      "ground_truth": "day and her drive in today from a new england",
+      "word_count": 10
+    },
+    {
+      "input": "willupwithchiefattheto",
+      "ground_truth": "will up with chief at the to",
+      "word_count": 7
+    },
+    {
+      "input": "beanalldaywithofnewonecomebackandsong",
+      "ground_truth": "be an all day with of new one come back and song",
+      "word_count": 12
+    },
+    {
+      "input": "thepeoplegaveupashowtotoherfirmhere",
+      "ground_truth": "the people gave up a show to to her firm here",
+      "word_count": 11
+    },
+    {
+      "input": "touchsheamorninglighttoforhisalsoan",
+      "ground_truth": "touch she a morning light to for his also an",
+      "word_count": 10
+    },
+    {
+      "input": "inofthenew",
+      "ground_truth": "in of the new",
+      "word_count": 4
+    },
+    {
+      "input": "jackcampaignforgovernorofismustfall",
+      "ground_truth": "jack campaign for governor of is must fall",
+      "word_count": 8
+    },
+    {
+      "input": "givewhenyoubuytodayfortheresearch",
+      "ground_truth": "give when you buy today for the research",
+      "word_count": 8
+    },
+    {
+      "input": "bestforthatfromopeningintheroom",
+      "ground_truth": "best for that from opening in the room",
+      "word_count": 8
+    },
+    {
+      "input": "offisnightwhenthemeetlouisintheirseasonhome",
+      "ground_truth": "off is night when the meet louis in their season home",
+      "word_count": 11
+    },
+    {
+      "input": "andcallstheatthebattleofthe",
+      "ground_truth": "and calls the at the battle of the",
+      "word_count": 8
+    },
+    {
+      "input": "thethisworldandtheareallright",
+      "ground_truth": "the this world and the are all right",
+      "word_count": 8
+    },
+    {
+      "input": "theatmosphereincludingtheirownbuttheirownstillknowaboutit",
+      "ground_truth": "the atmosphere including their own but their own still know about it",
+      "word_count": 12
+    },
+    {
+      "input": "moreonthefreeworldside",
+      "ground_truth": "more on the free world side",
+      "word_count": 6
+    },
+    {
+      "input": "johnaforhissouthhastogettotohis",
+      "ground_truth": "john a for his south has to get to to his",
+      "word_count": 11
+    },
+    {
+      "input": "actuallyisawithasenseof",
+      "ground_truth": "actually is a with a sense of",
+      "word_count": 7
+    },
+    {
+      "input": "hehismorethananyone",
+      "ground_truth": "he his more than anyone",
+      "word_count": 5
+    },
+    {
+      "input": "theatpopularatthe",
+      "ground_truth": "the at popular at the",
+      "word_count": 5
+    },
+    {
+      "input": "myideaofmaking",
+      "ground_truth": "my idea of making",
+      "word_count": 4
+    },
+    {
+      "input": "williamupwithourdailytheandhemeheneverthe",
+      "ground_truth": "william up with our daily the and he me he never the",
+      "word_count": 12
+    },
+    {
+      "input": "blueisthefirsttoplocalclubtothatnewdancethe",
+      "ground_truth": "blue is the first top local club to that new dance the",
+      "word_count": 12
+    },
+    {
+      "input": "andareplanninganextweekinofwhoheron",
+      "ground_truth": "and are planning a next week in of who her on",
+      "word_count": 11
+    },
+    {
+      "input": "andtheofadaughteroninhospital",
+      "ground_truth": "and the of a daughter on in hospital",
+      "word_count": 8
+    },
+    {
+      "input": "areandrobertandandof",
+      "ground_truth": "are and robert and and of",
+      "word_count": 6
+    },
+    {
+      "input": "istheformermissmary",
+      "ground_truth": "is the former miss mary",
+      "word_count": 5
+    },
+    {
+      "input": "johnofisseveraldaysinherapartment",
+      "ground_truth": "john of is several days in her apartment",
+      "word_count": 8
+    },
+    {
+      "input": "theareleavingsoonfortheirnewpost",
+      "ground_truth": "the are leaving soon for their new post",
+      "word_count": 8
+    },
+    {
+      "input": "wereinthepublichighschools",
+      "ground_truth": "were in the public high schools",
+      "word_count": 6
+    },
+    {
+      "input": "thecommitteefortheannualcentralcityshowhasbeenannouncedby",
+      "ground_truth": "the committee for the annual central city show has been announced by",
+      "word_count": 12
+    },
+    {
+      "input": "theeventbywillbeheldinthehouse",
+      "ground_truth": "the event by will be held in the house",
+      "word_count": 9
+    },
+    {
+      "input": "itwillbebyinthehouse",
+      "ground_truth": "it will be by in the house",
+      "word_count": 7
+    },
+    {
+      "input": "isheadofthetable",
+      "ground_truth": "is head of the table",
+      "word_count": 5
+    },
+    {
+      "input": "isandisinchargeof",
+      "ground_truth": "is and is in charge of",
+      "word_count": 6
+    },
+    {
+      "input": "membersofthecommitteeincludejohnwilliamglassrichardjamesandthomas",
+      "ground_truth": "members of the committee include john william glass richard james and thomas",
+      "word_count": 12
+    },
+    {
+      "input": "thefirstcommitteemeetingwillbeheldonmay",
+      "ground_truth": "the first committee meeting will be held on may",
+      "word_count": 9
+    },
+    {
+      "input": "andofwashingtontheofadaughteroninwashington",
+      "ground_truth": "and of washington the of a daughter on in washington",
+      "word_count": 10
+    },
+    {
+      "input": "areandandandof",
+      "ground_truth": "are and and and of",
+      "word_count": 5
+    },
+    {
+      "input": "istheformermiss",
+      "ground_truth": "is the former miss",
+      "word_count": 4
+    },
+    {
+      "input": "aainterestinothersandaapproach",
+      "ground_truth": "a a interest in others and a approach",
+      "word_count": 8
+    },
+    {
+      "input": "thosemakeapopularatthesocialcenterat",
+      "ground_truth": "those make a popular at the social center at",
+      "word_count": 9
+    },
+    {
+      "input": "herpositionanumberofdailycommontoanysocialdirector",
+      "ground_truth": "her position a number of daily common to any social director",
+      "word_count": 11
+    },
+    {
+      "input": "thejobalsoanumberofotheritems",
+      "ground_truth": "the job also a number of other items",
+      "word_count": 8
+    },
+    {
+      "input": "anditoeverythingicanshesaid",
+      "ground_truth": "and i to everything i can she said",
+      "word_count": 8
+    },
+    {
+      "input": "becomethegreatestintheworld",
+      "ground_truth": "become the greatest in the world",
+      "word_count": 6
+    },
+    {
+      "input": "andwhereishomethatplaceoftheheart",
+      "ground_truth": "and where is home that place of the heart",
+      "word_count": 9
+    },
+    {
+      "input": "thatiswhereweturninthegoodold",
+      "ground_truth": "that is where we turn in the good old",
+      "word_count": 9
+    },
+    {
+      "input": "thelandreadyforthecoming",
+      "ground_truth": "the land ready for the coming",
+      "word_count": 6
+    },
+    {
+      "input": "maybetheindustrybutitcertainlylooksthatwayfromthe",
+      "ground_truth": "maybe the industry but it certainly looks that way from the",
+      "word_count": 11
+    },
+    {
+      "input": "thereareforallpurposesandall",
+      "ground_truth": "there are for all purposes and all",
+      "word_count": 7
+    },
+    {
+      "input": "thereareevenforlocalinasidiscovered",
+      "ground_truth": "there are even for local in as i discovered",
+      "word_count": 9
+    },
+    {
+      "input": "theretheallfacilitiesheatairfree",
+      "ground_truth": "there the all facilities heat air free",
+      "word_count": 7
+    },
+    {
+      "input": "someeventwooneforandoneforchildren",
+      "ground_truth": "some even two one for and one for children",
+      "word_count": 9
+    },
+    {
+      "input": "parentsoftheareand",
+      "ground_truth": "parents of the are and",
+      "word_count": 5
+    },
+    {
+      "input": "theisthesonofjamesofandof",
+      "ground_truth": "the is the son of james of and of",
+      "word_count": 9
+    },
+    {
+      "input": "heisaofandschoolofaj",
+      "ground_truth": "he is a of and school of aj",
+      "word_count": 8
+    },
+    {
+      "input": "andthewasgiveninmarriagebyherfather",
+      "ground_truth": "and the was given in marriage by her father",
+      "word_count": 9
+    },
+    {
+      "input": "forthecoupleweremissand",
+      "ground_truth": "for the couple were miss and",
+      "word_count": 6
+    },
+    {
+      "input": "thecouplewillinnationalpark",
+      "ground_truth": "the couple will in national park",
+      "word_count": 6
+    },
+    {
+      "input": "therichardofcityandcharlesandhandpresentedmusic",
+      "ground_truth": "the richard of city and charles and hand presented music",
+      "word_count": 10
+    },
+    {
+      "input": "thewasgiveninmarriagebyherfather",
+      "ground_truth": "the was given in marriage by her father",
+      "word_count": 8
+    },
+    {
+      "input": "sheaofdesignedwithandby",
+      "ground_truth": "she a of designed with and by",
+      "word_count": 7
+    },
+    {
+      "input": "herwascaughttoaandshecarriedand",
+      "ground_truth": "her was caught to a and she carried and",
+      "word_count": 9
+    },
+    {
+      "input": "andbothofandof",
+      "ground_truth": "and both of and of",
+      "word_count": 5
+    },
+    {
+      "input": "afteraatthetheleftforatriptonew",
+      "ground_truth": "after a at the the left for a trip to new",
+      "word_count": 11
+    },
+    {
+      "input": "theywilllivein",
+      "ground_truth": "they will live in",
+      "word_count": 4
+    },
+    {
+      "input": "theywillliveatafteratripto",
+      "ground_truth": "they will live at after a trip to",
+      "word_count": 8
+    },
+    {
+      "input": "theattheinofthefirstchurch",
+      "ground_truth": "the at the in of the first church",
+      "word_count": 8
+    },
+    {
+      "input": "presentedmusicandthewasgiveninmarriagebyherfather",
+      "ground_truth": "presented music and the was given in marriage by her father",
+      "word_count": 11
+    },
+    {
+      "input": "sheaofdesignedalonglinesandaandwith",
+      "ground_truth": "she a of designed along lines and a and with",
+      "word_count": 10
+    },
+    {
+      "input": "missofwasherofandofsanwasbestman",
+      "ground_truth": "miss of was her of and of san was best man",
+      "word_count": 11
+    },
+    {
+      "input": "awasheldatthechurch",
+      "ground_truth": "a was held at the church",
+      "word_count": 6
+    },
+    {
+      "input": "beenworkingforweeks",
+      "ground_truth": "been working for weeks",
+      "word_count": 4
+    },
+    {
+      "input": "weareanumberofunderour",
+      "ground_truth": "we are a number of under our",
+      "word_count": 7
+    },
+    {
+      "input": "butwetellitallnowandthenhavenonewlater",
+      "ground_truth": "but we tell it all now and then have no new later",
+      "word_count": 12
+    },
+    {
+      "input": "shesaysofcoursehadthebest",
+      "ground_truth": "she says of course had the best",
+      "word_count": 7
+    },
+    {
+      "input": "butwehaveofothernew",
+      "ground_truth": "but we have of other new",
+      "word_count": 6
+    },
+    {
+      "input": "iknowtheywillbegood",
+      "ground_truth": "i know they will be good",
+      "word_count": 6
+    },
+    {
+      "input": "willbetreatedtoeffects",
+      "ground_truth": "will be treated to effects",
+      "word_count": 5
+    },
+    {
+      "input": "isofthisphaseandsheisgettinganfromdirectorof",
+      "ground_truth": "is of this phase and she is getting an from director of",
+      "word_count": 12
+    },
+    {
+      "input": "inadditiontothepaythecostoftheir",
+      "ground_truth": "in addition to the pay the cost of their",
+      "word_count": 9
+    },
+    {
+      "input": "bigbusinessthislittlebusinesssaythemembers",
+      "ground_truth": "big business this little business say the members",
+      "word_count": 8
+    },
+    {
+      "input": "formostoftheyearstheoperationwasunderdirection",
+      "ground_truth": "for most of the years the operation was under direction",
+      "word_count": 10
+    },
+    {
+      "input": "isofthecommitteeforthe",
+      "ground_truth": "is of the committee for the",
+      "word_count": 6
+    },
+    {
+      "input": "ismakingfora",
+      "ground_truth": "is making for a",
+      "word_count": 4
+    },
+    {
+      "input": "andforandforthe",
+      "ground_truth": "and for and for the",
+      "word_count": 5
+    },
+    {
+      "input": "theshowbywillhavejohnas",
+      "ground_truth": "the show by will have john as",
+      "word_count": 7
+    },
+    {
+      "input": "willbewilliamrichardwilliamrobertrobertwilliama",
+      "ground_truth": "will be william richard william robert robert william a",
+      "word_count": 9
+    },
+    {
+      "input": "butthereneverisanyneed",
+      "ground_truth": "but there never is any need",
+      "word_count": 6
+    },
+    {
+      "input": "theboysloveit",
+      "ground_truth": "the boys love it",
+      "word_count": 4
+    },
+    {
+      "input": "johncharlesisofforthecountryfairandandof",
+      "ground_truth": "john charles is of for the country fair and and of",
+      "word_count": 11
+    },
+    {
+      "input": "theyallareof",
+      "ground_truth": "they all are of",
+      "word_count": 4
+    },
+    {
+      "input": "theeventwillbeopentothepublicthefollowingday",
+      "ground_truth": "the event will be open to the public the following day",
+      "word_count": 11
+    },
+    {
+      "input": "amongthemwillbeand",
+      "ground_truth": "among them will be and",
+      "word_count": 5
+    },
+    {
+      "input": "itwiththesection",
+      "ground_truth": "it with the section",
+      "word_count": 4
+    },
+    {
+      "input": "andarethisyear",
+      "ground_truth": "and are this year",
+      "word_count": 4
+    },
+    {
+      "input": "asofvariousarerobert",
+      "ground_truth": "as of various are robert",
+      "word_count": 5
+    },
+    {
+      "input": "alsohenryandjackand",
+      "ground_truth": "also henry and jack and",
+      "word_count": 5
+    },
+    {
+      "input": "andhavehadasandjohnofhouse",
+      "ground_truth": "and have had as and john of house",
+      "word_count": 8
+    },
+    {
+      "input": "willthemembersofherbookclubon",
+      "ground_truth": "will the members of her book club on",
+      "word_count": 8
+    },
+    {
+      "input": "ataatherhomeon",
+      "ground_truth": "at a at her home on",
+      "word_count": 6
+    },
+    {
+      "input": "andwereatdinneronsundaybyandof",
+      "ground_truth": "and were at dinner on sunday by and of",
+      "word_count": 9
+    },
+    {
+      "input": "andjamestheofadaughteronmarch",
+      "ground_truth": "and james the of a daughter on march",
+      "word_count": 8
+    },
+    {
+      "input": "mississeveralweeksin",
+      "ground_truth": "miss is several weeks in",
+      "word_count": 5
+    },
+    {
+      "input": "ofgermanyandof",
+      "ground_truth": "of germany and of",
+      "word_count": 4
+    },
+    {
+      "input": "andhavereturnedtotheirhomeinparkaftersometimein",
+      "ground_truth": "and have returned to their home in park after some time in",
+      "word_count": 12
+    },
+    {
+      "input": "andofhillandnowofsquareareandof",
+      "ground_truth": "and of hill and now of square are and of",
+      "word_count": 10
+    },
+    {
+      "input": "williamofparkataatherhomeon",
+      "ground_truth": "william of park at a at her home on",
+      "word_count": 9
+    },
+    {
+      "input": "androbertbrownwillreturnnextweekfrom",
+      "ground_truth": "and robert brown will return next week from",
+      "word_count": 8
+    },
+    {
+      "input": "willthemembersofherbookclubatherhomeon",
+      "ground_truth": "will the members of her book club at her home on",
+      "word_count": 11
+    },
+    {
+      "input": "themarriagewillbeinearly",
+      "ground_truth": "the marriage will be in early",
+      "word_count": 6
+    },
+    {
+      "input": "misswasfromtheschoolandiscollegein",
+      "ground_truth": "miss was from the school and is college in",
+      "word_count": 9
+    },
+    {
+      "input": "hermotheristheformermiss",
+      "ground_truth": "her mother is the former miss",
+      "word_count": 6
+    },
+    {
+      "input": "wallisastudentatuniversitywhereheisamemberof",
+      "ground_truth": "wall is a student at university where he is a member of",
+      "word_count": 12
+    },
+    {
+      "input": "missladywillbeatthisatwhichthewillbeof",
+      "ground_truth": "miss lady will be at this at which the will be of",
+      "word_count": 12
+    },
+    {
+      "input": "shewillataatintheearlyafternoon",
+      "ground_truth": "she will at a at in the early afternoon",
+      "word_count": 9
+    },
+    {
+      "input": "thomasselectedablackmadewithaofandwith",
+      "ground_truth": "thomas selected a black made with a of and with",
+      "word_count": 10
+    },
+    {
+      "input": "whosedaughterwasamongthecourtadeepblue",
+      "ground_truth": "whose daughter was among the court a deep blue",
+      "word_count": 9
+    },
+    {
+      "input": "whosedaughterwasalsoatotheanof",
+      "ground_truth": "whose daughter was also a to the an of",
+      "word_count": 9
+    },
+    {
+      "input": "lastanwhiteshortmadewithawidewithanof",
+      "ground_truth": "last an white short made with a wide with an of",
+      "word_count": 11
+    },
+    {
+      "input": "streetlengthwasonthewithandand",
+      "ground_truth": "street length was on the with and and",
+      "word_count": 8
+    },
+    {
+      "input": "thecurrentcomestoabout",
+      "ground_truth": "the current comes to about",
+      "word_count": 5
+    },
+    {
+      "input": "theinwillinthestatesinwhichthe",
+      "ground_truth": "the in will in the states in which the",
+      "word_count": 9
+    },
+    {
+      "input": "itwillbeintwoways",
+      "ground_truth": "it will be in two ways",
+      "word_count": 6
+    },
+    {
+      "input": "thereareaboutofficersandinthisclass",
+      "ground_truth": "there are about officers and in this class",
+      "word_count": 8
+    },
+    {
+      "input": "ofuniontobringaboutapercentcutintheunion",
+      "ground_truth": "of union to bring about a per cent cut in the union",
+      "word_count": 12
+    },
+    {
+      "input": "thewaswhenhetostopthe",
+      "ground_truth": "the was when he to stop the",
+      "word_count": 7
+    },
+    {
+      "input": "hesaidthewhowaswithaenteredtheatandstreet",
+      "ground_truth": "he said the who was with a entered the at and street",
+      "word_count": 12
+    },
+    {
+      "input": "thenegrowasdeadonatgeneralhospitalin",
+      "ground_truth": "the negro was dead on at general hospital in",
+      "word_count": 9
+    },
+    {
+      "input": "hisandbrotherandjohnmonthsweretothehospital",
+      "ground_truth": "his and brother and john months were to the hospital",
+      "word_count": 10
+    },
+    {
+      "input": "thegirlwasinconditionwithoverpercentofherbody",
+      "ground_truth": "the girl was in condition with over per cent of her body",
+      "word_count": 12
+    },
+    {
+      "input": "boyinfaircondition",
+      "ground_truth": "boy in fair condition",
+      "word_count": 4
+    },
+    {
+      "input": "theboyreceivedofthefaceneckandback",
+      "ground_truth": "the boy received of the face neck and back",
+      "word_count": 9
+    },
+    {
+      "input": "hisconditionwasreportedtobefair",
+      "ground_truth": "his condition was reported to be fair",
+      "word_count": 7
+    },
+    {
+      "input": "policesaidthemotherwasnextdoorwhenthefire",
+      "ground_truth": "police said the mother was next door when the fire",
+      "word_count": 10
+    },
+    {
+      "input": "thesearetheminutes",
+      "ground_truth": "these are the minutes",
+      "word_count": 4
+    },
+    {
+      "input": "writewhatyoutellmeto",
+      "ground_truth": "write what you tell me to",
+      "word_count": 6
+    },
+    {
+      "input": "hewastakentouniversityhospitalina",
+      "ground_truth": "he was taken to university hospital in a",
+      "word_count": 8
+    },
+    {
+      "input": "atthehospitalsaidhewasontherightside",
+      "ground_truth": "at the hospital said he was on the right side",
+      "word_count": 10
+    },
+    {
+      "input": "hisconditionwassaidtobefair",
+      "ground_truth": "his condition was said to be fair",
+      "word_count": 7
+    },
+    {
+      "input": "policesaidhebecamewhileinfrontofaatweststreet",
+      "ground_truth": "police said he became while in front of a at west street",
+      "word_count": 12
+    },
+    {
+      "input": "hecalledofthewhopoliceandan",
+      "ground_truth": "he called of the who police and an",
+      "word_count": 8
+    },
+    {
+      "input": "hesaidtheplanwasputineffecttooslowlyin",
+      "ground_truth": "he said the plan was put in effect too slowly in",
+      "word_count": 11
+    },
+    {
+      "input": "equipmentshouldbeinoperationalmostimmediatelyafterthefirstsaid",
+      "ground_truth": "equipment should be in operation almost immediately after the first said",
+      "word_count": 11
+    },
+    {
+      "input": "senthomeforrest",
+      "ground_truth": "sent home for rest",
+      "word_count": 4
+    },
+    {
+      "input": "saidyesterdaythatoperationscontinuedthroughtheweek",
+      "ground_truth": "said yesterday that operations continued through the week",
+      "word_count": 8
+    },
+    {
+      "input": "whathedidsaidwasletgohomenightforsomerest",
+      "ground_truth": "what he did said was let go home night for some rest",
+      "word_count": 12
+    },
+    {
+      "input": "thewereandhiswife",
+      "ground_truth": "the were and his wife",
+      "word_count": 5
+    },
+    {
+      "input": "eachhadbeenshotinthebackseveraltimeswitha",
+      "ground_truth": "each had been shot in the back several times with a",
+      "word_count": 11
+    },
+    {
+      "input": "accordingtochiefof",
+      "ground_truth": "according to chief of",
+      "word_count": 4
+    },
+    {
+      "input": "thecourtsaidtheboywillhaveahearingincourt",
+      "ground_truth": "the court said the boy will have a hearing in court",
+      "word_count": 11
+    },
+    {
+      "input": "herhusbandwasonthekitchenfloorpolicesaid",
+      "ground_truth": "her husband was on the kitchen floor police said",
+      "word_count": 9
+    },
+    {
+      "input": "theofthecarwasimmediatelythroughoutsouthernonpoliceradio",
+      "ground_truth": "the of the car was immediately throughout southern on police radio",
+      "word_count": 11
+    },
+    {
+      "input": "thewantedcarwiththreeboysataservicestationjustoutside",
+      "ground_truth": "the wanted car with three boys at a service station just outside",
+      "word_count": 12
+    },
+    {
+      "input": "governortodayhisassecretaryofstate",
+      "ground_truth": "governor today his as secretary of state",
+      "word_count": 7
+    },
+    {
+      "input": "governorannouncedthatawillbeheldinhisofficenext",
+      "ground_truth": "governor announced that a will be held in his office next",
+      "word_count": 11
+    },
+    {
+      "input": "nowwasfromtheuniversityofcollegeofin",
+      "ground_truth": "now was from the university of college of in",
+      "word_count": 9
+    },
+    {
+      "input": "fiveyearslaterhewasthedegreeinlaw",
+      "ground_truth": "five years later he was the degree in law",
+      "word_count": 9
+    },
+    {
+      "input": "forfutureconstructionduringuptopercentcomparedtocorporationreported",
+      "ground_truth": "for future construction during up to per cent compared to corporation reported",
+      "word_count": 12
+    },
+    {
+      "input": "atdownpercent",
+      "ground_truth": "at down per cent",
+      "word_count": 4
+    },
+    {
+      "input": "atuppercent",
+      "ground_truth": "at up per cent",
+      "word_count": 4
+    },
+    {
+      "input": "andheavyatdownpercent",
+      "ground_truth": "and heavy at down per cent",
+      "word_count": 6
+    },
+    {
+      "input": "aofthetotalshowed",
+      "ground_truth": "a of the total showed",
+      "word_count": 5
+    },
+    {
+      "input": "buildingofhousesandotherbuildingsdesignedforshelter",
+      "ground_truth": "building of houses and other buildings designed for shelter",
+      "word_count": 9
+    },
+    {
+      "input": "isthereforethekeytothemarkettoday",
+      "ground_truth": "is therefore the key to the market today",
+      "word_count": 8
+    },
+    {
+      "input": "qualitywillplayanimportantpartintheofnewin",
+      "ground_truth": "quality will play an important part in the of new in",
+      "word_count": 11
+    },
+    {
+      "input": "livingunitsarebeingaddedtotheviewinthehillsection",
+      "ground_truth": "living units are being added to the view in the hill section",
+      "word_count": 12
+    },
+    {
+      "input": "thedevelopmentwillunitsinand",
+      "ground_truth": "the development will units in and",
+      "word_count": 6
+    },
+    {
+      "input": "otherswhicharereachedbyupasingleofhave",
+      "ground_truth": "others which are reached by up a single of have",
+      "word_count": 10
+    },
+    {
+      "input": "thetheareofandframeconstruction",
+      "ground_truth": "the the are of and frame construction",
+      "word_count": 7
+    },
+    {
+      "input": "isbyindividualforcedairsystems",
+      "ground_truth": "is by individual forced air systems",
+      "word_count": 6
+    },
+    {
+      "input": "itisathatisaofenemy",
+      "ground_truth": "it is a that is a of enemy",
+      "word_count": 8
+    },
+    {
+      "input": "ithasaonthatoftheunitedstatesthefirst",
+      "ground_truth": "it has a on that of the united states the first",
+      "word_count": 11
+    },
+    {
+      "input": "fiveheldfortrial",
+      "ground_truth": "five held for trial",
+      "word_count": 4
+    },
+    {
+      "input": "afulltrialwasfor",
+      "ground_truth": "a full trial was for",
+      "word_count": 5
+    },
+    {
+      "input": "twobritishcivilmissandherfriendand",
+      "ground_truth": "two british civil miss and her friend and",
+      "word_count": 8
+    },
+    {
+      "input": "theyareofoutofoverwhichtheykept",
+      "ground_truth": "they are of out of over which they kept",
+      "word_count": 9
+    },
+    {
+      "input": "amantoberussianalthoughhea",
+      "ground_truth": "a man to be russian although he a",
+      "word_count": 8
+    },
+    {
+      "input": "acouplewhocallthemselvesandwife",
+      "ground_truth": "a couple who call themselves and wife",
+      "word_count": 7
+    },
+    {
+      "input": "eachonitsoriginalconditionasaaora",
+      "ground_truth": "each on its original condition as a a or a",
+      "word_count": 10
+    },
+    {
+      "input": "onlymissaskedfor",
+      "ground_truth": "only miss asked for",
+      "word_count": 4
+    },
+    {
+      "input": "iamnotpreparedtotoanyofthemsaidthe",
+      "ground_truth": "i am not prepared to to any of them said the",
+      "word_count": 11
+    },
+    {
+      "input": "hewenttocommunisteastgermany",
+      "ground_truth": "he went to communist east germany",
+      "word_count": 6
+    },
+    {
+      "input": "thisisrussianmoneysaidfortheoffice",
+      "ground_truth": "this is russian money said for the office",
+      "word_count": 8
+    },
+    {
+      "input": "almostanyinformationaboutthewouldalsoabouttheamerican",
+      "ground_truth": "almost any information about the would also about the american",
+      "word_count": 10
+    },
+    {
+      "input": "withthewentacompletedesignforthe",
+      "ground_truth": "with the went a complete design for the",
+      "word_count": 8
+    },
+    {
+      "input": "itwastherethatthetwocivilwereatwork",
+      "ground_truth": "it was there that the two civil were at work",
+      "word_count": 10
+    },
+    {
+      "input": "thewasalsoaresultofalmostaofwork",
+      "ground_truth": "the was also a result of almost a of work",
+      "word_count": 10
+    },
+    {
+      "input": "itwasfirsttriedoutonathein",
+      "ground_truth": "it was first tried out on a the in",
+      "word_count": 9
+    },
+    {
+      "input": "thebecametheeverbuilt",
+      "ground_truth": "the became the ever built",
+      "word_count": 5
+    },
+    {
+      "input": "itcouldgomileswithoutandstaydownmorethanamonth",
+      "ground_truth": "it could go miles without and stay down more than a month",
+      "word_count": 12
+    },
+    {
+      "input": "thealsowasparticularlyinterestedintheequipmentforitwas",
+      "ground_truth": "the also was particularly interested in the equipment for it was",
+      "word_count": 11
+    },
+    {
+      "input": "rangewasadetail",
+      "ground_truth": "range was a detail",
+      "word_count": 4
+    },
+    {
+      "input": "thecallswerestillhearddaysafterthefivewere",
+      "ground_truth": "the calls were still heard days after the five were",
+      "word_count": 10
+    },
+    {
+      "input": "theyonasand",
+      "ground_truth": "they on as and",
+      "word_count": 4
+    },
+    {
+      "input": "thisheaddedbroughtaboutandpersonal",
+      "ground_truth": "this he added brought about and personal",
+      "word_count": 7
+    },
+    {
+      "input": "inopeningunitedstatesreadthebutmadeno",
+      "ground_truth": "in opening united states read the but made no",
+      "word_count": 9
+    },
+    {
+      "input": "fortheeightothersaidonlythattherewasnooftheir",
+      "ground_truth": "for the eight other said only that there was no of their",
+      "word_count": 12
+    },
+    {
+      "input": "andareofworthoftoaof",
+      "ground_truth": "and are of worth of to a of",
+      "word_count": 8
+    },
+    {
+      "input": "amongotherandareofto",
+      "ground_truth": "among other and are of to",
+      "word_count": 6
+    },
+    {
+      "input": "hisincludedhismoneytoandhis",
+      "ground_truth": "his included his money to and his",
+      "word_count": 7
+    },
+    {
+      "input": "thenthewithhismoney",
+      "ground_truth": "then the with his money",
+      "word_count": 5
+    },
+    {
+      "input": "hasbeenlivingunderaeversince",
+      "ground_truth": "has been living under a ever since",
+      "word_count": 7
+    },
+    {
+      "input": "whenthecameinagainsthisyoungsaid",
+      "ground_truth": "when the came in against his young said",
+      "word_count": 8
+    },
+    {
+      "input": "iamverytohavethedoubtofremoved",
+      "ground_truth": "i am very to have the doubt of removed",
+      "word_count": 9
+    },
+    {
+      "input": "stilliwishtoappearhappyat",
+      "ground_truth": "still i wish to appear happy at",
+      "word_count": 7
+    },
+    {
+      "input": "thewhilebeingaboutseveralintheareabystatepolice",
+      "ground_truth": "the while being about several in the area by state police",
+      "word_count": 11
+    },
+    {
+      "input": "judgedidnotsetadatefor",
+      "ground_truth": "judge did not set a date for",
+      "word_count": 7
+    },
+    {
+      "input": "couldreceivefromtoyearsinor",
+      "ground_truth": "could receive from to years in or",
+      "word_count": 7
+    },
+    {
+      "input": "aagainstcameatafteralmosthoursof",
+      "ground_truth": "a against came at after almost hours of",
+      "word_count": 8
+    },
+    {
+      "input": "shesaidtheagreedthatwas",
+      "ground_truth": "she said the agreed that was",
+      "word_count": 6
+    },
+    {
+      "input": "thecamethreehourslater",
+      "ground_truth": "the came three hours later",
+      "word_count": 5
+    },
+    {
+      "input": "thetrialhadthelargeformorethanaweek",
+      "ground_truth": "the trial had the large for more than a week",
+      "word_count": 10
+    },
+    {
+      "input": "theyarehomenowwiththeotherchildren",
+      "ground_truth": "they are home now with the other children",
+      "word_count": 8
+    },
+    {
+      "input": "womensuchashavebeenthefamilywithandwitheast",
+      "ground_truth": "women such as have been the family with and with east",
+      "word_count": 11
+    },
+    {
+      "input": "anotherbycomingtothehomeyesterdaywithtowardthecosts",
+      "ground_truth": "another by coming to the home yesterday with toward the costs",
+      "word_count": 11
+    },
+    {
+      "input": "hesaidalsocouldbetopostofficeboxvillagestation",
+      "ground_truth": "he said also could be to post office box village station",
+      "word_count": 11
+    },
+    {
+      "input": "hasbutlittlesincethefirelast",
+      "ground_truth": "has but little since the fire last",
+      "word_count": 7
+    },
+    {
+      "input": "buttodayhewantedtomakeapublicstatement",
+      "ground_truth": "but today he wanted to make a public statement",
+      "word_count": 9
+    },
+    {
+      "input": "isurethereweresuchpeopleintheworld",
+      "ground_truth": "i sure there were such people in the world",
+      "word_count": 9
+    },
+    {
+      "input": "acarthebutlostitin",
+      "ground_truth": "a car the but lost it in",
+      "word_count": 7
+    },
+    {
+      "input": "theistobeginthedayafterfromhighschoolinjune",
+      "ground_truth": "the is to begin the day after from high school in june",
+      "word_count": 12
+    },
+    {
+      "input": "thelongcrisisinappearedatoday",
+      "ground_truth": "the long crisis in appeared a today",
+      "word_count": 7
+    },
+    {
+      "input": "announcedthatitisthesovietuniontotoanimmediate",
+      "ground_truth": "announced that it is the soviet union to to an immediate",
+      "word_count": 11
+    },
+    {
+      "input": "aconferenceonshouldthenmeetonmayhesaid",
+      "ground_truth": "a conference on should then meet on may he said",
+      "word_count": 10
+    },
+    {
+      "input": "thegovernmentforhelpwasmadebyforeign",
+      "ground_truth": "the government for help was made by foreign",
+      "word_count": 8
+    },
+    {
+      "input": "heindicatedthatwouldbemadeformorearmsandmoremilitary",
+      "ground_truth": "he indicated that would be made for more arms and more military",
+      "word_count": 12
+    },
+    {
+      "input": "hethegovernmentisthinkingofforforeignifthesituation",
+      "ground_truth": "he the government is thinking of for foreign if the situation",
+      "word_count": 11
+    },
+    {
+      "input": "anotemakingthewastobrown",
+      "ground_truth": "a note making the was to brown",
+      "word_count": 7
+    },
+    {
+      "input": "thegovernmentsaidfourmajorhadbeenbyfromcommunistnorth",
+      "ground_truth": "the government said four major had been by from communist north",
+      "word_count": 11
+    },
+    {
+      "input": "therewasnoofsuchfromindependentsources",
+      "ground_truth": "there was no of such from independent sources",
+      "word_count": 8
+    },
+    {
+      "input": "inthepastsuchgovernmentclaimshavebeenfound",
+      "ground_truth": "in the past such government claims have been found",
+      "word_count": 9
+    },
+    {
+      "input": "aradiotheamericansasandjack",
+      "ground_truth": "a radio the americans as and jack",
+      "word_count": 7
+    },
+    {
+      "input": "thesaidaandandofwereonofarmsto",
+      "ground_truth": "the said a and and of were on of arms to",
+      "word_count": 11
+    },
+    {
+      "input": "wifeandfourchildrenlivein",
+      "ground_truth": "wife and four children live in",
+      "word_count": 6
+    },
+    {
+      "input": "morethanweresaidtohavebeenofthemcatholic",
+      "ground_truth": "more than were said to have been of them catholic",
+      "word_count": 10
+    },
+    {
+      "input": "todaywasintohiswifeandchildrenin",
+      "ground_truth": "today was in to his wife and children in",
+      "word_count": 9
+    },
+    {
+      "input": "iswiththechurch",
+      "ground_truth": "is with the church",
+      "word_count": 4
+    },
+    {
+      "input": "thestudenttheasearlyasthefallofcalledfor",
+      "ground_truth": "the student the as early as the fall of called for",
+      "word_count": 11
+    },
+    {
+      "input": "ontheotherhanduniversityitsexistencefromthestateof",
+      "ground_truth": "on the other hand university its existence from the state of",
+      "word_count": 11
+    },
+    {
+      "input": "thedeadyouthwasasrobertofaj",
+      "ground_truth": "the dead youth was as robert of aj",
+      "word_count": 8
+    },
+    {
+      "input": "saidthecaroutofcontrolonandintothe",
+      "ground_truth": "said the car out of control on and into the",
+      "word_count": 10
+    },
+    {
+      "input": "thenegrostudentmovementitsforandandiffailed",
+      "ground_truth": "the negro student movement its for and and if failed",
+      "word_count": 10
+    },
+    {
+      "input": "wetothebeforethefirstoftheyeartheletterssaid",
+      "ground_truth": "we to the before the first of the year the letters said",
+      "word_count": 12
+    },
+    {
+      "input": "theletterssetaforthestartof",
+      "ground_truth": "the letters set a for the start of",
+      "word_count": 8
+    },
+    {
+      "input": "theyindicatedthatandwouldbestartediffailedto",
+      "ground_truth": "they indicated that and would be started if failed to",
+      "word_count": 10
+    },
+    {
+      "input": "studentleadersbeganeffortstoseveralmonthsago",
+      "ground_truth": "student leaders began efforts to several months ago",
+      "word_count": 8
+    },
+    {
+      "input": "hetonamethethree",
+      "ground_truth": "he to name the three",
+      "word_count": 5
+    },
+    {
+      "input": "lettersaskedforameeting",
+      "ground_truth": "letters asked for a meeting",
+      "word_count": 5
+    },
+    {
+      "input": "ofthestudentssentletterstoofartintheareaand",
+      "ground_truth": "of the students sent letters to of art in the area and",
+      "word_count": 12
+    },
+    {
+      "input": "diedsundayathishomeataj",
+      "ground_truth": "died sunday at his home at aj",
+      "word_count": 7
+    },
+    {
+      "input": "wasawithand",
+      "ground_truth": "was a with and",
+      "word_count": 4
+    },
+    {
+      "input": "hewasborninandwasaofworldwar",
+      "ground_truth": "he was born in and was a of world war",
+      "word_count": 10
+    },
+    {
+      "input": "hewasamemberofthechurch",
+      "ground_truth": "he was a member of the church",
+      "word_count": 7
+    },
+    {
+      "input": "includetwoandjohn",
+      "ground_truth": "include two and john",
+      "word_count": 4
+    },
+    {
+      "input": "andtwomissandbothof",
+      "ground_truth": "and two miss and both of",
+      "word_count": 6
+    },
+    {
+      "input": "johnwilliamballofapartmentdiedsundayathishome",
+      "ground_truth": "john william ball of apartment died sunday at his home",
+      "word_count": 10
+    },
+    {
+      "input": "ballwasahouse",
+      "ground_truth": "ball was a house",
+      "word_count": 4
+    },
+    {
+      "input": "hewasamemberofthecitychurchandaof",
+      "ground_truth": "he was a member of the city church and a of",
+      "word_count": 11
+    },
+    {
+      "input": "serviceswillbeatatwiththe",
+      "ground_truth": "services will be at at with the",
+      "word_count": 7
+    },
+    {
+      "input": "aofdiedsundayatherhomein",
+      "ground_truth": "a of died sunday at her home in",
+      "word_count": 8
+    },
+    {
+      "input": "includeasoncharles",
+      "ground_truth": "include a son charles",
+      "word_count": 4
+    },
+    {
+      "input": "twoandmissbothof",
+      "ground_truth": "two and miss both of",
+      "word_count": 5
+    },
+    {
+      "input": "herfatherandthreelittleandbothofandbill",
+      "ground_truth": "her father and three little and both of and bill",
+      "word_count": 10
+    },
+    {
+      "input": "andsaidtheythomasofafterhetheofficers",
+      "ground_truth": "and said they thomas of after he the officers",
+      "word_count": 9
+    },
+    {
+      "input": "theofficersgavethisaccount",
+      "ground_truth": "the officers gave this account",
+      "word_count": 5
+    },
+    {
+      "input": "healsohisandwifeandduringthethealso",
+      "ground_truth": "he also his and wife and during the the also",
+      "word_count": 10
+    },
+    {
+      "input": "whenpolicethemanwasstillsaid",
+      "ground_truth": "when police the man was still said",
+      "word_count": 7
+    },
+    {
+      "input": "heoneoftheofficersandwas",
+      "ground_truth": "he one of the officers and was",
+      "word_count": 7
+    },
+    {
+      "input": "aboutfiveminuteslaterheupsaidandthetwoagain",
+      "ground_truth": "about five minutes later he up said and the two again",
+      "word_count": 11
+    },
+    {
+      "input": "thenhethetwoofficersagainandwasagainrelated",
+      "ground_truth": "then he the two officers again and was again related",
+      "word_count": 10
+    },
+    {
+      "input": "saidheandreceivedandandtheirwere",
+      "ground_truth": "said he and received and and their were",
+      "word_count": 8
+    },
+    {
+      "input": "thomaswaswithfourofand",
+      "ground_truth": "thomas was with four of and",
+      "word_count": 6
+    },
+    {
+      "input": "twoofonanofficerandpolicesaid",
+      "ground_truth": "two of on an officer and police said",
+      "word_count": 8
+    },
+    {
+      "input": "ahearingwassetfor",
+      "ground_truth": "a hearing was set for",
+      "word_count": 5
+    },
+    {
+      "input": "aspersonnelsheoffromtototootherto",
+      "ground_truth": "as personnel she of from to to to other to",
+      "word_count": 10
+    },
+    {
+      "input": "willspreadaoverininandinand",
+      "ground_truth": "will spread a over in in and in and",
+      "word_count": 9
+    },
+    {
+      "input": "theeffortisbeinginandjonesover",
+      "ground_truth": "the effort is being in and jones over",
+      "word_count": 8
+    },
+    {
+      "input": "thedepartmenthasjustfinishedinareasof",
+      "ground_truth": "the department has just finished in areas of",
+      "word_count": 8
+    },
+    {
+      "input": "alsobeingtreatedareandsaid",
+      "ground_truth": "also being treated are and said",
+      "word_count": 6
+    },
+    {
+      "input": "studentshavebeenusingandhighspeedduringthestudy",
+      "ground_truth": "students have been using and high speed during the study",
+      "word_count": 10
+    },
+    {
+      "input": "perhapsthecanfindoutwhatalltheandmethodstoit",
+      "ground_truth": "perhaps the can find out what all the and methods to it",
+      "word_count": 12
+    },
+    {
+      "input": "streetandtheisthehighduringhours",
+      "ground_truth": "street and the is the high during hours",
+      "word_count": 8
+    },
+    {
+      "input": "itisfollowedbystreetand",
+      "ground_truth": "it is followed by street and",
+      "word_count": 6
+    },
+    {
+      "input": "theoftheandandjonesandstreetaj",
+      "ground_truth": "the of the and and jones and street aj",
+      "word_count": 9
+    },
+    {
+      "input": "thedeathreportedwasthatofof",
+      "ground_truth": "the death reported was that of of",
+      "word_count": 7
+    },
+    {
+      "input": "thatdeathatandwasreportedsundaythesaid",
+      "ground_truth": "that death at and was reported sunday the said",
+      "word_count": 9
+    },
+    {
+      "input": "anintoastoppedandintonearthesaid",
+      "ground_truth": "an into a stopped and into near the said",
+      "word_count": 9
+    },
+    {
+      "input": "ofandjonesofdiedinthecarthesaid",
+      "ground_truth": "of and jones of died in the car the said",
+      "word_count": 10
+    },
+    {
+      "input": "noforhadyetbeenreceivedhowever",
+      "ground_truth": "no for had yet been received however",
+      "word_count": 7
+    },
+    {
+      "input": "askedfromcountyofthecommission",
+      "ground_truth": "asked from county of the commission",
+      "word_count": 6
+    },
+    {
+      "input": "thecontinuedoperationofthisprogramonhavinghisservice",
+      "ground_truth": "the continued operation of this program on having his service",
+      "word_count": 10
+    },
+    {
+      "input": "thestaffalotofworkingdownhereunderreal",
+      "ground_truth": "the staff a lot of working down here under real",
+      "word_count": 10
+    },
+    {
+      "input": "saidhisobjectivewastoabetterpublicimagefor",
+      "ground_truth": "said his objective was to a better public image for",
+      "word_count": 10
+    },
+    {
+      "input": "isofthecarusedinaoftheinaprilof",
+      "ground_truth": "is of the car used in a of the in april of",
+      "word_count": 12
+    },
+    {
+      "input": "secretwerereturnedagainstthelastweekreported",
+      "ground_truth": "secret were returned against the last week reported",
+      "word_count": 8
+    },
+    {
+      "input": "themorethanabywilliamandotherofficers",
+      "ground_truth": "the more than a by william and other officers",
+      "word_count": 9
+    },
+    {
+      "input": "washeldonin",
+      "ground_truth": "was held on in",
+      "word_count": 4
+    },
+    {
+      "input": "shewasbypoliceaftertheyreceivedthefrom",
+      "ground_truth": "she was by police after they received the from",
+      "word_count": 9
+    },
+    {
+      "input": "forwilliamwhodiedinwillbeatthe",
+      "ground_truth": "for william who died in will be at the",
+      "word_count": 9
+    },
+    {
+      "input": "bornincametoin",
+      "ground_truth": "born in came to in",
+      "word_count": 5
+    },
+    {
+      "input": "threenewyorkcityandnewyorkcityandfive",
+      "ground_truth": "three new york city and new york city and five",
+      "word_count": 10
+    },
+    {
+      "input": "andleaderanddiedinacenter",
+      "ground_truth": "and leader and died in a center",
+      "word_count": 7
+    },
+    {
+      "input": "formanyyearshehadprovidedmusicandforthroughoutthe",
+      "ground_truth": "for many years he had provided music and for throughout the",
+      "word_count": 11
+    },
+    {
+      "input": "wasborninnewyorkandcametoin",
+      "ground_truth": "was born in new york and came to in",
+      "word_count": 9
+    },
+    {
+      "input": "hewasamemberofafam",
+      "ground_truth": "he was a member of af am",
+      "word_count": 7
+    },
+    {
+      "input": "hewasaformerofpostandamemberof",
+      "ground_truth": "he was a former of post and a member of",
+      "word_count": 10
+    },
+    {
+      "input": "serviceswillbeatatsonhomewithin",
+      "ground_truth": "services will be at at son home with in",
+      "word_count": 9
+    },
+    {
+      "input": "thefamilythatbe",
+      "ground_truth": "the family that be",
+      "word_count": 4
+    },
+    {
+      "input": "byhadtakeninbothlocalandtheconferenceatsan",
+      "ground_truth": "by had taken in both local and the conference at san",
+      "word_count": 11
+    },
+    {
+      "input": "overfundsfortheofjuniorhere",
+      "ground_truth": "over funds for the of junior here",
+      "word_count": 7
+    },
+    {
+      "input": "forwillreceiveafromthejuniornationalorganization",
+      "ground_truth": "for will receive a from the junior national organization",
+      "word_count": 9
+    },
+    {
+      "input": "hiscompanywillreceiveawhichwillbeamongthemembers",
+      "ground_truth": "his company will receive a which will be among the members",
+      "word_count": 11
+    },
+    {
+      "input": "forthenationalcompanywerejohnmorganwilliamandwilliamallof",
+      "ground_truth": "for the national company were john morgan william and william all of",
+      "word_count": 12
+    },
+    {
+      "input": "youngisthesonofand",
+      "ground_truth": "young is the son of and",
+      "word_count": 6
+    },
+    {
+      "input": "othermembersofthetheconferenceinarehighschool",
+      "ground_truth": "other members of the the conference in are high school",
+      "word_count": 10
+    },
+    {
+      "input": "ontheareashowandshowsthelatteratand",
+      "ground_truth": "on the are a show and shows the latter at and",
+      "word_count": 11
+    },
+    {
+      "input": "continuedtorunaheadoflastduringtheshowwithclear",
+      "ground_truth": "continued to run ahead of last during the show with clear",
+      "word_count": 11
+    },
+    {
+      "input": "fromtheofofthe",
+      "ground_truth": "from the of of the",
+      "word_count": 5
+    },
+    {
+      "input": "billofwassecondandofthird",
+      "ground_truth": "bill of was second and of third",
+      "word_count": 7
+    },
+    {
+      "input": "fromtheeastendfailedtoplace",
+      "ground_truth": "from the east end failed to place",
+      "word_count": 7
+    },
+    {
+      "input": "ofnorthofthe",
+      "ground_truth": "of north of the",
+      "word_count": 4
+    },
+    {
+      "input": "bluewenttoofof",
+      "ground_truth": "blue went to of of",
+      "word_count": 5
+    },
+    {
+      "input": "ofofnorthofnorth",
+      "ground_truth": "of of north of north",
+      "word_count": 5
+    },
+    {
+      "input": "ofofnorthandandof",
+      "ground_truth": "of of north and and of",
+      "word_count": 6
+    },
+    {
+      "input": "dayofthemarketawhite",
+      "ground_truth": "day of the market a white",
+      "word_count": 6
+    },
+    {
+      "input": "alsoblueweredayofofandof",
+      "ground_truth": "also blue were day of of and of",
+      "word_count": 8
+    },
+    {
+      "input": "wenttodaywithdayandother",
+      "ground_truth": "went to day with day and other",
+      "word_count": 7
+    },
+    {
+      "input": "inwerebyjohnofofofofandof",
+      "ground_truth": "in were by john of of of of and of",
+      "word_count": 10
+    },
+    {
+      "input": "blueforonewhitewastakenby",
+      "ground_truth": "blue for one white was taken by",
+      "word_count": 7
+    },
+    {
+      "input": "inopenclassofhadtheandand",
+      "ground_truth": "in open class of had the and and",
+      "word_count": 8
+    },
+    {
+      "input": "johnsonofwastheonlyinopenclassandall",
+      "ground_truth": "john son of was the only in open class and all",
+      "word_count": 11
+    },
+    {
+      "input": "strongofthejuniordinner",
+      "ground_truth": "strong of the junior dinner",
+      "word_count": 5
+    },
+    {
+      "input": "highschoolfromhadthedinnerandofalsoablue",
+      "ground_truth": "high school from had the dinner and of also a blue",
+      "word_count": 11
+    },
+    {
+      "input": "oftooktopindividualhomewithacalled",
+      "ground_truth": "of took top individual home with a called",
+      "word_count": 8
+    },
+    {
+      "input": "thesewerethelasttwodayssetbytheboardforhearing",
+      "ground_truth": "these were the last two days set by the board for hearing",
+      "word_count": 12
+    },
+    {
+      "input": "wereheardfortwodaystwoweeksago",
+      "ground_truth": "were heard for two days two weeks ago",
+      "word_count": 8
+    },
+    {
+      "input": "aboutpersonsappearedatthattime",
+      "ground_truth": "about persons appeared at that time",
+      "word_count": 6
+    },
+    {
+      "input": "theyalsowillvisitonwhichhavebeenmade",
+      "ground_truth": "they also will visit on which have been made",
+      "word_count": 9
+    },
+    {
+      "input": "bothcarswereslightly",
+      "ground_truth": "both cars were slightly",
+      "word_count": 4
+    },
+    {
+      "input": "wastakentoawhotreatedhim",
+      "ground_truth": "was taken to a who treated him",
+      "word_count": 7
+    },
+    {
+      "input": "andreportedtheattheirhomeondriveataboutlastnight",
+      "ground_truth": "and reported the at their home on drive at about last night",
+      "word_count": 12
+    },
+    {
+      "input": "theytoldpolicethetookaworthablackworth",
+      "ground_truth": "they told police the took a worth a black worth",
+      "word_count": 10
+    },
+    {
+      "input": "awithinit",
+      "ground_truth": "a with in it",
+      "word_count": 4
+    },
+    {
+      "input": "acollectionofenglishfrenchandgermanat",
+      "ground_truth": "a collection of english french and german at",
+      "word_count": 8
+    },
+    {
+      "input": "fourawatchandasetof",
+      "ground_truth": "four a watch and a set of",
+      "word_count": 7
+    },
+    {
+      "input": "oneofthewasawhitewithaat",
+      "ground_truth": "one of the was a white with a at",
+      "word_count": 9
+    },
+    {
+      "input": "theotherswereatand",
+      "ground_truth": "the others were at and",
+      "word_count": 5
+    },
+    {
+      "input": "thewatchwasatandtheat",
+      "ground_truth": "the watch was at and the at",
+      "word_count": 7
+    },
+    {
+      "input": "robertwhosaidthebrokeinthroughthebackdoor",
+      "ground_truth": "robert who said the broke in through the back door",
+      "word_count": 10
+    },
+    {
+      "input": "andintwoandaroomwere",
+      "ground_truth": "and in two and a room were",
+      "word_count": 7
+    },
+    {
+      "input": "hewastakentothehospitalbythenorthprovidence",
+      "ground_truth": "he was taken to the hospital by the north providence",
+      "word_count": 10
+    },
+    {
+      "input": "onehousewaswithoutpowerforabouthalfanhourasaid",
+      "ground_truth": "one house was without power for about half an hour a said",
+      "word_count": 12
+    },
+    {
+      "input": "hadforthepost",
+      "ground_truth": "had for the post",
+      "word_count": 4
+    },
+    {
+      "input": "thepropertyincludedabuildingonsquarefeetofland",
+      "ground_truth": "the property included a building on square feet of land",
+      "word_count": 10
+    },
+    {
+      "input": "appearedforthestate",
+      "ground_truth": "appeared for the state",
+      "word_count": 4
+    },
+    {
+      "input": "personswhofinditmaysendtheirtotheofficeatpark",
+      "ground_truth": "persons who find it may send their to the office at park",
+      "word_count": 12
+    },
+    {
+      "input": "thethisyearistoprovidefor",
+      "ground_truth": "the this year is to provide for",
+      "word_count": 7
+    },
+    {
+      "input": "ofchildrenwillberemembered",
+      "ground_truth": "of children will be remembered",
+      "word_count": 5
+    },
+    {
+      "input": "havebeentotheovertheyears",
+      "ground_truth": "have been to the over the years",
+      "word_count": 7
+    },
+    {
+      "input": "wasgivenfirstaidat",
+      "ground_truth": "was given first aid at",
+      "word_count": 5
+    },
+    {
+      "input": "wherehehadbeenbya",
+      "ground_truth": "where he had been by a",
+      "word_count": 6
+    },
+    {
+      "input": "aboutofthefirmwillbeonhandtooftheupon",
+      "ground_truth": "about of the firm will be on hand to of the upon",
+      "word_count": 12
+    },
+    {
+      "input": "thehasbackatafterthreeinnorthmarkedbyand",
+      "ground_truth": "the has back at after three in north marked by and",
+      "word_count": 11
+    },
+    {
+      "input": "localthemenwiththelife",
+      "ground_truth": "local the men with the life",
+      "word_count": 6
+    },
+    {
+      "input": "hethemanasaof",
+      "ground_truth": "he the man as a of",
+      "word_count": 6
+    },
+    {
+      "input": "oneoftheeightwasonaof",
+      "ground_truth": "one of the eight was on a of",
+      "word_count": 8
+    },
+    {
+      "input": "theofthethirdchargeofthethatheardthecase",
+      "ground_truth": "the of the third charge of the that heard the case",
+      "word_count": 11
+    },
+    {
+      "input": "neitherwasonthe",
+      "ground_truth": "neither was on the",
+      "word_count": 4
+    },
+    {
+      "input": "thesaidthemenhadhimtobe",
+      "ground_truth": "the said the men had him to be",
+      "word_count": 8
+    }
+  ]
+}
