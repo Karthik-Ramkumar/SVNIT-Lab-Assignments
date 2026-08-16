@@ -58,7 +58,6 @@ def main():
     # Select the Age and Fare columns
     age_fare_df = data[['age', 'fare']].copy()
     
-    # Handle missing values (dropping rows with missing Age or Fare)
     age_fare_df = age_fare_df.dropna()
     print(f"\nHandled missing values. Remaining rows: {len(age_fare_df)}")
     
