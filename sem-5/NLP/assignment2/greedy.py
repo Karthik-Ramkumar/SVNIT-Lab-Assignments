@@ -21,3 +21,4 @@ def greedy_segment(text, vocabulary):
         i += len(best_word)
 
     return result
+

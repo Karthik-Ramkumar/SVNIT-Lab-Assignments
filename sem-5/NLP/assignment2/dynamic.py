@@ -28,6 +28,8 @@ def dynamic_segment(text, word_counts):
                 if score > dp[i]:
                     dp[i] = score
                     best_word[i] = word
+# t h e r e
+# P(there) > P(the) + P(re)
 
     result = []
     i = n

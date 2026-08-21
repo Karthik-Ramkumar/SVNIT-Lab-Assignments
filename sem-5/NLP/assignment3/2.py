@@ -8,10 +8,10 @@ with open("brown_nouns.txt", "r", encoding="utf-8") as file:
         if re.fullmatch(r"[a-z]+", line.strip())
     }
 
-print("Number of words in corpus:", len(words))
+print("number of words in corpus:", len(words))
 
 
-def get_plural_forms(word):
+def get_plural(word):
 
     # -es rule comes first
     if word.endswith(("s", "x", "z", "ch", "sh")):
@@ -27,20 +27,16 @@ def get_plural_forms(word):
 
 def analyze(word):
 
-    # Check whether the word can be a plural FIRST
     for root in words:
 
-        if word in get_plural_forms(root):
+        if word in get_plural(root):
             return root + "+N+PL"
 
-    # If it wasn't a plural, check if it is a noun
     if word in words:
         return word + "+N+SG"
 
     return "Invalid Word"
 
-
-# Test
 test_words = [
     "fox",
     "foxes",
