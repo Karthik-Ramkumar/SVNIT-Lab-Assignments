@@ -120,4 +120,3 @@ print("Average Edit Distance:", round(greedy_avg_edit, 2))
 print("\nDynamic Programming:")
 print("Accuracy:", round(dynamic_accuracy, 2), "%")
 print("Average Edit Distance:", round(dynamic_avg_edit, 2))
-
