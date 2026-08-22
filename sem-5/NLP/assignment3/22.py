@@ -1,266 +1,179 @@
 import re
-with open("brown_nouns.txt", "r", encoding="utf-8") as file:
-    vocabulary = {
-        line.strip()
-        for line in file
-        if re.fullmatch(r"[a-z]+", line.strip())
-    }
 
-
-class FST:
+class SimpleFST:
     def __init__(self):
-        self.transitions = {}
-        self.states = set()
-        self.final_outputs = {}
-
-        self.start_state = "q0"
-        self.state_count = 1
-
-        self.states.add("q0")
+        self.transitions = {}      # state -> { (input_char, output_char): next_state }
+        self.final_outputs = {}    # state -> set of grammatical tags
+        self.state_counter = 0
+        self.start_state = self.new_state()
 
     def new_state(self):
-        state = f"q{self.state_count}"
-        self.state_count += 1
-        self.states.add(state)
+        state = f"q{self.state_counter}"
+        self.state_counter += 1
+        self.transitions[state] = {}
         return state
 
-    def add_transition(self, current, input_symbol,
-                       output_symbol, next_state):
+    def add_transition(self, current, in_char, out_char):
+        # Prefix sharing - reuse existing transition if present
+        if (in_char, out_char) not in self.transitions[current]:
+            self.transitions[current][(in_char, out_char)] = self.new_state()
+        return self.transitions[current][(in_char, out_char)] # continue from new state
 
-        self.transitions[(current, input_symbol)] = (
-            output_symbol,
-            next_state
-        )
+    def add_final(self, state, tag):
+        if state not in self.final_outputs:
+            self.final_outputs[state] = set() # set allows multiple outputs for one state
+        self.final_outputs[state].add(tag)
 
-    def add_final_output(self, state, output):
-        self.final_outputs[state] = output
+    def minimize(self):
+        # Bottom-up recursive minimization. Two states are identical if their outgoing transitions and final outputs are exactly the same.
+        signature_to_state = {}
+
+        def dfs(state):
+            # Minimize all children first (bottom-up)
+            # we minimize from the child upwards to parent
+            # because when we compare two states their destination should be minimized
+            for key, next_state in list(self.transitions[state].items()):
+                self.transitions[state][key] = dfs(next_state)
+                
+            # build a unique "signature" for the current state
+            trans_sig = tuple(sorted(self.transitions[state].items())) # all the transitions leaving the state
+            final_sig = tuple(sorted(self.final_outputs.get(state, []))) # keeps whether state is final and what output it produces
+            signature = (final_sig, trans_sig)
+            
+            # If we have seen this exact signature before -> merge,  Return the old state.
+            if signature in signature_to_state:
+                return signature_to_state[signature]
+            else:
+                signature_to_state[signature] = state
+                return state
+
+        self.start_state = dfs(self.start_state)
+
+        # number of reachable states after minimization
+        reachable = set() # all states reachable from the start state
+        def find_reachable(state):
+            if state in reachable: return
+            reachable.add(state) # mark the state
+            for next_state in self.transitions[state].values(): # visit all the destinations
+                find_reachable(next_state)
+
+        find_reachable(self.start_state)
+        self.reachable_states = reachable # store final set of reachable states
+        return len(reachable)
+
+    def analyze(self, word):
+        # stores: (current_state, current_index_in_word, accumulated_output)
+        queue = [(self.start_state, 0, "")]
+        results = set()
+        
+        while queue:
+            state, idx, out_str = queue.pop(0)
+            
+            # Reached the end of the input word
+            if idx == len(word):
+                if state in self.final_outputs: # check if final state
+                    for tag in self.final_outputs[state]:
+                        results.add(out_str + tag) # get grammatical tag
+                continue
+                
+            char = word[idx]
+            for (in_char, out_char), next_state in self.transitions.get(state, {}).items():
+                if in_char == char:
+                    # If output is epsilon (ε), we don't add it to the final string
+                    actual_out = "" if out_char == "ε" else out_char
+                    queue.append((next_state, idx + 1, out_str + actual_out))
+                    
+        return ", ".join(sorted(results)) if results else "Invalid Word"
 
 
-fst = FST()
+with open("brown_nouns.txt", "r", encoding="utf-8") as file:
+    words = {line.strip() for line in file if re.fullmatch(r"[a-z]+", line.strip())}
 
-# Each node stores the FST state associated with it
-root = {"state": "q0", "children": {}}
+fst = SimpleFST()
 
-# Only words that can act as roots
-roots = set(vocabulary)
-
-for word in roots:
-
-    node = root
-
-    for character in word:
-
-        if character not in node["children"]:
-
-            next_state = fst.new_state()
-
-            node["children"][character] = {
-                "state": next_state,
-                "children": {}
-            }
-
-            fst.add_transition(
-                node["state"],
-                character,
-                character,
-                next_state
-            )
-
-        node = node["children"][character]
-
-for root_word in roots:
-
-    node = root
-
-    for character in root_word:
-        node = node["children"][character]
-
-    state = node["state"]
-
-    # Singular
-    if root_word in vocabulary:
-        fst.add_final_output(
-            state,
-            "+N+SG"
-        )
-
-    # Plural: root + s
-    plural_s = root_word + "s"
-
-    if plural_s in vocabulary:
-        plural_state = fst.new_state()
-
-        fst.add_transition(
-            state,
-            "s",
-            "s",
-            plural_state
-        )
-
-        fst.add_final_output(
-            plural_state,
-            "+N+PL"
-        )
-
-    # Plural: root + es
-    plural_es = root_word + "es"
-
-    if plural_es in vocabulary:
-
-        e_state = fst.new_state()
-        s_state = fst.new_state()
-
-        fst.add_transition(
-            state,
-            "e",
-            "e",
-            e_state
-        )
-
-        fst.add_transition(
-            e_state,
-            "s",
-            "s",
-            s_state
-        )
-
-        fst.add_final_output(
-            s_state,
-            "+N+PL"
-        )
-
-    # Plural: y -> ies
-    if root_word.endswith("y"):
-
-        plural_ies = root_word[:-1] + "ies"
-
-        if plural_ies in vocabulary:
-
-            # Go back to the state before y
-            node = root
-
-            for character in root_word[:-1]:
-                node = node["children"][character]
-
-            state_before_y = node["state"]
-
-            i_state = fst.new_state()
-            e_state = fst.new_state()
-            s_state = fst.new_state()
-
-            fst.add_transition(
-                state_before_y,
-                "i",
-                "i",
-                i_state
-            )
-
-            fst.add_transition(
-                i_state,
-                "e",
-                "e",
-                e_state
-            )
-
-            fst.add_transition(
-                e_state,
-                "s",
-                "s",
-                s_state
-            )
-
-            fst.add_final_output(
-                s_state,
-                "+N+PL"
-            )
-
-def analyze(word):
-
-    state = fst.start_state
-    output = ""
-
-    for character in word:
-
-        transition = fst.transitions.get(
-            (state, character)
-        )
-
-        if transition is None:
-            return "Invalid Word"
-
-        output_symbol, state = transition
-
-        output += output_symbol
-
-    if state in fst.final_outputs:
-
-        output += fst.final_outputs[state]
-
-        # Recover the lexical root from the output
-        if output.endswith("+N+SG"):
-            root = word
-
+# Build the Trie
+for word in words:
+    
+    # Add Singular Form
+    curr = fst.start_state
+    for char in word:
+        curr = fst.add_transition(curr, char, char)
+    fst.add_final(curr, "+N+SG")
+    
+    # Add Plural Form
+    if word.endswith(("s", "x", "z", "ch", "sh")):
+        plural = word + "es"
+        plural_type = "es"
+    elif word.endswith("y"):
+        plural = word[:-1] + "ies"
+        plural_type = "ies"
+    else:
+        plural = word + "s"
+        plural_type = "s"
+        
+    curr = fst.start_state
+    for i, char in enumerate(plural):
+        # We output the root letters and silence the plural suffixes using ε (epsilon)
+        if plural_type == "ies" and i >= len(word) - 1:
+            out_char = 'y' if char == 'i' else 'ε'
+        elif plural_type == "es" and i >= len(word):
+            out_char = 'ε'
+        elif plural_type == "s" and i >= len(word):
+            out_char = 'ε'
         else:
-            root = word
+            out_char = char
+            
+        curr = fst.add_transition(curr, char, out_char)
+        
+    fst.add_final(curr, "+N+PL")
 
-            if word.endswith("ies"):
-                root = word[:-3] + "y"
+states_before = len(fst.transitions)
 
-            elif word.endswith("es"):
-                root = word[:-2]
+states_after = fst.minimize()
+#------------------------------------------------------------------------------------------
 
-            elif word.endswith("s"):
-                root = word[:-1]
-
-        return root + output
-
-    return "Invalid Word"
-
-print("Transition Table")
-
-for (state, input_symbol), (output_symbol, next_state) in fst.transitions.items():
-
-    print(
-        state,
-        input_symbol + ":" + output_symbol,
-        next_state
-    )
-
+print(f"States BEFORE minimization: {states_before}")
+print(f"States AFTER minimization:  {states_after}")
 
 input_alphabet = set()
-
-for state, symbol in fst.transitions:
-    input_alphabet.add(symbol)
-
 output_alphabet = set()
 
-for _, output_symbol in fst.transitions.values():
-    output_alphabet.add(output_symbol)
+for state in fst.reachable_states:
+    for (in_char, out_char) in fst.transitions[state].keys():
+        input_alphabet.add(in_char)
+        output_alphabet.add(out_char)
+        
+    for tag in fst.final_outputs.get(state, []):
+        output_alphabet.add(tag)
 
-output_alphabet.update(fst.final_outputs.values())
+print("\n Input Alphabet:",sorted(input_alphabet))
+print("\n Output Alphabet:",sorted(output_alphabet))
 
-print("\nInput Alphabet:")
-print(sorted(input_alphabet))
 
-print("\nOutput Alphabet:")
-print(sorted(output_alphabet))
+# Transition Table
+print(f"{'State':<10} | {'Input':<5} | {'Output':<10} | {'Next State / Final'}")
+print("-" * 55)
 
-print("\nNumber of states:", len(fst.states))
+count = 0
+for state in fst.reachable_states:
+    for (in_char, out_char), next_state in fst.transitions[state].items():
+        if count < 15:
+            print(f"{state:<10} | {in_char:<5} | {out_char:<10} | {next_state}")
+            count += 1
+            
+    if state in fst.final_outputs and count < 20:
+        for tag in fst.final_outputs[state]:
+            print(f"{state:<10} | {'END':<5} | {tag:<10} | [FINAL]")
+            count += 1
+            
+    if count >= 20:
+        break
+
 
 test_words = [
-    "fox",
-    "foxes",
-    "bag",
-    "bags",
-    "try",
-    "tries",
-    "dish",
-    "dishes",
-    "foxs",
-    "dishs"
+    "fox", "foxes", "bag", "bags", "try", "tries", 
+    "dish", "dishes", "foxs", "dishs"
 ]
 
-print("\nResults")
-
 for word in test_words:
-    print(word, "->", analyze(word))
+    print(f"{word:<8} -> {fst.analyze(word)}")
