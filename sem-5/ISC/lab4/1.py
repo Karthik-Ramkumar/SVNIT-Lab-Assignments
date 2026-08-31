@@ -3,8 +3,6 @@
 key = "DRONE"
 plaintext = "ATTACK AT THE STATION"
 
-
-
 # Create 5 x5 Key Matrix
 
 alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"  # J is removed
@@ -30,8 +28,6 @@ for i in range(0, 25, 5):
 print("Key Matrix:")
 for row in matrix:
     print(row)
-
-
 
 text = plaintext.replace(" ", "").upper().replace("J", "I")
 
