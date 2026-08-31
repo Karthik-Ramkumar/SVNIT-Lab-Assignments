@@ -14,5 +14,4 @@ def brute_force_caesar(ciphertext):
 
 # Example
 ciphertext1 = input("Enter text to encrypt: \n")
-ciphertext = "SDWLHQW-9842"
 brute_force_caesar(ciphertext1)
