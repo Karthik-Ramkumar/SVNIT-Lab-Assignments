@@ -30,6 +30,7 @@ print(f"\nEncrypted numerical blocks: {encrypted_blocks}")
 print(f"Ciphertext: {ciphertext}")
 
 # Modular inverse of K mod 26 using determinant method
+
 det = int(round(np.linalg.det(K))) % 26
 # Find modular inverse of determinant mod 26
 det_inv = None
