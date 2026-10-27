@@ -1,0 +1,282 @@
+{
+    "assignment": "NLP Midsem",
+    "solutions": [
+        {
+            "topic": "fst_pluralization",
+            "states": [
+                "q0",
+                "q_copy",
+                "q_regular",
+                "q_exception",
+                "q_accept",
+                "q_singular_accept"
+            ],
+            "features": [
+                "+SG",
+                "+PL",
+                "+N"
+            ],
+            "transition_table": [
+                {
+                    "state": "q0",
+                    "input_symbol": "noun",
+                    "output_symbol": "noun",
+                    "next_state": "q_copy"
+                },
+                {
+                    "state": "q_copy",
+                    "input_symbol": "s|x|z|ch|sh",
+                    "output_symbol": "identity",
+                    "next_state": "q_exception"
+                },
+                {
+                    "state": "q_copy",
+                    "input_symbol": "other",
+                    "output_symbol": "identity",
+                    "next_state": "q_regular"
+                },
+                {
+                    "state": "q_regular",
+                    "input_symbol": "\u03b5",
+                    "output_symbol": "s",
+                    "next_state": "q_accept"
+                },
+                {
+                    "state": "q_exception",
+                    "input_symbol": "\u03b5",
+                    "output_symbol": "es",
+                    "next_state": "q_accept"
+                },
+                {
+                    "state": "q0",
+                    "input_symbol": "noun",
+                    "output_symbol": "noun+SG+N",
+                    "next_state": "q_singular_accept"
+                }
+            ],
+            "examples": [
+                {
+                    "singular": "cat",
+                    "plural": "cats"
+                },
+                {
+                    "singular": "bus",
+                    "plural": "buses"
+                },
+                {
+                    "singular": "box",
+                    "plural": "boxes"
+                },
+                {
+                    "singular": "buzz",
+                    "plural": "buzzes"
+                },
+                {
+                    "singular": "church",
+                    "plural": "churches"
+                },
+                {
+                    "singular": "dish",
+                    "plural": "dishes"
+                }
+            ],
+            "explanation": "The transducer copies the noun stem. If the final input is s, x, z, ch, or sh it emits es; otherwise it emits s. The singular path outputs the noun with +SG+N."
+        },
+        {
+            "topic": "wordpiece_two_merges",
+            "corpus": [
+                "low",
+                "lower",
+                "low",
+                "lower",
+                "lowest",
+                "low",
+                "lowest",
+                "low",
+                "lowest",
+                "low",
+                "new",
+                "new",
+                "new",
+                "newer",
+                "newer",
+                "new"
+            ],
+            "merges": [
+                {
+                    "pair": [
+                        "l",
+                        "o"
+                    ],
+                    "frequency": 10
+                },
+                {
+                    "pair": [
+                        "lo",
+                        "w"
+                    ],
+                    "frequency": 10
+                }
+            ],
+            "newest_tokens": [
+                "n",
+                "e",
+                "w",
+                "e",
+                "s",
+                "t",
+                "</w>"
+            ],
+            "explanation": "Character symbols include an end-of-word marker; the two most frequent adjacent pairs are merged greedily."
+        },
+        {
+            "topic": "tfidf",
+            "sentences": [
+                [
+                    "cat",
+                    "dog",
+                    "animal"
+                ],
+                [
+                    "cat",
+                    "cat",
+                    "pet"
+                ],
+                [
+                    "dog",
+                    "pet",
+                    "animal",
+                    "cat"
+                ]
+            ],
+            "vocabulary": [
+                "animal",
+                "cat",
+                "dog",
+                "pet"
+            ],
+            "idf": {
+                "animal": 0.4054651081081644,
+                "cat": 0.0,
+                "dog": 0.4054651081081644,
+                "pet": 0.4054651081081644
+            },
+            "tfidf_vectors": [
+                {
+                    "animal": 0.4054651081081644,
+                    "cat": 0.0,
+                    "dog": 0.4054651081081644,
+                    "pet": 0.0
+                },
+                {
+                    "animal": 0.0,
+                    "cat": 0.0,
+                    "dog": 0.0,
+                    "pet": 0.4054651081081644
+                },
+                {
+                    "animal": 0.4054651081081644,
+                    "cat": 0.0,
+                    "dog": 0.4054651081081644,
+                    "pet": 0.4054651081081644
+                }
+            ],
+            "cosine_similarities": [
+                {
+                    "sentences": [
+                        1,
+                        2
+                    ],
+                    "cosine": 0.0
+                },
+                {
+                    "sentences": [
+                        1,
+                        3
+                    ],
+                    "cosine": 0.816496580927726
+                },
+                {
+                    "sentences": [
+                        2,
+                        3
+                    ],
+                    "cosine": 0.5773502691896257
+                }
+            ],
+            "closest_pair": [
+                1,
+                3
+            ],
+            "explanation": "TF uses raw term counts and IDF is unsmoothed log(N/df). Sentence similarity is cosine similarity."
+        },
+        {
+            "topic": "naive_bayes",
+            "features": [
+                "free",
+                "win",
+                "offer"
+            ],
+            "query": [
+                0,
+                0,
+                0
+            ],
+            "computations": {
+                "Spam": {
+                    "prior": 0.5714285714285714,
+                    "feature_likelihoods": [
+                        0.25,
+                        0.25,
+                        0.25
+                    ],
+                    "unnormalized_score": 0.008928571428571428,
+                    "formula": "P(Spam) * 0.250000 * 0.250000 * 0.250000"
+                },
+                "NotSpam": {
+                    "prior": 0.42857142857142855,
+                    "feature_likelihoods": [
+                        0.6666666666666666,
+                        0.6666666666666666,
+                        0.6666666666666666
+                    ],
+                    "unnormalized_score": 0.12698412698412698,
+                    "formula": "P(NotSpam) * 0.666667 * 0.666667 * 0.666667"
+                }
+            },
+            "prediction": "NotSpam",
+            "explanation": "Bernoulli Naive Bayes multiplies the class prior by the three binary feature likelihoods. No smoothing is needed because all query feature values occur in each class."
+        },
+        {
+            "topic": "kneser_ney",
+            "discount": 0.5,
+            "bigram_counts": {
+                "I|like": 2,
+                "like|NLP": 2,
+                "like|AI": 1,
+                "You|like": 1,
+                "You|love": 1,
+                "love|AI": 1,
+                "We|love": 1,
+                "love|NLP": 1
+            },
+            "probabilities": {
+                "P(AI|love)": {
+                    "count": 1,
+                    "first_term": 0.25,
+                    "lambda": 0.5,
+                    "continuation": 0.25,
+                    "probability": 0.375
+                },
+                "P(NLP|like)": {
+                    "count": 2,
+                    "first_term": 0.75,
+                    "lambda": 0.5,
+                    "continuation": 0.25,
+                    "probability": 0.875
+                }
+            },
+            "explanation": "For bigram Kneser-Ney, P(w|h) = max(c(hw)-d,0)/c(h) + lambda(h)P_continuation(w), with d=0.5."
+        }
+    ]
+}
